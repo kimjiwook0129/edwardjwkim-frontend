@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { format, parseISO } from 'date-fns';
 import './WorkExperience.css';
 import * as data from './experiences.json';
+import { useLanguage } from '../LanguageContext';
 
 const experiencesString = JSON.stringify(data);
 const experiences = JSON.parse(experiencesString);
 
 type WorkExperienceProps = {
-    title: string;
+    // title: string;
     type: string;
 };
 
@@ -21,14 +22,16 @@ const formatDuration = (duration: string) => {
 
 
 const WorkExperience: React.FC<WorkExperienceProps> = (props: WorkExperienceProps) => {
-    const [language, setLanguage] = useState('en');
+
+    const { language } = useLanguage();
     const experienceList = experiences[props.type][language];
+    const experienceType = experiences[props.type][language + '-title'];
     const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
   
     return (
       <div className="work-experience-container">
           <div className="header">
-            <h1 className="experiences-type">{props.title}</h1>
+            <h1 className="experiences-type">{experienceType}</h1>
           </div>
         
         <div className="experience-list">
@@ -43,9 +46,13 @@ const WorkExperience: React.FC<WorkExperienceProps> = (props: WorkExperienceProp
                     <div className="job-duration">
                     {formatDuration(experience.duration)}
                     </div>
+                    <div className="job-location">
+                    {experience.location}
+                    </div>
                 </div>
             ))}
             </div>
+            
       </div>
     );
   };

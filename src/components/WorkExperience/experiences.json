@@ -1,73 +1,89 @@
 {
     "technical": {
+      "en-title": "Technical Experience",
       "en": [
         {
-          "company": "RBC", 
+          "company": "Royal Bank of Canada", 
           "title": "Data Engineer",
-          "duration": "2022-09-06,2023-04-28"
+          "duration": "2022-09-06,2023-04-28",
+          "location": "Toronto, Canada"
         },
         {
           "company": "Wish (Contextlogic Inc.)",
           "title": "Data Scientist",
-          "duration": "2022-01-10,2022-04-29"
+          "duration": "2022-01-10,2022-04-29",
+          "location": "Toronto, Canada"
         },
         {
           "company": "Barcode of Life Data Systems", 
           "title": "Data Analyst & Programmer",
-          "duration": "2019-05-06,2019-08-30"
+          "duration": "2019-05-06,2019-08-30",
+          "location": "Guelph, Canada"
         }
       ],
+      "ko-title": "기술 경력",
       "ko": [
         {
-          "company": "RBC",
+          "company": "Royal Bank of Canada",
           "title": "데이터 엔지니어",
-          "duration": "2022-09-06,2023-04-28"
+          "duration": "2022-09-06,2023-04-28",
+          "location": "캐나다 토론토"
         },
         {
           "company": "Wish (Contextlogic Inc.)",
            "title": "데이터 사이언티스트",
-           "duration": "2022-01-10,2022-04-29"
+           "duration": "2022-01-10,2022-04-29",
+           "location": "캐나다 토론토"
         },
         {
           "company": "Barcode of Life Data Systems",
            "title": "데이터 분석 프로그래머",
-           "duration": "2019-05-06,2019-08-30"
+           "duration": "2019-05-06,2019-08-30",
+           "location": "캐나다 구웰프"
         }
       ]
     },
     "other": {
+        "en-title": "Other Experience",
         "en": [
             {
               "company": "Ministry of National Defense, Republic of Korea", 
               "title": "Sergeant, Squad Leader",
-              "duration": "2020-01-28,2021-08-07"
+              "duration": "2020-01-28,2021-08-07",
+              "location": "Busan, South Korea"
             },
             {
               "company": "ASAP Academy", 
               "title": "IB / SAT Mathematics Instructor",
-              "duration": "2019-12-09,2020-01-27"
+              "duration": "2019-12-09,2020-01-27",
+              "location": "Seoul, South Korea"
             },
             {
               "company": "Sheridan College", 
               "title": "Computer Mathematics Learning Assistant",
-              "duration": "2018-05-07,2018-08-24"
+              "duration": "2018-05-07,2018-08-24",
+              "location": "Oakville, Canada"
             }
           ],
+          "ko-title": "기타 경력",
           "ko": [
             {
               "company": "국군복지단",
               "title": "육군 병장 만기전역",
-              "duration": "2020-01-28,2021-08-07"
+              "duration": "2020-01-28,2021-08-07",
+              "location": "대한민국 부산"
             },
             {
               "company": "프리미엄 맞춤수업 학원", 
-              "title": "IB / SAT Mathematics Instructor",
-              "duration": "2019-12-09,2020-01-27"
+              "title": "IB/SAT 수학 강사",
+              "duration": "2019-12-09,2020-01-27",
+              "location": "대한민국 서울"
             },
             {
               "company": "쉐리든 대학교", 
-              "title": "Computer Mathematics Learning Assistant",
-              "duration": "2018-05-07,2018-08-24"
+              "title": "컴퓨터수학 조교",
+              "duration": "2018-05-07,2018-08-24",
+              "location": "캐나다 옥빌"
             }
           ]
     }
