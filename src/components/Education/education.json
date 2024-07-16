@@ -1,0 +1,64 @@
+{
+    "en-program": "Education",
+    "en": [
+        {
+            "school": "University of Waterloo", 
+            "program": "Bachelor of Mathematics, Applied Mathematics with Computing Option",
+            "duration": "2017-09-01,2024-04-30",
+            "location": "Waterloo, Canada",
+            "summary": [
+                "Grade: CGPA 85.95 / 100",
+                "Bachelor of Mathematics, Honours Applied Mathematics - Computing Option - Co-operative Program (Distinction)",
+                "Received Excellent Standing during all academic terms",
+                "Leave of absence from Sep 2019 to Aug 2021 due to mandatory military service"
+            ],
+            "description": [
+                "",
+                ""
+            ]
+        },
+        {
+            "school": "Cairo American College",
+            "program": "High School Diploma",
+            "duration": "2013-03-20,2017-06-02",
+            "location": "Cairo, Egypt",
+            "summary": [
+                ""
+            ],
+            "description": [
+                ""
+            ]
+        }
+    ],
+    "ko-program": "학력",
+    "ko": [
+        {
+            "school": "워털루대학교", 
+            "program": "응용수학 전공, 컴퓨터공학 부전공 학사과정",
+            "duration": "2017-09-01,2024-04-30",
+            "location": "캐나다 워털루",
+            "summary": [
+                "Grade: CGPA 85.95 / 100",
+                "Bachelor of Mathematics, Honours Applied Mathematics - Computing Option - Co-operative Program (Distinction)",
+                "Received Excellent Standing during all academic terms",
+                "Leave of absence from Sep 2019 to Aug 2021 due to mandatory military service"
+            ],
+            "description": [
+                "",
+                ""
+            ]
+        },
+        {
+            "school": "Cairo American College",
+            "program": "고등학교",
+            "duration": "2013-03-20,2017-06-02",
+            "location": "이집트 카이로",
+            "summary": [
+                ""
+            ],
+            "description": [
+                ""
+            ]
+        }
+    ]
+}

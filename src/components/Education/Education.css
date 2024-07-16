@@ -1,0 +1,101 @@
+.work-experience-container {
+    padding: 1rem;
+    background-color: #c4c4c4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: #b79f9f;
+}
+
+.experience-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0rem;
+    background-color: #585858;
+}
+
+.education-item {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 450px;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative; /* Added for positioning the button */
+}
+
+.education-school {
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.education-program {
+    height: 40px;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.job-duration {
+    height: 15px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.job-location {
+    height: 10px;
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.view-details-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-details-button:hover {
+    background-color: #0056b3;
+}
+
+.details-box {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease, height 1s ease;
+    text-align: left;
+}
+
+.details-box.visible {
+    opacity: 1;
+    height: auto;
+}
+
+@media (max-width: 1150px) {
+    .experience-list {
+        flex-direction: column;
+        align-items: stretch; 
+    }
+    .education-item {
+        width: 100%; 
+    }
+}
