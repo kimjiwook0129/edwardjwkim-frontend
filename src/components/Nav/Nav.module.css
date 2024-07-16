@@ -1,69 +1,160 @@
 /* .navbar {
-    width: 100%;
-    height: 50px;
-    background: #F7F7F7;
-    border-bottom: 1px solid #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .logo-container {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .links-container {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .toggle-switch {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+  
+  .toggle-switch:hover {
+    background-color: #bbb;
+  }
+  
+  .toggle-knob {
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: left 0.3s;
+  }
+  
+  .toggle-knob-right {
+    left: 30px;
+  }
+  
+  .toggle-text {
+    font-size: 0.8rem;
+    color: #000000;
+    z-index: 1;
+    font-weight: bold;
+  } */
 
-.logo-container {
-    margin-left: 80px;
-}
 
-.logo-container span {
-    font-weight: 500;
-    cursor: pointer;
-}
 
-.links-container {
+  .navbar {
     display: flex;
-    width: 300px;
-    justify-content: space-evenly;
-    margin-right: 80px;
-}
-
-.link a {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .logo-container {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .links-container {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .links-container.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on your navbar height */
+    right: 1rem;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  .link a {
+    color: #fff;
     text-decoration: none;
-    color: rgb(14, 34, 14, 0.8);
-} */
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
-.navbar {
-    width: 100%;
-    height: 50px; /* Increase the height to accommodate the larger logo */
-    background: #F7F7F7;
-    border-bottom: 1px solid #555;
+    font-size: 1rem;
+  }
+  
+  .toggle-switch {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Roboto', sans-serif; /* Apply the new font */
-}
-
-.logo-container {
-    margin-left: 80px;
-}
-
-.logo-container span {
-    font-weight: 700; /* Make it bold */
-    font-size: 24px; /* Increase the font size */
-    cursor: pointer;
-    color: #222; /* Darker color for better visibility */
-}
-
-.links-container {
-    display: flex;
-    width: 300px;
-    justify-content: space-evenly;
-    margin-right: 80px;
-}
-
-.link a {
-    text-decoration: none;
-    color: rgba(14, 34, 14, 0.8);
-    font-weight: 500;
-    font-size: 16px;
-}
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+  
+  .toggle-switch:hover {
+    background-color: #bbb;
+  }
+  
+  .toggle-knob {
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: left 0.3s;
+  }
+  
+  .toggle-knob-right {
+    left: 30px;
+  }
+  
+  .toggle-text {
+    font-size: 0.8rem;
+    color: #000000;
+    z-index: 1;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .links-container {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }

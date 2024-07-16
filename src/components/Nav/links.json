@@ -1,16 +1,17 @@
 {
-    "links": [
-        {
-            "label": "Home",
-            "href": "/home"
-        },
-        {
-            "label": "About",
-            "href": "/about"
-        },
-        {
-            "label": "Contact",
-            "href": "/contact"
-        }
-    ]
-}
+    "links": {
+      "en": [
+        {"label": "Home", "href": "/"},
+        {"label": "About", "href": "/about"},
+        {"label": "Projects", "href": "/projects"},
+        {"label": "Contact", "href": "/contact"}
+      ],
+      "ko": [
+        {"label": "홈", "href": "/"},
+        {"label": "소개", "href": "/about"},
+        {"label": "프로젝트", "href": "/projects"},
+        {"label": "연락처", "href": "/contact"}
+      ]
+    }
+  }
+  

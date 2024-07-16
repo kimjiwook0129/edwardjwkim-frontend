@@ -1,12 +1,17 @@
 import './App.css';
-import { Greet } from './components/Greet';
 import Nav from "./components/Nav/Nav"
+import Summary from './components/Summary/Summary';
+import WorkExperience from './components/WorkExperience/WorkExperience';
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <Greet name="Edward Jiwook Kim"/>
+      <div className="body">
+        <Summary />
+        <WorkExperience title="Technical Experience" type="technical"/>
+        <WorkExperience title="Other Experience" type="other"/>
+      </div>
     </div>
   );
 }
