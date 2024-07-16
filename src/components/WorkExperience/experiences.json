@@ -6,19 +6,46 @@
           "company": "Royal Bank of Canada", 
           "title": "Data Engineer",
           "duration": "2022-09-06,2023-04-28",
-          "location": "Toronto, Canada"
+          "location": "Toronto, Canada",
+          "summary": [
+            "Collaborated with auditors across the Chief Audit Executive (CAE) group departments to gather business requirements, refining and implementing 100+ Key Risk Indicator (KRI) metrics using Python(Pandas, Numpy), R, and SQL",
+            "Automated 15+ Extract-Transform-Load (ETL) data pipelines using Dataiku for the Risk Assessment Planning Tool Organizer (RaptOR), facilitating monthly and quarterly data ingestion and metrics updates",
+            "Analyzed End User Data Applications (EUDA) across two systems using Natural Language Processing (NLP) techniques, successfully restoring over 8.5%+ of lost data connections with 100% precision through data analysis and modeling",
+            "Managed bugs and data quality checks within agile development for the RaptOR project, overseeing data pipelines through DEV, QA, UAT, and PROD stages, ensuring continuous feedback and iterative progress"
+          ],
+          "description": [
+            "Despite being a large company, RBC did not have a standardized internal audit support tool. To address this issue, the audit data team started developing a platform called RaptOR (Risk Assessment Planning Tool Organizer) two years before I joined the team. This platform collects, standardizes, and visualizes risk indicators by country and branch.",
+            "In the RaptOR team, my role involved meeting with internal stakeholders from various departments to gather requirements for new or revised Key Risk Indicators (KRIs), and developing the corresponding ETL processes. I was also responsible for automating the pipeline to ensure that audit data is updated automatically on a quarterly and monthly basis. For this process, I primarily used the Dataiku data science platform and implemented code recipes using Python, R, and SQL."
+          ]
         },
         {
           "company": "Wish (Contextlogic Inc.)",
           "title": "Data Scientist",
           "duration": "2022-01-10,2022-04-29",
-          "location": "Toronto, Canada"
+          "location": "Toronto, Canada",
+          "summary": [
+            "Conducted Exploratory Data Analysis (EDA) on sequential user behavior logs, identifying significant differences between fraudulent and normal user patterns using an Long Short-Term Memory (LSTM) model",
+            "Consolidated 1,500+ user actions into 90 categories based on User Experience (UX) behavior chunks and automated the mapping process using Airflow cron jobs to enhance team insights"
+          ],
+          "description": [
+            "At Wish, as a data scientist in the customer risk management team, I was responsible for analyzing user session logs and deriving insights to detect fraudulent data. I performed exploratory data analysis (EDA) and data visualization on sequential user behavior log data to meet the team's requirements. Through this process, I identified significant differences between fraudulent user behavior patterns and regular user behavior patterns using an LSTM model.",
+            "Additionally, there were approximately 1,500 types of user actions. Simply grouping these actions into sequences for each user did not provide substantial insights. Further analysis revealed that these user actions were not all possible interactions via the UI but represented all types of signals communicating with the backend of the app. By categorizing these signals into about 90 categories, I significantly contributed to the team's more detailed analysis.",
+            "This approach enabled more efficient analysis of user behavior data and provided the necessary insights for detecting fraudulent data, thereby enhancing the team's data analysis capabilities."
+          ]
         },
         {
           "company": "Barcode of Life Data Systems", 
           "title": "Data Analyst & Programmer",
           "duration": "2019-05-06,2019-08-30",
-          "location": "Guelph, Canada"
+          "location": "Guelph, Canada",
+          "summary": [
+            "Designed, planned, and implemented a comprehensive automated DNA barcode data workflow dashboard using Google Apps API, enhancing data management efficiency by streamlining processes and data visualization",
+            "Compiled taxonomy JSON files to create and visualize responsive multi-node hierarchical trees using D3.js"
+          ],
+          "description": [
+            "At BOLD Systems, the lab’s primary task was to collect DNA barcode data for various species of plants and animals, record it on the server, and process it for inclusion in the laboratory archive. At the time, multiple researchers were conducting various DNA barcoding tasks, but inefficiencies arose due to the lack of effective communication regarding the progress of each task. To address this issue, I designed and developed an automated dashboard.",
+            "First, I gathered requirements based on the laboratory's DNA barcoding task manual and recorded the progress of each task. Considering that the primary users were biological researchers, I facilitated easy data entry and verification through Google Forms. I aggregated the collected data according to the type of task and created a dashboard that displayed ongoing tasks and their progress. This dashboard was implemented using Google API (Forms & Sheets) and PHP, and was deployed on the laboratory server to be displayed in real-time on a large TV. Researchers could now easily monitor the progress of tasks in real-time via Google Sheets on their computers."
+          ]
         }
       ],
       "ko-title": "기술 경력",
@@ -27,19 +54,46 @@
           "company": "Royal Bank of Canada",
           "title": "데이터 엔지니어",
           "duration": "2022-09-06,2023-04-28",
-          "location": "캐나다 토론토"
+          "location": "캐나다 토론토",
+          "summary": [
+            "Collaborated with auditors across the Chief Audit Executive (CAE) group departments to gather business requirements, refining and implementing 100+ Key Risk Indicator (KRI) metrics using Python(Pandas, Numpy), R, and SQL",
+            "Automated 15+ Extract-Transform-Load (ETL) data pipelines using Dataiku for the Risk Assessment Planning Tool Organizer (RaptOR), facilitating monthly and quarterly data ingestion and metrics updates",
+            "Analyzed End User Data Applications (EUDA) across two systems using Natural Language Processing (NLP) techniques, successfully restoring over 8.5%+ of lost data connections with 100% precision through data analysis and modeling",
+            "Managed bugs and data quality checks within agile development for the RaptOR project, overseeing data pipelines through DEV, QA, UAT, and PROD stages, ensuring continuous feedback and iterative progress"
+          ],
+          "description": [
+            "Despite being a large company, RBC did not have a standardized internal audit support tool. To address this issue, the audit data team started developing a platform called RaptOR (Risk Assessment Planning Tool Organizer) two years before I joined the team. This platform collects, standardizes, and visualizes risk indicators by country and branch.",
+            "In the RaptOR team, my role involved meeting with internal stakeholders from various departments to gather requirements for new or revised Key Risk Indicators (KRIs), and developing the corresponding ETL processes. I was also responsible for automating the pipeline to ensure that audit data is updated automatically on a quarterly and monthly basis. For this process, I primarily used the Dataiku data science platform and implemented code recipes using Python, R, and SQL."
+          ]
         },
         {
           "company": "Wish (Contextlogic Inc.)",
            "title": "데이터 사이언티스트",
            "duration": "2022-01-10,2022-04-29",
-           "location": "캐나다 토론토"
+           "location": "캐나다 토론토",
+           "summary": [
+            "Conducted Exploratory Data Analysis (EDA) on sequential user behavior logs, identifying significant differences between fraudulent and normal user patterns using an Long Short-Term Memory (LSTM) model",
+            "Consolidated 1,500+ user actions into 90 categories based on User Experience (UX) behavior chunks and automated the mapping process using Airflow cron jobs to enhance team insights"
+          ],
+          "description": [
+            "At Wish, as a data scientist in the customer risk management team, I was responsible for analyzing user session logs and deriving insights to detect fraudulent data. I performed exploratory data analysis (EDA) and data visualization on sequential user behavior log data to meet the team's requirements. Through this process, I identified significant differences between fraudulent user behavior patterns and regular user behavior patterns using an LSTM model.",
+            "Additionally, there were approximately 1,500 types of user actions. Simply grouping these actions into sequences for each user did not provide substantial insights. Further analysis revealed that these user actions were not all possible interactions via the UI but represented all types of signals communicating with the backend of the app. By categorizing these signals into about 90 categories, I significantly contributed to the team's more detailed analysis.",
+            "This approach enabled more efficient analysis of user behavior data and provided the necessary insights for detecting fraudulent data, thereby enhancing the team's data analysis capabilities."
+          ]
         },
         {
           "company": "Barcode of Life Data Systems",
            "title": "데이터 분석 프로그래머",
            "duration": "2019-05-06,2019-08-30",
-           "location": "캐나다 구웰프"
+           "location": "캐나다 구웰프",
+           "summary": [
+            "Designed, planned, and implemented a comprehensive automated DNA barcode data workflow dashboard using Google Apps API, enhancing data management efficiency by streamlining processes and data visualization",
+            "Compiled taxonomy JSON files to create and visualize responsive multi-node hierarchical trees using D3.js"
+          ],
+          "description": [
+            "At BOLD Systems, the lab’s primary task was to collect DNA barcode data for various species of plants and animals, record it on the server, and process it for inclusion in the laboratory archive. At the time, multiple researchers were conducting various DNA barcoding tasks, but inefficiencies arose due to the lack of effective communication regarding the progress of each task. To address this issue, I designed and developed an automated dashboard.",
+            "First, I gathered requirements based on the laboratory's DNA barcoding task manual and recorded the progress of each task. Considering that the primary users were biological researchers, I facilitated easy data entry and verification through Google Forms. I aggregated the collected data according to the type of task and created a dashboard that displayed ongoing tasks and their progress. This dashboard was implemented using Google API (Forms & Sheets) and PHP, and was deployed on the laboratory server to be displayed in real-time on a large TV. Researchers could now easily monitor the progress of tasks in real-time via Google Sheets on their computers."
+          ]
         }
       ]
     },
@@ -50,19 +104,43 @@
               "company": "Ministry of National Defense, Republic of Korea", 
               "title": "Sergeant, Squad Leader",
               "duration": "2020-01-28,2021-08-07",
-              "location": "Busan, South Korea"
+              "location": "Busan, South Korea",
+              "summary": [
+                "To be Soon...",
+                "To be Soon..."
+              ],
+              "description": [
+                "To be Soon...",
+                "To be Soon..."
+              ]
             },
             {
               "company": "ASAP Academy", 
               "title": "IB / SAT Mathematics Instructor",
               "duration": "2019-12-09,2020-01-27",
-              "location": "Seoul, South Korea"
+              "location": "Seoul, South Korea",
+              "summary": [
+                "To be Soon...",
+                "To be Soon..."
+              ],
+              "description": [
+                "To be Soon...",
+                "To be Soon..."
+              ]
             },
             {
               "company": "Sheridan College", 
               "title": "Computer Mathematics Learning Assistant",
               "duration": "2018-05-07,2018-08-24",
-              "location": "Oakville, Canada"
+              "location": "Oakville, Canada",
+              "summary": [
+                "To be Soon...",
+                "To be Soon..."
+              ],
+              "description": [
+                "To be Soon...",
+                "To be Soon..."
+              ]
             }
           ],
           "ko-title": "기타 경력",
@@ -71,19 +149,43 @@
               "company": "국군복지단",
               "title": "육군 병장 만기전역",
               "duration": "2020-01-28,2021-08-07",
-              "location": "대한민국 부산"
+              "location": "대한민국 부산",
+              "summary": [
+                "To be Soon...",
+                "To be Soon..."
+              ],
+              "description": [
+                "To be Soon...",
+                "To be Soon..."
+              ]
             },
             {
               "company": "프리미엄 맞춤수업 학원", 
               "title": "IB/SAT 수학 강사",
               "duration": "2019-12-09,2020-01-27",
-              "location": "대한민국 서울"
+              "location": "대한민국 서울",
+              "summary": [
+                "To be Soon...",
+                "To be Soon..."
+              ],
+              "description": [
+                "To be Soon...",
+                "To be Soon..."
+              ]
             },
             {
               "company": "쉐리든 대학교", 
               "title": "컴퓨터수학 조교",
               "duration": "2018-05-07,2018-08-24",
-              "location": "캐나다 옥빌"
+              "location": "캐나다 옥빌",
+              "summary": [
+                "To be Soon...",
+                "To be Soon..."
+              ],
+              "description": [
+                "To be Soon...",
+                "To be Soon..."
+              ]
             }
           ]
     }

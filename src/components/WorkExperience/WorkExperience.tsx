@@ -8,10 +8,8 @@ const experiencesString = JSON.stringify(data);
 const experiences = JSON.parse(experiencesString);
 
 type WorkExperienceProps = {
-    // title: string;
     type: string;
 };
-
 
 const formatDuration = (duration: string) => {
   const [start, end] = duration.split(',');
@@ -20,41 +18,58 @@ const formatDuration = (duration: string) => {
   return `${format(startDate, 'MMM yyyy')} - ${format(endDate, 'MMM yyyy')}`;
 };
 
-
 const WorkExperience: React.FC<WorkExperienceProps> = (props: WorkExperienceProps) => {
-
     const { language } = useLanguage();
     const experienceList = experiences[props.type][language];
     const experienceType = experiences[props.type][language + '-title'];
     const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
-  
+
+    const handleViewDetails = (index: number) => {
+        setExpandedIndex(index === expandedIndex ? null : index);
+    };
+
     return (
-      <div className="work-experience-container">
-          <div className="header">
-            <h1 className="experiences-type">{experienceType}</h1>
-          </div>
-        
-        <div className="experience-list">
-            {experienceList.map((experience: any, index: number) => (
-                <div key={index} className="experience-item">
-                    <div className="job-title">
-                    {experience.title}
-                    </div>
-                    <div className="job-company">
-                    {experience.company}
-                    </div>
-                    <div className="job-duration">
-                    {formatDuration(experience.duration)}
-                    </div>
-                    <div className="job-location">
-                    {experience.location}
-                    </div>
-                </div>
-            ))}
+        <div className="work-experience-container">
+            <div className="header">
+                <h1 className="experiences-type">{experienceType}</h1>
             </div>
-            
-      </div>
+            <div className="experience-list">
+                {experienceList.map((experience: any, index: number) => (
+                    <div key={index} className="experience-item">
+                        <div className="job-title">{experience.title}</div>
+                        <div className="job-company">{experience.company}</div>
+                        <div className="job-duration">{formatDuration(experience.duration)}</div>
+                        <div className="job-location">{experience.location}</div>
+                        <button
+                            className="view-details-button"
+                            onClick={() => handleViewDetails(index)}
+                        >
+                            {expandedIndex === index ? 'Hide Details' : 'View Details'}
+                        </button>
+                    </div>
+                ))}
+            </div>
+            <div className={`details-box ${expandedIndex !== null ? 'visible' : ''}`}>
+                {expandedIndex !== null && (
+                    <>
+                        <h2>{experienceList[expandedIndex].title}</h2>
+                        <p><strong>Company:</strong> {experienceList[expandedIndex].company}</p>
+                        <p><strong>Duration:</strong> {formatDuration(experienceList[expandedIndex].duration)}</p>
+                        <p><strong>Location:</strong> {experienceList[expandedIndex].location}</p>
+                        <p><strong>Summary:</strong></p>
+                        {experienceList[expandedIndex].summary.map((point: string, index: number) => (
+                          <React.Fragment key={index}><p>{"- " + point}</p></React.Fragment>
+                          ))}   
+                          <br />
+                        <p><strong>Description:</strong></p>
+                        {experienceList[expandedIndex].description.map((paragraph: string, index: number) => (
+                          <React.Fragment key={index}><p>{paragraph}</p></React.Fragment>
+                          ))}   
+                    </>
+                )}
+            </div>
+        </div>
     );
-  };
-  
-  export default WorkExperience;
+};
+
+export default WorkExperience;
