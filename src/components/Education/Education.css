@@ -26,7 +26,7 @@
     width: 450px;
     box-sizing: border-box;
     text-align: left;
-    position: relative; /* Added for positioning the button */
+    position: relative;
 }
 
 .education-school {
@@ -88,7 +88,53 @@
 .details-box.visible {
     opacity: 1;
     height: auto;
+    padding-top: 0;
+    line-height: 1;
 }
+
+.skills {
+    /* background-color: #b79f9f; */
+    margin-top: 0.5rem;
+}
+
+.skills p {
+    margin-bottom: 0.2rem;
+}
+
+.skills span {
+    margin-right: 0.5rem;
+}
+
+.tech-stacks {
+    flex-direction: column;
+    margin-top: 0rem;
+    background-color: #0056b3;
+    padding-top:0;
+}
+
+.tech-stacks p {
+    margin-bottom: 0.2rem;
+}
+
+.tech-stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 1rem;
+    clear: both; 
+    padding-left: 10px;
+}
+.tech-stack {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tech-icon {
+    width: 40px;
+    height: 40px;
+}
+
 
 @media (max-width: 1150px) {
     .experience-list {

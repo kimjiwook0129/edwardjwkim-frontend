@@ -16,6 +16,24 @@
           "description": [
             "Despite being a large company, RBC did not have a standardized internal audit support tool. To address this issue, the audit data team started developing a platform called RaptOR (Risk Assessment Planning Tool Organizer) two years before I joined the team. This platform collects, standardizes, and visualizes risk indicators by country and branch.",
             "In the RaptOR team, my role involved meeting with internal stakeholders from various departments to gather requirements for new or revised Key Risk Indicators (KRIs), and developing the corresponding ETL processes. I was also responsible for automating the pipeline to ensure that audit data is updated automatically on a quarterly and monthly basis. For this process, I primarily used the Dataiku data science platform and implemented code recipes using Python, R, and SQL."
+          ],
+          "skills": [
+            "Data Engineering",
+            "ETL/ELT Process",
+            "Natural Language Processing",
+            "Data Pipelines",
+            "Data Modeling",
+            "Data Analysis",
+            "Agile Development"
+          ],
+          "techStacks": [
+            { "name": "Python", "icon": "icons/python.svg" },
+            { "name": "SQL", "icon": "icons/postgresql.svg" },
+            { "name": "R", "icon": "icons/r.svg" },
+            { "name": "Pandas", "icon": "icons/pandas.svg" },
+            { "name": "Numpy", "icon": "icons/numpy.svg" },
+            { "name": "Dataiku", "icon": "icons/dataiku.svg" },
+            { "name": "Jupyter", "icon": "icons/jupyter.svg" }
           ]
         },
         {
@@ -31,6 +49,23 @@
             "At Wish, as a data scientist in the customer risk management team, I was responsible for analyzing user session logs and deriving insights to detect fraudulent data. I performed exploratory data analysis (EDA) and data visualization on sequential user behavior log data to meet the team's requirements. Through this process, I identified significant differences between fraudulent user behavior patterns and regular user behavior patterns using an LSTM model.",
             "Additionally, there were approximately 1,500 types of user actions. Simply grouping these actions into sequences for each user did not provide substantial insights. Further analysis revealed that these user actions were not all possible interactions via the UI but represented all types of signals communicating with the backend of the app. By categorizing these signals into about 90 categories, I significantly contributed to the team's more detailed analysis.",
             "This approach enabled more efficient analysis of user behavior data and provided the necessary insights for detecting fraudulent data, thereby enhancing the team's data analysis capabilities."
+          ],
+          "skills": [
+            "Data Science", 
+            "Machine Learning", 
+            "Deep Learning", 
+            "Data Analysis", 
+            "Data Modeling", 
+            "Data Visualization"
+          ],
+          "techStacks": [
+            { "name": "Python", "icon": "icons/python.svg" },
+            { "name": "SQL", "icon": "icons/postgresql.svg" },
+            { "name": "Airflow", "icon": "icons/apacheairflow.svg" },
+            { "name": "Pandas", "icon": "icons/pandas.svg" },
+            { "name": "Jupyter", "icon": "icons/jupyter.svg" },
+            { "name": "PyTorch", "icon": "icons/pytorch.svg" }
+
           ]
         },
         {
@@ -45,6 +80,20 @@
           "description": [
             "At BOLD Systems, the lab’s primary task was to collect DNA barcode data for various species of plants and animals, record it on the server, and process it for inclusion in the laboratory archive. At the time, multiple researchers were conducting various DNA barcoding tasks, but inefficiencies arose due to the lack of effective communication regarding the progress of each task. To address this issue, I designed and developed an automated dashboard.",
             "First, I gathered requirements based on the laboratory's DNA barcoding task manual and recorded the progress of each task. Considering that the primary users were biological researchers, I facilitated easy data entry and verification through Google Forms. I aggregated the collected data according to the type of task and created a dashboard that displayed ongoing tasks and their progress. This dashboard was implemented using Google API (Forms & Sheets) and PHP, and was deployed on the laboratory server to be displayed in real-time on a large TV. Researchers could now easily monitor the progress of tasks in real-time via Google Sheets on their computers."
+          ],
+          "skills": [
+            "Data Analysis", 
+            "Data Visualization", 
+            "Dashboard Design"
+          ],
+          "techStacks": [
+            { "name": "Javascript", "icon": "icons/javascript.svg" },
+            { "name": "HTML", "icon": "icons/html5.svg" },
+            { "name": "CSS", "icon": "icons/css3.svg" },
+            { "name": "PHP", "icon": "icons/php.svg" },
+            { "name": "D3.js", "icon": "icons/d3dotjs.svg" },
+            { "name": "Google Sheets", "icon": "icons/googlesheets.svg" },
+            { "name": "Google Forms", "icon": "icons/googleforms.svg" }
           ]
         }
       ],
@@ -64,6 +113,24 @@
           "description": [
             "Despite being a large company, RBC did not have a standardized internal audit support tool. To address this issue, the audit data team started developing a platform called RaptOR (Risk Assessment Planning Tool Organizer) two years before I joined the team. This platform collects, standardizes, and visualizes risk indicators by country and branch.",
             "In the RaptOR team, my role involved meeting with internal stakeholders from various departments to gather requirements for new or revised Key Risk Indicators (KRIs), and developing the corresponding ETL processes. I was also responsible for automating the pipeline to ensure that audit data is updated automatically on a quarterly and monthly basis. For this process, I primarily used the Dataiku data science platform and implemented code recipes using Python, R, and SQL."
+          ],
+          "skills": [
+            "Data Engineering",
+            "ETL/ELT Process",
+            "Natural Language Processing",
+            "Data Pipelines",
+            "Data Modeling",
+            "Data Analysis",
+            "Agile Development"
+          ],
+          "techStacks": [
+            { "name": "Python", "icon": "icons/python.svg" },
+            { "name": "SQL", "icon": "icons/postgresql.svg" },
+            { "name": "R", "icon": "icons/r.svg" },
+            { "name": "Pandas", "icon": "icons/pandas.svg" },
+            { "name": "Numpy", "icon": "icons/numpy.svg" },
+            { "name": "Dataiku", "icon": "icons/dataiku.svg" },
+            { "name": "Jupyter", "icon": "icons/jupyter.svg" }
           ]
         },
         {
@@ -79,6 +146,22 @@
             "At Wish, as a data scientist in the customer risk management team, I was responsible for analyzing user session logs and deriving insights to detect fraudulent data. I performed exploratory data analysis (EDA) and data visualization on sequential user behavior log data to meet the team's requirements. Through this process, I identified significant differences between fraudulent user behavior patterns and regular user behavior patterns using an LSTM model.",
             "Additionally, there were approximately 1,500 types of user actions. Simply grouping these actions into sequences for each user did not provide substantial insights. Further analysis revealed that these user actions were not all possible interactions via the UI but represented all types of signals communicating with the backend of the app. By categorizing these signals into about 90 categories, I significantly contributed to the team's more detailed analysis.",
             "This approach enabled more efficient analysis of user behavior data and provided the necessary insights for detecting fraudulent data, thereby enhancing the team's data analysis capabilities."
+          ],
+          "skills": [
+            "Data Science", 
+            "Machine Learning", 
+            "Deep Learning", 
+            "Data Analysis", 
+            "Data Modeling", 
+            "Data Visualization"
+          ],
+          "techStacks": [
+            { "name": "Python", "icon": "icons/python.svg" },
+            { "name": "SQL", "icon": "icons/postgresql.svg" },
+            { "name": "Airflow", "icon": "icons/apacheairflow.svg" },
+            { "name": "Pandas", "icon": "icons/pandas.svg" },
+            { "name": "Jupyter", "icon": "icons/jupyter.svg" },
+            { "name": "PyTorch", "icon": "icons/pytorch.svg" }
           ]
         },
         {
@@ -93,6 +176,18 @@
           "description": [
             "At BOLD Systems, the lab’s primary task was to collect DNA barcode data for various species of plants and animals, record it on the server, and process it for inclusion in the laboratory archive. At the time, multiple researchers were conducting various DNA barcoding tasks, but inefficiencies arose due to the lack of effective communication regarding the progress of each task. To address this issue, I designed and developed an automated dashboard.",
             "First, I gathered requirements based on the laboratory's DNA barcoding task manual and recorded the progress of each task. Considering that the primary users were biological researchers, I facilitated easy data entry and verification through Google Forms. I aggregated the collected data according to the type of task and created a dashboard that displayed ongoing tasks and their progress. This dashboard was implemented using Google API (Forms & Sheets) and PHP, and was deployed on the laboratory server to be displayed in real-time on a large TV. Researchers could now easily monitor the progress of tasks in real-time via Google Sheets on their computers."
+          ],
+          "skills": [
+            "Data Analysis", "Data Visualization", "Dashboard Design"
+          ],
+          "techStacks": [
+            { "name": "Javascript", "icon": "icons/javascript.svg" },
+            { "name": "HTML", "icon": "icons/html5.svg" },
+            { "name": "CSS", "icon": "icons/css3.svg" },
+            { "name": "PHP", "icon": "icons/php.svg" },
+            { "name": "D3.js", "icon": "icons/d3dotjs.svg" },
+            { "name": "Google Sheets", "icon": "icons/googlesheets.svg" },
+            { "name": "Google Forms", "icon": "icons/googleforms.svg" }
           ]
         }
       ]
@@ -112,6 +207,16 @@
               "description": [
                 "To be Soon...",
                 "To be Soon..."
+              ],
+              "skills": [
+                "Leadership",
+                "Time Management",
+                "Human Resources",
+                "Bookkeeping",
+                "MS Excel",
+                "MS Word"
+              ],
+              "techStacks": [
               ]
             },
             {
@@ -126,6 +231,15 @@
               "description": [
                 "To be Soon...",
                 "To be Soon..."
+              ],
+              "skills": [
+                "Teaching",
+                "Consulting",
+                "IB/SAT Mathematics"
+              ],
+              "techStacks": [
+                { "name": "Excel", "icon": "icons/NOTAVAILABLE.svg"},
+                { "name": "Word", "icon": "icons/NOTAVAILABLE.svg"}
               ]
             },
             {
@@ -140,6 +254,13 @@
               "description": [
                 "To be Soon...",
                 "To be Soon..."
+              ],
+              "skills": [
+                "Teaching", 
+                "Calculus", 
+                "Computer Mathematics"
+              ],
+              "techStacks": [
               ]
             }
           ],
@@ -157,6 +278,16 @@
               "description": [
                 "To be Soon...",
                 "To be Soon..."
+              ],
+              "skills": [
+                "리더십",
+                "시간 관리",
+                "인사행정",
+                "자금결산",
+                "MS Excel",
+                "MS Word"
+              ],
+              "techStacks": [
               ]
             },
             {
@@ -171,6 +302,22 @@
               "description": [
                 "To be Soon...",
                 "To be Soon..."
+              ],
+              "skills": [
+                "Data Science", 
+                "Machine Learning", 
+                "Deep Learning", 
+                "Data Analysis", 
+                "Data Modeling", 
+                "Data Visualization"
+              ],
+              "techStacks": [
+                { "name": "Python", "icon": "icons/python.svg" },
+                { "name": "SQL", "icon": "icons/postgresql.svg" },
+                { "name": "Airflow", "icon": "icons/apacheairflow.svg" },
+                { "name": "Pandas", "icon": "icons/pandas.svg" },
+                { "name": "Jupyter", "icon": "icons/jupyter.svg" },
+                { "name": "PyTorch", "icon": "icons/pytorch.svg" }
               ]
             },
             {
@@ -185,6 +332,22 @@
               "description": [
                 "To be Soon...",
                 "To be Soon..."
+              ],
+              "skills": [
+                "Data Science", 
+                "Machine Learning", 
+                "Deep Learning", 
+                "Data Analysis", 
+                "Data Modeling", 
+                "Data Visualization"
+              ],
+              "techStacks": [
+                { "name": "Python", "icon": "icons/python.svg" },
+                { "name": "SQL", "icon": "icons/postgresql.svg" },
+                { "name": "Airflow", "icon": "icons/apacheairflow.svg" },
+                { "name": "Pandas", "icon": "icons/pandas.svg" },
+                { "name": "Jupyter", "icon": "icons/jupyter.svg" },
+                { "name": "PyTorch", "icon": "icons/pytorch.svg" }
               ]
             }
           ]

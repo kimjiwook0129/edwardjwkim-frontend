@@ -26,7 +26,7 @@
     width: 300px;
     box-sizing: border-box;
     text-align: left;
-    position: relative; /* Added for positioning the button */
+    position: relative; 
 }
 
 .job-title {
@@ -88,6 +88,7 @@
 .details-box.visible {
     opacity: 1;
     height: auto;
+    padding-top: 0;
 }
 
 @media (max-width: 1150px) {
@@ -98,4 +99,23 @@
     .experience-item {
         width: 100%; 
     }
+}
+
+
+.tech-stacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 1rem;
+}
+
+.tech-stack {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tech-icon {
+    width: 40px;
+    height: 40px;
 }

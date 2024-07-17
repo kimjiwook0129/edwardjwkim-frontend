@@ -1,5 +1,5 @@
 {
-    "en-program": "Education",
+    "en-title": "Education",
     "en": [
         {
             "school": "University of Waterloo", 
@@ -30,7 +30,7 @@
             ]
         }
     ],
-    "ko-program": "학력",
+    "ko-title": "학력",
     "ko": [
         {
             "school": "워털루대학교", 

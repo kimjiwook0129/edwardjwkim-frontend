@@ -52,18 +52,34 @@ const WorkExperience: React.FC<WorkExperienceProps> = (props: WorkExperienceProp
             <div className={`details-box ${expandedIndex !== null ? 'visible' : ''}`}>
                 {expandedIndex !== null && (
                     <>
-                        <h2>{experienceList[expandedIndex].title}</h2>
-                        <p><strong>Company:</strong> {experienceList[expandedIndex].company}</p>
-                        <p><strong>Duration:</strong> {formatDuration(experienceList[expandedIndex].duration)}</p>
-                        <p><strong>Location:</strong> {experienceList[expandedIndex].location}</p>
+                        <div className="skills">
+                            <p><strong>Skills:</strong></p>
+                            {experienceList[expandedIndex].skills.map((skill: any, index: number) => (
+                                <span key={index}>{index > 0 && '• '}<i>{skill}</i></span>
+                            ))}
+                        </div>  
+                        {experienceList[expandedIndex].techStacks.length > 0 && (
+                            <div className="skills">
+                                <p><strong>Tech/Tool Stacks:</strong></p>
+                                <div className="tech-stack-list">
+                                    {experienceList[expandedIndex].techStacks.map((tech: any, index: number) => (
+                                        <div key={index} className="tech-stack">
+                                            <img src={tech.icon} alt={tech.name} title={tech.name} className="tech-icon"/>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
                         <p><strong>Summary:</strong></p>
+                        <div>
                         {experienceList[expandedIndex].summary.map((point: string, index: number) => (
-                          <React.Fragment key={index}><p>{"- " + point}</p></React.Fragment>
-                          ))}   
-                          <br />
+                        <React.Fragment key={index}><p style={{ margin: '10px', padding: '0px' }}>{"• " + point}</p></React.Fragment>
+                        ))}   
+                        </div>
+                        
                         <p><strong>Description:</strong></p>
                         {experienceList[expandedIndex].description.map((paragraph: string, index: number) => (
-                          <React.Fragment key={index}><p>{paragraph}</p></React.Fragment>
+                          <React.Fragment key={index}><p style={{ margin: '10px', padding: '0px' }}>{paragraph}</p></React.Fragment>
                           ))}   
                     </>
                 )}
