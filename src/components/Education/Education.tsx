@@ -54,12 +54,12 @@ const WorkExperience: React.FC<{}> = () => {
                         <p><strong>Location:</strong> {educationList[expandedIndex].location}</p>
                         <p><strong>Summary:</strong></p>
                         {educationList[expandedIndex].summary.map((point: string, index: number) => (
-                          <React.Fragment key={index}><p>{"- " + point}</p></React.Fragment>
+                          <React.Fragment key={index}><p style={{ margin: '10px', padding: '0px' }}>{"- " + point}</p></React.Fragment>
                           ))}   
                           <br />
                         <p><strong>Description:</strong></p>
                         {educationList[expandedIndex].description.map((paragraph: string, index: number) => (
-                          <React.Fragment key={index}><p>{paragraph}</p></React.Fragment>
+                          <React.Fragment key={index}><p style={{ margin: '10px', padding: '0px' }}>{paragraph}</p></React.Fragment>
                           ))}   
                     </>
                 )}

@@ -45,7 +45,7 @@ const Nav: React.FC<{}> = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles['logo-container']}>
-        <span>Edward.J.Kim</span>
+        <span>Edward Kim</span>
       </div>
       <div className={styles['menu-toggle']} onClick={toggleMenu}>
         &#9776;

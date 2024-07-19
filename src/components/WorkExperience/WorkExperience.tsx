@@ -44,7 +44,9 @@ const WorkExperience: React.FC<WorkExperienceProps> = (props: WorkExperienceProp
                             className="view-details-button"
                             onClick={() => handleViewDetails(index)}
                         >
-                            {expandedIndex === index ? 'Hide Details' : 'View Details'}
+                            {language === 'en' 
+                                ? (expandedIndex === index ? 'Hide Details' : 'View Details') 
+                                : (expandedIndex === index ? '숨기기' : '자세히 보기')}
                         </button>
                     </div>
                 ))}

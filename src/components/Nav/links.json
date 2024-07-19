@@ -1,12 +1,8 @@
 {
     "links": {
       "en": [
-        {"label": "Home", "href": "/"},
-        {"label": "Contact", "href": "/contact"}
       ],
       "ko": [
-        {"label": "홈", "href": "/"},
-        {"label": "연락처", "href": "/contact"}
       ]
     }
   }

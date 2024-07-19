@@ -16,6 +16,7 @@ function App() {
         <WorkExperience  type="technical"/>
         <WorkExperience  type="other"/>
         <Education />
+        <WorkExperience type="projects" />
         {/* <Scraper /> */}
       </div>
       </LanguageProvider>
