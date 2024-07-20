@@ -16,6 +16,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 0rem;
+    justify-content: center;
 }
 
 .experience-item {
@@ -91,7 +92,7 @@
     line-height: 1.2;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1300px) {
     .experience-list {
         flex-direction: column;
         align-items: stretch; 
