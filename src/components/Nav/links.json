@@ -1,8 +1,12 @@
 {
     "links": {
       "en": [
+        {"label": "Contact", "href": "/", "download": false},
+        {"label": "Résumé", "href": "/Edward_Jiwook_Kim_CV.pdf", "download": true}
       ],
       "ko": [
+        {"label": "이메일", "href": "/", "download": false},
+        {"label": "이력서", "href": "/Edward_Jiwook_Kim_CV.pdf", "download": true}
       ]
     }
   }

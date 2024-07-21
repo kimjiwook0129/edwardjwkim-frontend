@@ -25,27 +25,29 @@ const WorkExperience: React.FC<{}> = () => {
     };
 
     return (
-        <div className="work-experience-container">
-            <div className="header">
-                <h1 className="experiences-type">{educationType}</h1>
+        <div className="education-container">
+            <div className="education-header">
+                <h1 className="education-type">{educationType}</h1>
             </div>
-            <div className="experience-list">
+            <div className="education-list">
                 {educationList.map((education: any, index: number) => (
                     <div key={index} className="education-item">
                             <div className="education-school">{education.school}</div>
                             <div className="education-program">{education.program}</div>
-                            <div className="job-duration">{formatDuration(education.duration)}</div>
-                            <div className="job-location">{education.location}</div>
+                            <div className="education-duration">{formatDuration(education.duration)}</div>
+                            <div className="education-location">{education.location}</div>
                         <button
-                            className="view-details-button"
+                            className="edu-view-details-button"
                             onClick={() => handleViewDetails(index)}
                         >
-                            {expandedIndex === index ? 'Hide Details' : 'View Details'}
+                            {language === 'en' 
+                                ? (expandedIndex === index ? 'Hide Details' : 'View Details') 
+                                : (expandedIndex === index ? '숨기기' : '자세히 보기')}
                         </button>
                     </div>
                 ))}
             </div>
-            <div className={`details-box ${expandedIndex !== null ? 'visible' : ''}`}>
+            <div className={`edu-details-box ${expandedIndex !== null ? 'visible' : ''}`}>
                 {expandedIndex !== null && (
                     <>
                         <h2>{educationList[expandedIndex].title}</h2>

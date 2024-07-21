@@ -9,9 +9,7 @@
     max-width: 900px;
     margin: 0 auto;
     background-color: #1e1e1e;
-    /* box-shadow:  5 10px rgba(0, 0, 0, 0.1); */
     box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
-
   }
   
   .text-container {

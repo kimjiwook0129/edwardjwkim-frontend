@@ -1,20 +1,22 @@
-/* .work-experience-container {
+.education-container {
     padding: 1rem;
-    
-} */
+    margin-top:0;
+    margin-bottom:0;
+}
 
-.header {
+.education-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
 }
 
-.experience-list {
+.education-list {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 0rem;
+    justify-content: center;
 }
 
 .education-item {
@@ -40,31 +42,33 @@
     font-size: 15px;
 }
 
-.job-duration {
+.education-duration {
     height: 15px;
     margin: 0;
     font-size: 14px;
 }
 
-.job-location {
+
+.education-location {
     height: 10px;
     margin: 0;
     font-size: 14px;
     font-style: italic;
 }
 
-.view-details-button {
+.edu-view-details-button {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
     padding: 0.5rem 1rem;
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.details-box {
+.edu-details-box {
     margin-top: 1rem;
     padding: 1rem;
     background-color: #ffffff;
@@ -77,11 +81,11 @@
     text-align: left;
 }
 
-.details-box.visible {
+.edu-details-box.visible {
     opacity: 1;
     height: auto;
     padding-top: 0;
-    line-height: 1;
+    line-height: 1.2;
 }
 
 

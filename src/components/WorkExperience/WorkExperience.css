@@ -74,7 +74,9 @@
 .details-box {
     margin-top: 1rem;
     padding: 1rem;
+    background-color: #ffffff;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     opacity: 0;
     height: 0;
     overflow: hidden;
@@ -86,9 +88,6 @@
     opacity: 1;
     height: auto;
     padding-top: 0;
-}
-
-.details-box.visible p {
     line-height: 1.2;
 }
 
@@ -101,7 +100,6 @@
         width: 100%; 
     }
 }
-
 
 .tech-stacks {
     display: flex;

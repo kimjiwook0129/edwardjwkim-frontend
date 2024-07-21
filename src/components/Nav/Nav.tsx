@@ -9,14 +9,20 @@ const links = JSON.parse(linksString).links;
 type Link = {
   label: string;
   href: string;
+  download: boolean;
 };
 
-const Links: React.FC<{ links: Link[], className: string }> = ({ links, className }) => {
+const Links: React.FC<{ links: Link[], className: string, onLinkClick: (link: Link) => void }> = ({ links, className, onLinkClick }) => {
   return (
     <div className={className}>
       {links.map((link: Link) => (
         <div key={link.href} className={styles['link']}>
-          <a href={link.href}>{link.label}</a>
+          <a href={link.href} download={link.download} onClick={(e) => {
+            e.preventDefault();
+            onLinkClick(link);
+          }}>
+            {link.label}
+          </a>
         </div>
       ))}
     </div>
@@ -31,13 +37,24 @@ const Nav: React.FC<{}> = () => {
     setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setIsMenuOpen(false);
-      }
-    };
+  const handleResize = () => {
+    if (window.innerWidth > 768) {
+      setIsMenuOpen(false);
+    }
+  };
 
+  const handleLinkClick = (link: Link) => {
+    if (link.href === '/') {
+      const bottomElement = document.getElementById('bottom-element');
+      if (bottomElement) {
+        bottomElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      window.open(link.href, '_blank');
+    }
+  };
+
+  useEffect(() => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -50,7 +67,11 @@ const Nav: React.FC<{}> = () => {
       <div className={styles['menu-toggle']} onClick={toggleMenu}>
         &#9776;
       </div>
-      <Links links={links[language]} className={`${styles['links-container']} ${isMenuOpen ? styles['open'] : ''}`} />
+      <Links 
+        links={links[language]} 
+        className={`${styles['links-container']} ${isMenuOpen ? styles['open'] : ''}`}
+        onLinkClick={handleLinkClick}
+      />
       <div className={styles['toggle-switch']} onClick={toggleLanguage}>
         <div className={`${styles['toggle-knob']} ${language === 'ko' ? styles['toggle-knob-right'] : ''}`}></div>
         <span className={styles['toggle-text']}>{language === 'en' ? 'EN' : 'KR'}</span>
