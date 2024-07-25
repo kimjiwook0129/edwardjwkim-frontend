@@ -1,456 +1,465 @@
 {
-    "technical": {
-      "en-title": "Technical Experience",
-      "en": [
-        {
-          "company": "Royal Bank of Canada", 
-          "title": "Data Engineer Intern",
-          "duration": "2022-09-06,2023-04-28",
-          "location": "Toronto, Canada",
-          "summary": [
-            "Collaborated with auditors across the Chief Audit Executive (CAE) group departments to gather business requirements, refining and implementing 100+ Key Risk Indicator (KRI) metrics using Python(Pandas, Numpy), R, and SQL",
-            "Automated 15+ Extract-Transform-Load (ETL) data pipelines using Dataiku for the Risk Assessment Planning Tool Organizer (RaptOR), facilitating monthly and quarterly data ingestion and metrics updates",
-            "Analyzed End User Data Applications (EUDA) across two systems using Natural Language Processing (NLP) techniques, successfully restoring over 8.5%+ of lost data connections with 100% precision through data analysis and modeling",
-            "Managed bugs and data quality checks within agile development for the RaptOR project, overseeing data pipelines through DEV, QA, UAT, and PROD stages, ensuring continuous feedback and iterative progress"
-          ],
-          "description": [
-            "The audit data team started developing a platform called RaptOR (Risk Assessment Planning Tool Organizer) two years before I joined the team. This platform collects, standardizes, and visualizes risk indicators by country and branch.",
-            "In the RaptOR team, my role involved meeting with internal stakeholders from various departments to gather requirements for new or revised Key Risk Indicators (KRIs), and developing the corresponding ETL processes. I was also responsible for automating the pipeline to ensure that audit data is updated automatically on a quarterly and monthly basis. For this process, I primarily used the Dataiku data science platform and implemented code recipes using Python, R, and SQL."
-          ],
-          "skills": [
-            "Data Engineering",
-            "ETL/ELT Process",
-            "Natural Language Processing",
-            "Data Pipelines",
-            "Data Modeling",
-            "Data Analysis",
-            "Agile Development"
-          ],
-          "techStacks": [
-            { "name": "Python", "icon": "icons/python.svg" },
-            { "name": "SQL", "icon": "icons/postgresql.svg" },
-            { "name": "R", "icon": "icons/r.svg" },
-            { "name": "Pandas", "icon": "icons/pandas.svg" },
-            { "name": "Numpy", "icon": "icons/numpy.svg" },
-            { "name": "Dataiku", "icon": "icons/dataiku.svg" },
-            { "name": "Jupyter", "icon": "icons/jupyter.svg" }
-          ]
-        },
-        {
-          "company": "Wish (Contextlogic Inc.)",
-          "title": "Data Scientist Intern",
-          "duration": "2022-01-10,2022-04-29",
-          "location": "Toronto, Canada",
-          "summary": [
-            "Conducted Exploratory Data Analysis (EDA) on sequential user behavior logs, identifying significant differences between fraudulent and normal user patterns using an Long Short-Term Memory (LSTM) model",
-            "Consolidated 1,500+ user actions into 90 categories based on User Experience (UX) behavior chunks and automated the mapping process using Airflow cron jobs to enhance team insights"
-          ],
-          "description": [
-            "At Wish, as a data scientist in the customer risk management team, I was responsible for analyzing user session logs and deriving insights to detect fraudulent data. I performed exploratory data analysis (EDA) and data visualization on sequential user behavior log data to meet the team's requirements. Through this process, I identified significant differences between fraudulent user behavior patterns and regular user behavior patterns using an LSTM model.",
-            "Additionally, there were approximately 1,500 types of user actions. Simply grouping these actions into sequences for each user did not provide substantial insights. Further analysis revealed that these user actions were not all possible interactions via the UI but represented all types of signals communicating with the backend of the app. By categorizing these signals into about 90 categories, I significantly contributed to the team's more detailed analysis.",
-            "This approach enabled more efficient analysis of user behavior data and provided the necessary insights for detecting fraudulent data, thereby enhancing the team's data analysis capabilities."
-          ],
-          "skills": [
-            "Data Science", 
-            "Machine Learning", 
-            "Deep Learning", 
-            "Data Analysis", 
-            "Data Modeling", 
-            "Data Visualization"
-          ],
-          "techStacks": [
-            { "name": "Python", "icon": "icons/python.svg" },
-            { "name": "SQL", "icon": "icons/postgresql.svg" },
-            { "name": "Airflow", "icon": "icons/apacheairflow.svg" },
-            { "name": "Pandas", "icon": "icons/pandas.svg" },
-            { "name": "Jupyter", "icon": "icons/jupyter.svg" },
-            { "name": "PyTorch", "icon": "icons/pytorch.svg" }
+  "technical": {
+    "en-title": "Technical Experience",
+    "en": [
+      {
+        "company": "Royal Bank of Canada", 
+        "title": "Data Engineer Intern",
+        "duration": "2022-09-06,2023-04-28",
+        "location": "Toronto, Canada",
+        "summary": [
+          "Collaborated with auditors across the Chief Audit Executive (CAE) group departments to gather business requirements, refining and implementing 100+ Key Risk Indicator (KRI) metrics using Python(Pandas, Numpy), R, and SQL",
+          "Automated 15+ Extract-Transform-Load (ETL) data pipelines using Dataiku for the Risk Assessment Planning Tool Organizer (RaptOR), facilitating monthly and quarterly data ingestion and metrics updates",
+          "Analyzed End User Data Applications (EUDA) across two systems using Natural Language Processing (NLP) techniques, successfully restoring over 8.5%+ of lost data connections with 100% precision through data analysis and modeling",
+          "Managed bugs and data quality checks within agile development for the RaptOR project, overseeing data pipelines through DEV, QA, UAT, and PROD stages, ensuring continuous feedback and iterative progress"
+        ],
+        "description": [
+          "[Project RaptOR]",
+          "The audit data team started developing a platform called RaptOR (Risk Assessment Planning Tool Organizer) two years before I joined the team. This platform collects, standardizes, and visualizes risk indicators by country and branch.",
+          "In the RaptOR team, my role involved meeting with internal stakeholders from various departments to gather requirements for new or revised Key Risk Indicators (KRIs), and developing the corresponding ETL processes. I was also responsible for automating the pipeline to ensure that audit data is updated automatically on a quarterly and monthly basis. For this process, I primarily used the Dataiku data science platform and implemented code recipes using Python, R, and SQL.",
+          "[Project EUDA Analysis]",
+          "ESM and IMS are collections of End User Data Applications (EUDAs). Originally, ESM was intended to be a subset of IMS, containing only EUDAs for specific purposes. However, due to prolonged separate updates by internal users, data consistency between ESM and IMS was corrupted. Additionally, there were no foreign keys linking the EUDAs between the two systems or primary keys within each system. My task was to restore as many of these lost EUDA connections as possible.",
+          "First, I collaborated with previous handlers to analyze and model the data, identifying which columns in the two systems should correspond based on the original intent. Through text analysis and parsing, I identified potential key columns that could serve as primary links between the systems. From the remaining columns capable of serving as key columns, I extracted data where all EUDAs matched 1:1 between ESM and IMS. For EUDAs matching in one-to-many or many-to-many relationships, I utilized columns identified in the initial stage to establish secondary links, ensuring data consistency across all EUDAs without discrepancies.",
+          "By repeating this process, I successfully restored over 8% of the EUDA links with 100% precision. While allowing for false positives could have restored more EUDAs, preventing false positives was prioritized to maintain accuracy and reliability, especially important in the context of audits."
+        ],
+        "skills": [
+          "Data Engineering",
+          "ETL/ELT Process",
+          "Natural Language Processing",
+          "Data Pipelines",
+          "Data Modeling",
+          "Data Analysis",
+          "Agile Development"
+        ],
+        "techStacks": [
+          { "name": "Python", "icon": "icons/python.svg" },
+          { "name": "SQL", "icon": "icons/postgresql.svg" },
+          { "name": "R", "icon": "icons/r.svg" },
+          { "name": "Pandas", "icon": "icons/pandas.svg" },
+          { "name": "Numpy", "icon": "icons/numpy.svg" },
+          { "name": "Dataiku", "icon": "icons/dataiku.svg" },
+          { "name": "Jupyter", "icon": "icons/jupyter.svg" }
+        ]
+      },
+      {
+        "company": "Wish (Contextlogic Inc.)",
+        "title": "Data Scientist Intern",
+        "duration": "2022-01-10,2022-04-29",
+        "location": "Toronto, Canada",
+        "summary": [
+          "Conducted Exploratory Data Analysis (EDA) on sequential user behavior logs, identifying significant differences between fraudulent and normal user patterns using an Long Short-Term Memory (LSTM) model",
+          "Consolidated 1,500+ user actions into 90 categories based on User Experience (UX) behavior chunks and automated the mapping process using Airflow cron jobs to enhance team insights"
+        ],
+        "description": [
+          "At Wish, as a data scientist in the customer risk management team, I was responsible for analyzing user session logs and deriving insights to detect fraudulent data. I performed exploratory data analysis (EDA) and data visualization on sequential user behavior log data to meet the team's requirements. Through this process, I identified significant differences between fraudulent user behavior patterns and regular user behavior patterns using an LSTM model.",
+          "Additionally, there were approximately 1,500 types of user actions. Simply grouping these actions into sequences for each user did not provide substantial insights. Further analysis revealed that these user actions were not all possible interactions via the UI but represented all types of signals communicating with the backend of the app. By categorizing these signals into about 90 categories, I significantly contributed to the team's more detailed analysis.",
+          "This approach enabled more efficient analysis of user behavior data and provided the necessary insights for detecting fraudulent data, thereby enhancing the team's data analysis capabilities."
+        ],
+        "skills": [
+          "Data Science", 
+          "Machine Learning", 
+          "Deep Learning", 
+          "Data Analysis", 
+          "Data Modeling", 
+          "Data Visualization"
+        ],
+        "techStacks": [
+          { "name": "Python", "icon": "icons/python.svg" },
+          { "name": "SQL", "icon": "icons/postgresql.svg" },
+          { "name": "Airflow", "icon": "icons/apacheairflow.svg" },
+          { "name": "Pandas", "icon": "icons/pandas.svg" },
+          { "name": "Jupyter", "icon": "icons/jupyter.svg" },
+          { "name": "PyTorch", "icon": "icons/pytorch.svg" }
 
-          ]
-        },
-        {
-          "company": "Barcode of Life Data Systems", 
-          "title": "Data Analyst & Programmer Intern",
-          "duration": "2019-05-06,2019-08-30",
-          "location": "Guelph, Canada",
-          "summary": [
-            "Designed, planned, and implemented a comprehensive automated DNA barcode data workflow dashboard using Google Apps API, enhancing data management efficiency by streamlining processes and data visualization",
-            "Compiled taxonomy JSON files to create and visualize responsive multi-node hierarchical trees using D3.js"
-          ],
-          "description": [
-            "At BOLD Systems, the lab’s primary task was to collect DNA barcode data for various species of plants and animals, record it on the server, and process it for inclusion in the laboratory archive. At the time, multiple researchers were conducting various DNA barcoding tasks, but inefficiencies arose due to the lack of effective communication regarding the progress of each task. To address this issue, I designed and developed an automated dashboard.",
-            "First, I gathered requirements based on the laboratory's DNA barcoding task manual and recorded the progress of each task. Considering that the primary users were biological researchers, I facilitated easy data entry and verification through Google Forms. I aggregated the collected data according to the type of task and created a dashboard that displayed ongoing tasks and their progress. This dashboard was implemented using Google API (Forms & Sheets) and PHP, and was deployed on the laboratory server to be displayed in real-time on a large TV. Researchers could now easily monitor the progress of tasks in real-time via Google Sheets on their computers."
-          ],
-          "skills": [
-            "Data Analysis", 
-            "Data Visualization", 
-            "Dashboard Design"
-          ],
-          "techStacks": [
-            { "name": "Javascript", "icon": "icons/javascript.svg" },
-            { "name": "HTML", "icon": "icons/html5.svg" },
-            { "name": "CSS", "icon": "icons/css3.svg" },
-            { "name": "PHP", "icon": "icons/php.svg" },
-            { "name": "D3.js", "icon": "icons/d3dotjs.svg" },
-            { "name": "Google Sheets", "icon": "icons/googlesheets.svg" },
-            { "name": "Google Forms", "icon": "icons/googleforms.svg" }
-          ]
-        }
-      ],
-      "ko-title": "기술 경력",
-      "ko": [
-        {
-          "company": "Royal Bank of Canada",
-          "title": "데이터 엔지니어 인턴",
-          "duration": "2022-09-06,2023-04-28",
-          "location": "캐나다 토론토",
-          "summary": [
-            "감사 그룹(CAE) 부서의 감사원들과 협력하여 비즈니스 요구사항을 수집하고, 100개 이상의 핵심 리스크 지표(KRI) 메트릭스를 Python(Pandas, Numpy), R, SQL을 사용하여 개선 및 구현",
-            "Risk Assessment Planning Tool Organizer(RaptOR) 개발 과정 중 Dataiku를 사용하여 15개 이상의 Extract-Transform-Load(ETL) 데이터 파이프라인을 자동화하여 월간 및 분기별 데이터 수집 및 메트릭스 업데이트 촉진",
-            "자연어 처리(NLP) 기법을 사용하여 두 시스템의 데이터 응용 프로그램(EUDA)을 분석하고, 데이터 분석 및 모델링을 통해 8.5% 이상의 데이터 연결 손실을 100% 정밀도로 복구",
-            "RaptOR 프로젝트의 애자일 개발 내에서 버그 및 데이터 품질 검사를 관리하며, 데이터 파이프라인의 DEV, QA, UAT, PROD 단계에서 지속적인 피드백과 반복적인 진행 보장"
-          ],
-          "description": [
-            "감사 데이터 팀은 제가 팀에 합류하기 2년 전에 RaptOR(위험 평가 계획 도구 조직자)라는 플랫폼 개발을 시작했습니다. 이 플랫폼은 국가 및 지점별로 위험 지표를 수집, 표준화 및 시각화합니다.",
-            "RaptOR 팀에서 제 역할은 다양한 부서의 내부 이해 관계자들과 회의를 통해 새로운 또는 수정된 핵심 리스크 지표(KRI)에 대한 요구사항을 수집하고, 해당 ETL 프로세스를 개발하는 것이었습니다. 또한, 감사 데이터가 월간 및 분기별로 자동으로 업데이트되도록 파이프라인을 자동화하는 책임도 있었습니다. 이 과정에서 주로 Dataiku 데이터 과학 플랫폼을 사용하였고, Python, R, SQL을 사용하여 코드 레시피를 구현하였습니다."
-          ],
-          "skills": [
-            "데이터 엔지니어링",
-            "ETL/ELT 프로세스",
-            "자연어 처리",
-            "데이터 파이프라인 구축",
-            "데이터 모델링",
-            "데이터 분석",
-            "애자일 기법"
-          ],
-          "techStacks": [
-            { "name": "Python", "icon": "icons/python.svg" },
-            { "name": "SQL", "icon": "icons/postgresql.svg" },
-            { "name": "R", "icon": "icons/r.svg" },
-            { "name": "Pandas", "icon": "icons/pandas.svg" },
-            { "name": "Numpy", "icon": "icons/numpy.svg" },
-            { "name": "Dataiku", "icon": "icons/dataiku.svg" },
-            { "name": "Jupyter", "icon": "icons/jupyter.svg" }
-          ]
-        },
-        {
-          "company": "Wish (Contextlogic Inc.)",
-           "title": "데이터 사이언티스트 인턴",
-           "duration": "2022-01-10,2022-04-29",
-           "location": "캐나다 토론토",
-           "summary": [
-            "연속 사용자 행동 로그에 대한 탐색적 데이터 분석(EDA)을 수행하여 Long Short-Term Memory(LSTM) 모델을 사용해 사기 사용자와 정상 사용자 패턴 간의 유의미한 차이점을 식별",
-            "사용자 경험(UX) 행동 조각을 기반으로 1,500개 이상의 사용자 행동을 90개 카테고리로 통합하고, 팀의 통찰력을 향상시키기 위해 Airflow 크론 작업을 사용하여 매핑 프로세스를 자동화"
-          ],
-          "description": [
-            "Wish에서 고객 위험 관리 팀의 데이터 과학자로서 사용자 세션 로그를 분석하고 사기 데이터를 감지하기 위한 통찰력을 도출하는 역할을 맡았습니다. 팀의 요구사항을 충족시키기 위해 연속 사용자 행동 로그 데이터에 대한 탐색적 데이터 분석(EDA) 및 데이터 시각화를 수행했습니다. 이를 통해 LSTM 모델을 사용하여 사기 사용자 행동 패턴과 정상 사용자 행동 패턴 간의 유의미한 차이점을 식별했습니다.",
-            "약 1,500종의 사용자 행동이 있었으며, 이러한 행동을 단순히 각 사용자별로 시퀀스로 그룹화하는 것은 상당한 통찰력을 제공하지 못했습니다. 그래서 추가 분석을 통해 이러한 사용자 행동이 모두 UI를 통한 상호작용이 아니라 앱 백엔드와 통신하는 모든 유형의 신호를 나타낸다는 것을 밝혀냈습니다. 이러한 신호를 약 90개 카테고리로 분류하여 팀의 더 상세한 분석에 크게 기여했습니다.",
-            "이 접근 방식은 사용자 행동 데이터의 효율적인 분석을 가능하게 했으며, 사기 데이터를 감지하기 위한 필요한 통찰력을 제공함으로써 팀의 데이터 분석 역량을 향상시켰습니다."
-          ],
-          "skills": [
-            "데이터 과학", 
-            "머신러닝", 
-            "딥러닝", 
-            "데이터 분석", 
-            "데이터 모델링", 
-            "데이터 시각화"
-          ],
-          "techStacks": [
-            { "name": "Python", "icon": "icons/python.svg" },
-            { "name": "SQL", "icon": "icons/postgresql.svg" },
-            { "name": "Airflow", "icon": "icons/apacheairflow.svg" },
-            { "name": "Pandas", "icon": "icons/pandas.svg" },
-            { "name": "Jupyter", "icon": "icons/jupyter.svg" },
-            { "name": "PyTorch", "icon": "icons/pytorch.svg" }
-          ]
-        },
-        {
-          "company": "Barcode of Life Data Systems",
-           "title": "데이터 분석 프로그래머 인턴",
-           "duration": "2019-05-06,2019-08-30",
-           "location": "캐나다 구웰프",
-           "summary": [
-            "Google Apps API를 사용하여 종합적인 자동화 DNA 바코드 데이터 워크플로우 대시보드를 설계, 계획 및 구현하여 데이터 관리 효율성을 향상하고 프로세스 및 데이터 시각화를 간소화",
-            "D3.js를 사용하여 분류학 JSON 파일을 기반으로 반응형 계층 구조 트리를 시각화"
-          ],
-          "description": [
-            "BOLD Systems에서 연구실의 주요 업무는 다양한 식물 및 동물 종의 DNA 바코드 데이터를 수집하고 서버에 기록한 후 실험실 아카이브에 포함시키는 것이었습니다. 당시 여러 연구자가 다양한 DNA 바코딩 작업을 수행하고 있었지만, 각 작업의 진행 상황에 대한 효과적인 소통 부족으로 인해 비효율이 발생했습니다. 이 문제를 해결하기 위해 저는 자동화된 대시보드를 설계하고 개발했습니다.",
-            "먼저 연구실의 DNA 바코딩 작업 매뉴얼을 바탕으로 요구사항을 수집하고 각 작업의 진행 상황을 기록했습니다. 주 사용자가 생물학 연구자들이었기 때문에 Google Forms를 통해 데이터 입력 및 검증을 쉽게 할 수 있도록 했습니다. 수집된 데이터를 작업 유형에 따라 집계하고 진행 중인 작업과 그 진행 상황을 표시하는 대시보드를 만들었습니다. 이 대시보드는 Google API(Forms 및 Sheets)와 PHP를 사용하여 구현되었으며, 실시간으로 큰 TV에 표시되도록 연구실 서버에 배포되었습니다. 연구자들은 이제 Google Sheets를 통해 컴퓨터에서 작업 진행 상황을 실시간으로 쉽게 모니터링할 수 있었습니다."
-          ],
-          "skills": [
-            "데이터 분석", "데이터 시각화", "대시보드 설계"
-          ],
-          "techStacks": [
-            { "name": "Javascript", "icon": "icons/javascript.svg" },
-            { "name": "HTML", "icon": "icons/html5.svg" },
-            { "name": "CSS", "icon": "icons/css3.svg" },
-            { "name": "PHP", "icon": "icons/php.svg" },
-            { "name": "D3.js", "icon": "icons/d3dotjs.svg" },
-            { "name": "Google Sheets", "icon": "icons/googlesheets.svg" },
-            { "name": "Google Forms", "icon": "icons/googleforms.svg" }
-          ]
-        }
-      ]
-    },
-    "other": {
-        "en-title": "Other Experience",
-        "en": [
-            {
-              "company": "Ministry of National Defense, Republic of Korea", 
-              "title": "Sergeant, Squad Leader, Administrative",
-              "duration": "2020-01-28,2021-08-07",
-              "location": "Busan, South Korea",
-              "summary": [
-                "Independently managed daily transactions and prepared monthly financial settlements as an Administrative Soldier",
-                "Led a squadron and oversaw barracks operations smoothly for 14 months as a squad leader (June 2020 - July 2021)",
-                "Reduced time spent on repetitive tasks by 75% by generating reports using Excel and creating concise Word templates",
-                "Produced ledgers and income statements by gathering supporting documents, finalizing reports, and maintaining financial records"
-              ],
-              "description": [
-                "The Korea Armed Forces Welfare Agency is a unit directly under the Ministry of National Defense, overseeing various welfare facilities within the military, such as golf courses, hotels, and marts.",
-                "As an administrative soldier in the Busan Support Headquarters of the Armed Forces Welfare Agency, I was responsible for financial tasks related to the management of personnel in marts and PXs in the Gyeongbuk and Gyeongnam regions. Additionally, I conducted all administrative tasks, including end-of-month financial settlements, within the unit under the supervision of the administrative support officer.",
-                "Moreover, I served as a squad leader for 1 year and 2 months, managing personnel and the unit, and successfully maintained the unit without any incidents during my tenure."
-              ],
-              "skills": [
-                "MS Excel",
-                "MS Word",
-                "Leadership",
-                "Time Management",
-                "Human Resources",
-                "Bookkeeping",
-                "Logistics Management"
-              ],
-              "techStacks": [
-              ]
-            },
-            {
-              "company": "ASAP Academy", 
-              "title": "IB / SAT Mathematics Instructor",
-              "duration": "2019-12-09,2020-01-27",
-              "location": "Seoul, South Korea",
-              "summary": [
-                "Instructed International Baccalaureate Higher Level (IB HL) Mathematics I & II, and SAT Mathematics",
-                "Advised students on exam preparation strategies and university admission pathways"
-              ],
-              "description": [
-                "I instructed IB HL Mathematics I & II and SAT Mathematics, providing students with comprehensive mathematical education and preparation. By analyzing each student's weaknesses based on their performance, I optimized my teaching methods to address individual needs effectively.",
-                "Additionally, I provided personalized feedback and advised students on effective exam preparation strategies, guiding them through the university admission process and helping them navigate their academic and career pathways."
-              ],
-              "skills": [
-                "Teaching",
-                "Consulting",
-                "IB/SAT Mathematics"
-              ],
-              "techStacks": [
-              ]
-            },
-            {
-              "company": "Sheridan College", 
-              "title": "Computer Mathematics Learning Assistant",
-              "duration": "2018-05-07,2018-08-24",
-              "location": "Oakville, Canada",
-              "summary": [
-                "Conducted 40% of the tutorials and managed all computer mathematics drop-in sessions at the Trafalgar campus",
-                "Devised a streamlined method for self-serve data entry at the learning centre, significantly reducing the need for administrative corrections",
-                "Created problem packets on calculus and computer fundamentals for course materials, enhancing student learning"
-              ],
-              "description": [
-                "At Sheridan's Trafalgar campus, I conducted 40% of the tutorials and managed all computer mathematics drop-in sessions. My responsibilities included providing comprehensive support to students in understanding complex mathematical concepts and ensuring they received the help they needed outside of regular class hours. Additionally, I devised a streamlined method for self-serve data entry at the learning center, significantly reducing the need for administrative corrections.",
-                "I created problem packets on calculus and computer fundamentals for course materials, which were highly praised by the professor and incorporated into the curriculum to aid student exam preparation. My efforts were well-received by students, earning an average rating of 4.8 out of 5 from over 80 feedbacks, reflecting the positive impact of my tutorials and support sessions on their learning experience."
-              ],
-              "skills": [
-                "Teaching", 
-                "Calculus", 
-                "Computer Mathematics"
-              ],
-              "techStacks": [
-              ]
-            }
-          ],
-          "ko-title": "기타 경력",
-          "ko": [
-            {
-              "company": "국군복지단",
-              "title": "육군 병장 만기전역",
-              "duration": "2020-01-28,2021-08-07",
-              "location": "대한민국 부산",
-              "summary": [
-                "행정병으로서 일일 거래를 관리하고 월말 재정 결산을 담당했습니다",
-                "분대장으로서 14개월 동안 분대 및 막사 운영을 원활하게 관리했습니다 (2020년 6월 - 2021년 7월)",
-                "Excel을 사용하여 보고서 양식을 생성하고 간결한 Word 템플릿을 제안하여 반복 작업에 소요되는 시간을 75% 절감했습니다",
-                "지원 서류를 수집, 재정 기록을 유지하며, 원장과 월말자금결산을 작성했습니다"
-              ],
-              "description": [
-                "국군복지단은 국방부 직할 부대로서 군 내 골프장, 호텔, 마트 등 다양한 복지시설을 관할하는 부대입니다.",
-                "저는 국군복지단 부산지원본부 소속 행정병으로서 경북 및 경남 지역의 마트와 부대 내 PX 관리 인원들의 자금 관련 업무를 담당하였으며, 부대 내 월말 자금 결산 및 기타 모든 행정 업무를 행정지원관 아래에서 진행 및 보조하였습니다.",
-                "또한, 1년 2개월간 분대장으로서 인원 및 부대 관리를 담당하였고, 제가 분대장으로 있는 동안 부대를 무사고로 관리하고 잘 마무리했습니다."
-              ],
-              "skills": [
-                "MS Excel",
-                "MS Word",
-                "리더십",
-                "시간 관리",
-                "인사행정",
-                "자금결산",
-                "물류 관리"
-              ],
-              "techStacks": [
-              ]
-            },
-            {
-              "company": "프리미엄 맞춤수업 학원", 
-              "title": "IB/SAT 수학 강사",
-              "duration": "2019-12-09,2020-01-27",
-              "location": "대한민국 서울",
-              "summary": [
-                "International Baccalaureate Higher Level (IB HL) 수학 I & II 및 SAT 수학 지도",
-                "학생들에게 시험 준비 전략과 대학 입학 경로에 대해 조언"
-              ],
-              "description": [
-                "IB HL 수학 I & II 및 SAT 수학을 가르치며 학생들에게 포괄적인 수학 교육과 준비를 제공하였습니다. 각 학생의 성과를 바탕으로 약점을 분석하여, 개별적인 요구에 효과적으로 대응하기 위해 제 교육 방식을 최적화하였습니다.",
-                "또한, 개인 맞춤형 피드백을 제공하고 학생들에게 효과적인 시험 준비 전략을 조언하며, 대학 입학 과정을 안내하여 학업 및 진로를 계획하는 데 도움을 주었습니다."
-              ],
-              "skills": [
-                "학생 지도",
-                "대입 컨설팅",
-                "IB/SAT 수학"
-              ],
-              "techStacks": [
-              ]
-            },
-            {
-              "company": "쉐리든 대학교", 
-              "title": "컴퓨터수학 조교",
-              "duration": "2018-05-07,2018-08-24",
-              "location": "캐나다 옥빌",
-              "summary": [
-                "쉐리던 대학교 Trafalgar 캠퍼스에서 전체 수학 과목 튜토리얼의 40%를 진행하고 모든 컴퓨터 수학 드롭인 세션을 관리함",
-                "학습 센터에서 학생들의 셀프 서비스 데이터 입력을 위한 간소화된 방법을 고안",
-                "학생 학습 향상을 위해 미적분학 및 컴퓨터수학 기초에 대한 문제집 제작"
-              ],
-              "description": [
-                "쉐리던의 트라팔가 캠퍼스에서 저는 튜토리얼의 40%를 진행하고 모든 컴퓨터 수학 드롭인 세션을 관리했습니다. 제 책임은 학생들이 복잡한 수학 개념을 이해하고 정규 수업 시간 외에도 필요한 도움을 받을 수 있도록 종합적인 지원을 제공하는 것이었습니다. 추가적으로, 학습 센터에서 셀프 서비스 데이터 입력을 위한 간소화된 방법을 고안하여 행정 수정의 필요성을 크게 줄였습니다.",
-                "저는 학생들의 시험 준비를 돕기 위해 미적분학 및 컴퓨터 기초에 대한 문제 패킷을 작성했으며, 이 패킷들은 교수님으로부터 높은 평가를 받아 커리큘럼에 포함되었습니다. 제 노력은 학생들로부터도 좋은 평가를 받아, 80건 이상의 피드백에서 평균 4.8점(5점 만점)을 받으며, 튜토리얼과 지원 세션이 학생들의 학습 경험에 긍정적인 영향을 미쳤습니다."
-              ],
-              "skills": [
-                "학생 지도", 
-                "미적분", 
-                "컴퓨터수학"
-              ],
-              "techStacks": [
-              ]
-            }
-          ]
-    },
-    "projects": {
-      "en-title": "Publication & Projects",
+        ]
+      },
+      {
+        "company": "Barcode of Life Data Systems", 
+        "title": "Data Analyst & Programmer Intern",
+        "duration": "2019-05-06,2019-08-30",
+        "location": "Guelph, Canada",
+        "summary": [
+          "Designed, planned, and implemented a comprehensive automated DNA barcode data workflow dashboard using Google Apps API, enhancing data management efficiency by streamlining processes and data visualization",
+          "Compiled taxonomy JSON files to create and visualize responsive multi-node hierarchical trees using D3.js"
+        ],
+        "description": [
+          "At BOLD Systems, the lab’s primary task was to collect DNA barcode data for various species of plants and animals, record it on the server, and process it for inclusion in the laboratory archive. At the time, multiple researchers were conducting various DNA barcoding tasks, but inefficiencies arose due to the lack of effective communication regarding the progress of each task. To address this issue, I designed and developed an automated dashboard.",
+          "First, I gathered requirements based on the laboratory's DNA barcoding task manual and recorded the progress of each task. Considering that the primary users were biological researchers, I facilitated easy data entry and verification through Google Forms. I aggregated the collected data according to the type of task and created a dashboard that displayed ongoing tasks and their progress. This dashboard was implemented using Google API (Forms & Sheets) and PHP, and was deployed on the laboratory server to be displayed in real-time on a large TV. Researchers could now easily monitor the progress of tasks in real-time via Google Sheets on their computers."
+        ],
+        "skills": [
+          "Data Analysis", 
+          "Data Visualization", 
+          "Dashboard Design"
+        ],
+        "techStacks": [
+          { "name": "Javascript", "icon": "icons/javascript.svg" },
+          { "name": "HTML", "icon": "icons/html5.svg" },
+          { "name": "CSS", "icon": "icons/css3.svg" },
+          { "name": "PHP", "icon": "icons/php.svg" },
+          { "name": "D3.js", "icon": "icons/d3dotjs.svg" },
+          { "name": "Google Sheets", "icon": "icons/googlesheets.svg" },
+          { "name": "Google Forms", "icon": "icons/googleforms.svg" }
+        ]
+      }
+    ],
+    "ko-title": "기술 경력",
+    "ko": [
+      {
+        "company": "Royal Bank of Canada",
+        "title": "데이터 엔지니어 인턴",
+        "duration": "2022-09-06,2023-04-28",
+        "location": "캐나다 토론토",
+        "summary": [
+          "감사 그룹(CAE) 부서의 감사원들과 협력하여 비즈니스 요구사항을 수집하고, 100개 이상의 핵심 리스크 지표(KRI) 메트릭스를 Python(Pandas, Numpy), R, SQL을 사용하여 개선 및 구현",
+          "Risk Assessment Planning Tool Organizer(RaptOR) 개발 과정 중 Dataiku를 사용하여 15개 이상의 Extract-Transform-Load(ETL) 데이터 파이프라인을 자동화하여 월간 및 분기별 데이터 수집 및 메트릭스 업데이트 촉진",
+          "자연어 처리(NLP) 기법을 사용하여 두 시스템의 데이터 응용 프로그램(EUDA)을 분석하고, 데이터 분석 및 모델링을 통해 8.5% 이상의 데이터 연결 손실을 100% 정밀도로 복구",
+          "RaptOR 프로젝트의 애자일 개발 내에서 버그 및 데이터 품질 검사를 관리하며, 데이터 파이프라인의 DEV, QA, UAT, PROD 단계에서 지속적인 피드백과 반복적인 진행 보장"
+        ],
+        "description": [
+          "[프로젝트 RaptOR]",
+          "감사 데이터 팀은 제가 팀에 합류하기 2년 전에 RaptOR(Risk Assessment Planning Tool Organizer)라는 플랫폼 개발을 시작했습니다. 이 플랫폼은 국가 및 지점별로 위험 지표를 수집, 표준화 및 시각화합니다.",
+          "RaptOR 팀에서 제 역할은 다양한 부서의 내부 이해 관계자들과 회의를 통해 새로운 또는 수정된 핵심 리스크 지표(KRI)에 대한 요구사항을 수집하고, 해당 ETL 프로세스를 개발하는 것이었습니다. 또한, 감사 데이터가 월간 및 분기별로 자동으로 업데이트되도록 파이프라인을 자동화하는 책임도 있었습니다. 이 과정에서 주로 Dataiku 데이터 과학 플랫폼을 사용하였고, Python, R, SQL을 사용하여 코드 레시피를 구현하였습니다.",
+          "[프로젝트 EUDA 분석]",
+          "두 개의 시스템, ESM과 IMS는 각각 EUDA(End User Data Applications)의 모음입니다. 기존 목적은 ESM을 IMS의 부분 집합으로서, ESM은 특정 목적을 위한 EUDA만 포함하고 있는 것이었습니다. 그러나 내부 유저들이 오랜 기간 동안 ESM과 IMS 시스템을 별도로 업데이트하면서 두 시스템의 데이터 일관성이 어긋났고, 두 시스템 사이 각 EUDA를 연결하는 외래키 및 각 시스템 내 기본키 역시 부재했습니다. 제 임무는 이 두 시스템 내의 가능한 많은 잃어버린 EUDA 연결을 복구하는 것이었습니다.",
+          "먼저 기존 담당자들과 미팅을 통해 두 시스템의 데이터가 기존 목적 기준 서로 어떤 열에 대응되어야 하는지 데이터를 모델링을 통한 분석을 했습니다. 두 시스템 사이 잠재적인 키 열 역할을 할 열들을 찾고, 텍스트 분석 및 파싱을 통해 일차적으로 사용될 수 있는 열을 걸렀습니다. 그런 다음 키 열로서 역할을 수행할 수 있는 남은 열들에서 ESM과 IMS 사이 모든 EUDA가 1:1로 매칭되는 데이터를 복구된 EUDA로서 추출하고, 그 외에 1대다 혹은 다대다 관계로 매칭되는 EUDA 데이터는 첫 번째 단계에서 별도로 기록해 두었던 열들을 이용해 이차적인 대응 관계를 확인해 모든 EUDA가 일치하는 값을 가질 때(불일치를 허용하지 않음) 추출했습니다.",
+          "이 과정을 반복해 8% 이상의 EUDA 링크를 100%의 정밀도로 복원할 수 있었습니다. 물론 허위 양성을 허용하면 대부분의 EUDA를 복원할 수 있었겠지만, 감사의 세계에서는 허위 양성을 방지하는 것이 링크 복원보다 더 중요했습니다."
+        ],
+        "skills": [
+          "데이터 엔지니어링",
+          "ETL/ELT 프로세스",
+          "자연어 처리",
+          "데이터 파이프라인 구축",
+          "데이터 모델링",
+          "데이터 분석",
+          "애자일 기법"
+        ],
+        "techStacks": [
+          { "name": "Python", "icon": "icons/python.svg" },
+          { "name": "SQL", "icon": "icons/postgresql.svg" },
+          { "name": "R", "icon": "icons/r.svg" },
+          { "name": "Pandas", "icon": "icons/pandas.svg" },
+          { "name": "Numpy", "icon": "icons/numpy.svg" },
+          { "name": "Dataiku", "icon": "icons/dataiku.svg" },
+          { "name": "Jupyter", "icon": "icons/jupyter.svg" }
+        ]
+      },
+      {
+        "company": "Wish (Contextlogic Inc.)",
+         "title": "데이터 사이언티스트 인턴",
+         "duration": "2022-01-10,2022-04-29",
+         "location": "캐나다 토론토",
+         "summary": [
+          "연속 사용자 행동 로그에 대한 탐색적 데이터 분석(EDA)을 수행하여 Long Short-Term Memory(LSTM) 모델을 사용해 사기 사용자와 정상 사용자 패턴 간의 유의미한 차이점을 식별",
+          "사용자 경험(UX) 행동 조각을 기반으로 1,500개 이상의 사용자 행동을 90개 카테고리로 통합하고, 팀의 통찰력을 향상시키기 위해 Airflow 크론 작업을 사용하여 매핑 프로세스를 자동화"
+        ],
+        "description": [
+          "Wish에서 고객 위험 관리 팀의 데이터 과학자로서 사용자 세션 로그를 분석하고 사기 데이터를 감지하기 위한 통찰력을 도출하는 역할을 맡았습니다. 팀의 요구사항을 충족시키기 위해 연속 사용자 행동 로그 데이터에 대한 탐색적 데이터 분석(EDA) 및 데이터 시각화를 수행했습니다. 이를 통해 LSTM 모델을 사용하여 사기 사용자 행동 패턴과 정상 사용자 행동 패턴 간의 유의미한 차이점을 식별했습니다.",
+          "약 1,500종의 사용자 행동이 있었으며, 이러한 행동을 단순히 각 사용자별로 시퀀스로 그룹화하는 것은 상당한 통찰력을 제공하지 못했습니다. 그래서 추가 분석을 통해 이러한 사용자 행동이 모두 UI를 통한 상호작용이 아니라 앱 백엔드와 통신하는 모든 유형의 신호를 나타낸다는 것을 밝혀냈습니다. 이러한 신호를 약 90개 카테고리로 분류하여 팀의 더 상세한 분석에 크게 기여했습니다.",
+          "이 접근 방식은 사용자 행동 데이터의 효율적인 분석을 가능하게 했으며, 사기 데이터를 감지하기 위한 필요한 통찰력을 제공함으로써 팀의 데이터 분석 역량을 향상시켰습니다."
+        ],
+        "skills": [
+          "데이터 과학", 
+          "머신러닝", 
+          "딥러닝", 
+          "데이터 분석", 
+          "데이터 모델링", 
+          "데이터 시각화"
+        ],
+        "techStacks": [
+          { "name": "Python", "icon": "icons/python.svg" },
+          { "name": "SQL", "icon": "icons/postgresql.svg" },
+          { "name": "Airflow", "icon": "icons/apacheairflow.svg" },
+          { "name": "Pandas", "icon": "icons/pandas.svg" },
+          { "name": "Jupyter", "icon": "icons/jupyter.svg" },
+          { "name": "PyTorch", "icon": "icons/pytorch.svg" }
+        ]
+      },
+      {
+        "company": "Barcode of Life Data Systems",
+         "title": "데이터 분석 프로그래머 인턴",
+         "duration": "2019-05-06,2019-08-30",
+         "location": "캐나다 구웰프",
+         "summary": [
+          "Google Apps API를 사용하여 종합적인 자동화 DNA 바코드 데이터 워크플로우 대시보드를 설계, 계획 및 구현하여 데이터 관리 효율성을 향상하고 프로세스 및 데이터 시각화를 간소화",
+          "D3.js를 사용하여 분류학 JSON 파일을 기반으로 반응형 계층 구조 트리를 시각화"
+        ],
+        "description": [
+          "BOLD Systems에서 연구실의 주요 업무는 다양한 식물 및 동물 종의 DNA 바코드 데이터를 수집하고 서버에 기록한 후 실험실 아카이브에 포함시키는 것이었습니다. 당시 여러 연구자가 다양한 DNA 바코딩 작업을 수행하고 있었지만, 각 작업의 진행 상황에 대한 효과적인 소통 부족으로 인해 비효율이 발생했습니다. 이 문제를 해결하기 위해 저는 자동화된 대시보드를 설계하고 개발했습니다.",
+          "먼저 연구실의 DNA 바코딩 작업 매뉴얼을 바탕으로 요구사항을 수집하고 각 작업의 진행 상황을 기록했습니다. 주 사용자가 생물학 연구자들이었기 때문에 Google Forms를 통해 데이터 입력 및 검증을 쉽게 할 수 있도록 했습니다. 수집된 데이터를 작업 유형에 따라 집계하고 진행 중인 작업과 그 진행 상황을 표시하는 대시보드를 만들었습니다. 이 대시보드는 Google API(Forms 및 Sheets)와 PHP를 사용하여 구현되었으며, 실시간으로 큰 TV에 표시되도록 연구실 서버에 배포되었습니다. 연구자들은 이제 Google Sheets를 통해 컴퓨터에서 작업 진행 상황을 실시간으로 쉽게 모니터링할 수 있었습니다."
+        ],
+        "skills": [
+          "데이터 분석", "데이터 시각화", "대시보드 설계"
+        ],
+        "techStacks": [
+          { "name": "Javascript", "icon": "icons/javascript.svg" },
+          { "name": "HTML", "icon": "icons/html5.svg" },
+          { "name": "CSS", "icon": "icons/css3.svg" },
+          { "name": "PHP", "icon": "icons/php.svg" },
+          { "name": "D3.js", "icon": "icons/d3dotjs.svg" },
+          { "name": "Google Sheets", "icon": "icons/googlesheets.svg" },
+          { "name": "Google Forms", "icon": "icons/googleforms.svg" }
+        ]
+      }
+    ]
+  },
+  "other": {
+      "en-title": "Other Experience",
       "en": [
-        {
-          "company": "", 
-          "title": "Dilated SE-DenseNet for Radiographic Classification of Brain Tumors​",
-          "duration": "2023-11-01,2024-02-28",
-          "location": "",
-          "summary": [
-            "Contributed as First Author",
-            "Currently under Scientific Reports - Nature peer review progress",
-            "Enhanced the DenseNet121 Convolutional DNN architecture for classifying brain tumor types by integrating dilation layers and SE (Squeeze-and-Excitation) modules, resulting in an improved F1-score from 0.834 to 0.967."
-          ],
-          "description": [
-            "We have enhanced the DenseNet121 architecture to classify brain tumor types by integrating dilation layers and a Squeeze-and-Excitation (SE) module. This innovation aims to improve the model's capability to process and interpret complex radiographic data effectively.",
-            "By adjusting the DenseNet121 framework, we successfully enhanced its sensitivity to contextual information in brain MRI images, which led to a more accurate classification of various tumor types (f1-score improved from 0.834 to 0.967). This advancement demonstrates the potential of modified neural networks in medical imaging and paves the way for more precise and early detection of brain tumors, potentially improving patient outcomes."
-          ],
-          "skills": [
-            "Deep Learning",
-            "Medical Image Classification",
-            "Supervised Learning"
-          ],
-          "techStacks": [
-            { "name": "Python", "icon": "icons/python.svg" },
-            { "name": "PyTorch", "icon": "icons/pytorch.svg" },
-            { "name": "Jupyter", "icon": "icons/jupyter.svg" },
-            { "name": "Pandas", "icon": "icons/pandas.svg" },
-            { "name": "Numpy", "icon": "icons/numpy.svg" }
-          ]
-        },
-        {
-          "company": "", 
-          "title": "Project Zone",
-          "duration": "2023-04-15,2023-10-30",
-          "location": "",
-          "summary": [
-            "Found a project community platform that connects designers, developers, and enthusiasts.",
-            "Developed Project Zone's backend REST API using Django and Auth0"
-          ],
-          "description": [
-            "Young professionals and students often seek opportunities to develop their skills and build projects that can enhance their job market prospects. However, there has been a lack of a dedicated platform for entry-level professionals to connect with others for collaborative projects and learning. To address this gap, we created Project Zone, a platform designed to help users find collaborators and work on meaningful projects together.",
-            "Unfortunately, we have decided to discontinue Project Zone. We halted the project at the beta stage, before proceeding with user acceptance testing, after concluding that it no longer holds a competitive edge in the market."
-          ],
-          "skills": [
-            "Backend Development"
-          ],
-          "techStacks": [
-            { "name": "Python", "icon": "icons/python.svg" },
-            { "name": "Typescript", "icon": "icons/typescript.svg" },
-            { "name": "Django", "icon": "icons/django.svg" },
-            { "name": "React", "icon": "icons/react.svg" },
-            { "name": "Auth0", "icon": "icons/auth0.svg" }
-          ]
-        }
-      ],
-      "ko-title": "출판 & 프로젝트",
-      "ko": [
-        {
-          "company": "", 
-          "title": "Dilated SE-DenseNet for Radiographic Classification of Brain Tumors​",
-          "duration": "2023-11-01,2024-02-28",
-          "location": "",
-          "summary": [
-            "제1 저자로 기여함",
-            "현재 Scientific Reports - Nature Peer Review 진행 중",
-            "확장 레이어와 SE (Squeeze-and-Excitation) 모듈을 통합하여 뇌종양 유형 분류를 위한 DenseNet121 Convolutional DNN 아키텍처를 개선하여 F1-score 0.834에서 0.967로 향상"
-          ],
-          "description": [
-            "확장 레이어와 Squeeze-and-Excitation (SE) 모듈을 통합하여 DenseNet121 아키텍처를 개선함으로써 뇌종양 유형을 분류할 수 있도록 했습니다. 이 혁신은 모델이 복잡한 방사선 데이터를 효과적으로 처리하고 해석할 수 있는 능력을 향상시키는 것을 목표로 합니다.",
-            "DenseNet121 프레임워크를 조정함으로써 저희는 뇌 MRI 이미지의 맥락 정보에 대한 민감도를 성공적으로 향상시켜 다양한 종양 유형의 분류 정확도를 높였습니다 (F1-점수가 0.834에서 0.967로 개선됨). 이 발전은 의료 이미지 분류에 있어 수정된 신경망의 잠재력을 보여주며, 뇌종양의 더 정확하고 조기 발견을 가능하게 함으로써 환자의 결과를 개선할 수 있습니다."
-          ],
-          "skills": [
-            "딥 러닝",
-            "의료 이미지 분류",
-            "지도 학습"
-          ],
-          "techStacks": [
-            { "name": "Python", "icon": "icons/python.svg" },
-            { "name": "PyTorch", "icon": "icons/pytorch.svg" },
-            { "name": "Jupyter", "icon": "icons/jupyter.svg" },
-            { "name": "Pandas", "icon": "icons/pandas.svg" },
-            { "name": "Numpy", "icon": "icons/numpy.svg" }
-          ]
-        },
-        {
-          "company": "", 
-          "title": "Project Zone",
-          "duration": "2023-04-15,2023-10-30",
-          "location": "",
-          "summary": [
-            "디자이너, 개발자 및 기술 애호가들을 연결해주는 프로젝트 커뮤니티 플랫폼인 Project Zone을 개발",
-            "Django와 Auth0를 사용하여 백엔드 REST API 개발"
-          ],
-          "description": [
-            "취업 준비생들, 그리고 학생들은 종종 자신의 기술을 개발하고 취업 시장에서의 경쟁력을 높일 수 있는 프로젝트를 진행할 기회를 찾습니다. 그러나 오직 이런 특정 층의 협력 프로젝트를 위해 사람들을 찾고 배우기 위한 전용 플랫폼은 부족했습니다. 이러한 격차를 해소하기 위해, 저희는 사용자들이 협력자를 찾고 의미 있는 프로젝트를 함께 진행할 수 있도록 도와주는 플랫폼인 Project Zone을 만들었습니다.",
-            "그러나 안타깝게도, 현재는 Project Zone의 개발을 중단하기로 결정했습니다. 시장에서의 경쟁력이 더 이상 없다고 판단하여 사용자 수용 테스트를 진행하기 전 베타 단계에서 프로젝트를 중단하게 되었습니다."
-          ],
-          "skills": [
-            "백엔드 개발"
-          ],
-          "techStacks": [
-            { "name": "Python", "icon": "icons/python.svg" },
-            { "name": "Typescript", "icon": "icons/typescript.svg" },
-            { "name": "Django", "icon": "icons/django.svg" },
-            { "name": "React", "icon": "icons/react.svg" },
-            { "name": "Auth0", "icon": "icons/auth0.svg" }
-          ]
-        }
-      ]
-    }
+          {
+            "company": "Ministry of National Defense, Republic of Korea", 
+            "title": "Sergeant, Squad Leader, Administrative",
+            "duration": "2020-01-28,2021-08-07",
+            "location": "Busan, South Korea",
+            "summary": [
+              "Independently managed daily transactions and prepared monthly financial settlements as an Administrative Soldier",
+              "Led a squadron and oversaw barracks operations smoothly for 14 months as a squad leader (June 2020 - July 2021)",
+              "Reduced time spent on repetitive tasks by 75% by generating reports using Excel and creating concise Word templates",
+              "Produced ledgers and income statements by gathering supporting documents, finalizing reports, and maintaining financial records"
+            ],
+            "description": [
+              "The Korea Armed Forces Welfare Agency is a unit directly under the Ministry of National Defense, overseeing various welfare facilities within the military, such as golf courses, hotels, and marts.",
+              "As an administrative soldier in the Busan Support Headquarters of the Armed Forces Welfare Agency, I was responsible for financial tasks related to the management of personnel in marts and PXs in the Gyeongbuk and Gyeongnam regions. Additionally, I conducted all administrative tasks, including end-of-month financial settlements, within the unit under the supervision of the administrative support officer.",
+              "Moreover, I served as a squad leader for 1 year and 2 months, managing personnel and the unit, and successfully maintained the unit without any incidents during my tenure."
+            ],
+            "skills": [
+              "MS Excel",
+              "MS Word",
+              "Leadership",
+              "Time Management",
+              "Human Resources",
+              "Bookkeeping",
+              "Logistics Management"
+            ],
+            "techStacks": [
+            ]
+          },
+          {
+            "company": "ASAP Academy", 
+            "title": "IB / SAT Mathematics Instructor",
+            "duration": "2019-12-09,2020-01-27",
+            "location": "Seoul, South Korea",
+            "summary": [
+              "Instructed International Baccalaureate Higher Level (IB HL) Mathematics I & II, and SAT Mathematics",
+              "Advised students on exam preparation strategies and university admission pathways"
+            ],
+            "description": [
+              "I instructed IB HL Mathematics I & II and SAT Mathematics, providing students with comprehensive mathematical education and preparation. By analyzing each student's weaknesses based on their performance, I optimized my teaching methods to address individual needs effectively.",
+              "Additionally, I provided personalized feedback and advised students on effective exam preparation strategies, guiding them through the university admission process and helping them navigate their academic and career pathways."
+            ],
+            "skills": [
+              "Teaching",
+              "Consulting",
+              "IB/SAT Mathematics"
+            ],
+            "techStacks": [
+            ]
+          },
+          {
+            "company": "Sheridan College", 
+            "title": "Computer Mathematics Learning Assistant",
+            "duration": "2018-05-07,2018-08-24",
+            "location": "Oakville, Canada",
+            "summary": [
+              "Conducted 40% of the tutorials and managed all computer mathematics drop-in sessions at the Trafalgar campus",
+              "Devised a streamlined method for self-serve data entry at the learning centre, significantly reducing the need for administrative corrections",
+              "Created problem packets on calculus and computer fundamentals for course materials, enhancing student learning"
+            ],
+            "description": [
+              "At Sheridan's Trafalgar campus, I conducted 40% of the tutorials and managed all computer mathematics drop-in sessions. My responsibilities included providing comprehensive support to students in understanding complex mathematical concepts and ensuring they received the help they needed outside of regular class hours. Additionally, I devised a streamlined method for self-serve data entry at the learning center, significantly reducing the need for administrative corrections.",
+              "I created problem packets on calculus and computer fundamentals for course materials, which were highly praised by the professor and incorporated into the curriculum to aid student exam preparation. My efforts were well-received by students, earning an average rating of 4.8 out of 5 from over 80 feedbacks, reflecting the positive impact of my tutorials and support sessions on their learning experience."
+            ],
+            "skills": [
+              "Teaching", 
+              "Calculus", 
+              "Computer Mathematics"
+            ],
+            "techStacks": [
+            ]
+          }
+        ],
+        "ko-title": "기타 경력",
+        "ko": [
+          {
+            "company": "국군복지단",
+            "title": "육군 병장 만기전역",
+            "duration": "2020-01-28,2021-08-07",
+            "location": "대한민국 부산",
+            "summary": [
+              "행정병으로서 일일 거래를 관리하고 월말 재정 결산을 담당했습니다",
+              "분대장으로서 14개월 동안 분대 및 막사 운영을 원활하게 관리했습니다 (2020년 6월 - 2021년 7월)",
+              "Excel을 사용하여 보고서 양식을 생성하고 간결한 Word 템플릿을 제안하여 반복 작업에 소요되는 시간을 75% 절감했습니다",
+              "지원 서류를 수집, 재정 기록을 유지하며, 원장과 월말자금결산을 작성했습니다"
+            ],
+            "description": [
+              "국군복지단은 국방부 직할 부대로서 군 내 골프장, 호텔, 마트 등 다양한 복지시설을 관할하는 부대입니다.",
+              "저는 국군복지단 부산지원본부 소속 행정병으로서 경북 및 경남 지역의 마트와 부대 내 PX 관리 인원들의 자금 관련 업무를 담당하였으며, 부대 내 월말 자금 결산 및 기타 모든 행정 업무를 행정지원관 아래에서 진행 및 보조하였습니다.",
+              "또한, 1년 2개월간 분대장으로서 인원 및 부대 관리를 담당하였고, 제가 분대장으로 있는 동안 부대를 무사고로 관리하고 잘 마무리했습니다."
+            ],
+            "skills": [
+              "MS Excel",
+              "MS Word",
+              "리더십",
+              "시간 관리",
+              "인사행정",
+              "자금결산",
+              "물류 관리"
+            ],
+            "techStacks": [
+            ]
+          },
+          {
+            "company": "프리미엄 맞춤수업 학원", 
+            "title": "IB/SAT 수학 강사",
+            "duration": "2019-12-09,2020-01-27",
+            "location": "대한민국 서울",
+            "summary": [
+              "International Baccalaureate Higher Level (IB HL) 수학 I & II 및 SAT 수학 지도",
+              "학생들에게 시험 준비 전략과 대학 입학 경로에 대해 조언"
+            ],
+            "description": [
+              "IB HL 수학 I & II 및 SAT 수학을 가르치며 학생들에게 포괄적인 수학 교육과 준비를 제공하였습니다. 각 학생의 성과를 바탕으로 약점을 분석하여, 개별적인 요구에 효과적으로 대응하기 위해 제 교육 방식을 최적화하였습니다.",
+              "또한, 개인 맞춤형 피드백을 제공하고 학생들에게 효과적인 시험 준비 전략을 조언하며, 대학 입학 과정을 안내하여 학업 및 진로를 계획하는 데 도움을 주었습니다."
+            ],
+            "skills": [
+              "학생 지도",
+              "대입 컨설팅",
+              "IB/SAT 수학"
+            ],
+            "techStacks": [
+            ]
+          },
+          {
+            "company": "쉐리든 대학교", 
+            "title": "컴퓨터수학 조교",
+            "duration": "2018-05-07,2018-08-24",
+            "location": "캐나다 옥빌",
+            "summary": [
+              "쉐리던 대학교 Trafalgar 캠퍼스에서 전체 수학 과목 튜토리얼의 40%를 진행하고 모든 컴퓨터 수학 드롭인 세션을 관리함",
+              "학습 센터에서 학생들의 셀프 서비스 데이터 입력을 위한 간소화된 방법을 고안",
+              "학생 학습 향상을 위해 미적분학 및 컴퓨터수학 기초에 대한 문제집 제작"
+            ],
+            "description": [
+              "쉐리던의 트라팔가 캠퍼스에서 저는 튜토리얼의 40%를 진행하고 모든 컴퓨터 수학 드롭인 세션을 관리했습니다. 제 책임은 학생들이 복잡한 수학 개념을 이해하고 정규 수업 시간 외에도 필요한 도움을 받을 수 있도록 종합적인 지원을 제공하는 것이었습니다. 추가적으로, 학습 센터에서 셀프 서비스 데이터 입력을 위한 간소화된 방법을 고안하여 행정 수정의 필요성을 크게 줄였습니다.",
+              "저는 학생들의 시험 준비를 돕기 위해 미적분학 및 컴퓨터 기초에 대한 문제 패킷을 작성했으며, 이 패킷들은 교수님으로부터 높은 평가를 받아 커리큘럼에 포함되었습니다. 제 노력은 학생들로부터도 좋은 평가를 받아, 80건 이상의 피드백에서 평균 4.8점(5점 만점)을 받으며, 튜토리얼과 지원 세션이 학생들의 학습 경험에 긍정적인 영향을 미쳤습니다."
+            ],
+            "skills": [
+              "학생 지도", 
+              "미적분", 
+              "컴퓨터수학"
+            ],
+            "techStacks": [
+            ]
+          }
+        ]
+  },
+  "projects": {
+    "en-title": "Publication & Projects",
+    "en": [
+      {
+        "company": "", 
+        "title": "Dilated SE-DenseNet for Radiographic Classification of Brain Tumors​",
+        "duration": "2023-11-01,2024-02-28",
+        "location": "",
+        "summary": [
+          "Contributed as First Author",
+          "Currently under Scientific Reports - Nature peer review progress",
+          "Enhanced the DenseNet121 Convolutional DNN architecture for classifying brain tumor types by integrating dilation layers and SE (Squeeze-and-Excitation) modules, resulting in an improved F1-score from 0.834 to 0.967."
+        ],
+        "description": [
+          "We have enhanced the DenseNet121 architecture to classify brain tumor types by integrating dilation layers and a Squeeze-and-Excitation (SE) module. This innovation aims to improve the model's capability to process and interpret complex radiographic data effectively.",
+          "By adjusting the DenseNet121 framework, we successfully enhanced its sensitivity to contextual information in brain MRI images, which led to a more accurate classification of various tumor types (f1-score improved from 0.834 to 0.967). This advancement demonstrates the potential of modified neural networks in medical imaging and paves the way for more precise and early detection of brain tumors, potentially improving patient outcomes."
+        ],
+        "skills": [
+          "Deep Learning",
+          "Medical Image Classification",
+          "Supervised Learning"
+        ],
+        "techStacks": [
+          { "name": "Python", "icon": "icons/python.svg" },
+          { "name": "PyTorch", "icon": "icons/pytorch.svg" },
+          { "name": "Jupyter", "icon": "icons/jupyter.svg" },
+          { "name": "Pandas", "icon": "icons/pandas.svg" },
+          { "name": "Numpy", "icon": "icons/numpy.svg" }
+        ]
+      },
+      {
+        "company": "", 
+        "title": "Project Zone",
+        "duration": "2023-04-15,2023-10-30",
+        "location": "",
+        "summary": [
+          "Found a project community platform that connects designers, developers, and enthusiasts.",
+          "Developed Project Zone's backend REST API using Django and Auth0"
+        ],
+        "description": [
+          "Young professionals and students often seek opportunities to develop their skills and build projects that can enhance their job market prospects. However, there has been a lack of a dedicated platform for entry-level professionals to connect with others for collaborative projects and learning. To address this gap, we created Project Zone, a platform designed to help users find collaborators and work on meaningful projects together.",
+          "Unfortunately, we have decided to discontinue Project Zone. We halted the project at the beta stage, before proceeding with user acceptance testing, after concluding that it no longer holds a competitive edge in the market."
+        ],
+        "skills": [
+          "Backend Development"
+        ],
+        "techStacks": [
+          { "name": "Python", "icon": "icons/python.svg" },
+          { "name": "Typescript", "icon": "icons/typescript.svg" },
+          { "name": "Django", "icon": "icons/django.svg" },
+          { "name": "React", "icon": "icons/react.svg" },
+          { "name": "Auth0", "icon": "icons/auth0.svg" }
+        ]
+      }
+    ],
+    "ko-title": "출판 & 프로젝트",
+    "ko": [
+      {
+        "company": "", 
+        "title": "Dilated SE-DenseNet for Radiographic Classification of Brain Tumors​",
+        "duration": "2023-11-01,2024-02-28",
+        "location": "",
+        "summary": [
+          "제1 저자로 기여함",
+          "현재 Scientific Reports - Nature Peer Review 진행 중",
+          "확장 레이어와 SE (Squeeze-and-Excitation) 모듈을 통합하여 뇌종양 유형 분류를 위한 DenseNet121 Convolutional DNN 아키텍처를 개선하여 F1-score 0.834에서 0.967로 향상"
+        ],
+        "description": [
+          "확장 레이어와 Squeeze-and-Excitation (SE) 모듈을 통합하여 DenseNet121 아키텍처를 개선함으로써 뇌종양 유형을 분류할 수 있도록 했습니다. 이 혁신은 모델이 복잡한 방사선 데이터를 효과적으로 처리하고 해석할 수 있는 능력을 향상시키는 것을 목표로 합니다.",
+          "DenseNet121 프레임워크를 조정함으로써 저희는 뇌 MRI 이미지의 맥락 정보에 대한 민감도를 성공적으로 향상시켜 다양한 종양 유형의 분류 정확도를 높였습니다 (F1-점수가 0.834에서 0.967로 개선됨). 이 발전은 의료 이미지 분류에 있어 수정된 신경망의 잠재력을 보여주며, 뇌종양의 더 정확하고 조기 발견을 가능하게 함으로써 환자의 결과를 개선할 수 있습니다."
+        ],
+        "skills": [
+          "딥 러닝",
+          "의료 이미지 분류",
+          "지도 학습"
+        ],
+        "techStacks": [
+          { "name": "Python", "icon": "icons/python.svg" },
+          { "name": "PyTorch", "icon": "icons/pytorch.svg" },
+          { "name": "Jupyter", "icon": "icons/jupyter.svg" },
+          { "name": "Pandas", "icon": "icons/pandas.svg" },
+          { "name": "Numpy", "icon": "icons/numpy.svg" }
+        ]
+      },
+      {
+        "company": "", 
+        "title": "Project Zone",
+        "duration": "2023-04-15,2023-10-30",
+        "location": "",
+        "summary": [
+          "디자이너, 개발자 및 기술 애호가들을 연결해주는 프로젝트 커뮤니티 플랫폼인 Project Zone을 개발",
+          "Django와 Auth0를 사용하여 백엔드 REST API 개발"
+        ],
+        "description": [
+          "취업 준비생들, 그리고 학생들은 종종 자신의 기술을 개발하고 취업 시장에서의 경쟁력을 높일 수 있는 프로젝트를 진행할 기회를 찾습니다. 그러나 오직 이런 특정 층의 협력 프로젝트를 위해 사람들을 찾고 배우기 위한 전용 플랫폼은 부족했습니다. 이러한 격차를 해소하기 위해, 저희는 사용자들이 협력자를 찾고 의미 있는 프로젝트를 함께 진행할 수 있도록 도와주는 플랫폼인 Project Zone을 만들었습니다.",
+          "그러나 안타깝게도, 현재는 Project Zone의 개발을 중단하기로 결정했습니다. 시장에서의 경쟁력이 더 이상 없다고 판단하여 사용자 수용 테스트를 진행하기 전 베타 단계에서 프로젝트를 중단하게 되었습니다."
+        ],
+        "skills": [
+          "백엔드 개발"
+        ],
+        "techStacks": [
+          { "name": "Python", "icon": "icons/python.svg" },
+          { "name": "Typescript", "icon": "icons/typescript.svg" },
+          { "name": "Django", "icon": "icons/django.svg" },
+          { "name": "React", "icon": "icons/react.svg" },
+          { "name": "Auth0", "icon": "icons/auth0.svg" }
+        ]
+      }
+    ]
+  }
 }
-  
