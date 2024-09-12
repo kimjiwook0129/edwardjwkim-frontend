@@ -1,8 +1,8 @@
 .navbar {
   display: flex;
+  justify-content: flex-end;
   padding: 1rem;
-  background-color: #909090;
-  height: 30px;
+  height: 20px;
   align-items: center;
 }
 
@@ -19,6 +19,11 @@
   justify-content: space-between;
   padding: 0 5px;
   box-sizing: border-box;
+  margin-left: 5px;
+}
+
+.toggle-switch:first-child {
+  margin-left: 0;
 }
 
 .toggle-switch:hover {
@@ -43,9 +48,15 @@
 }
 
 .toggle-knob-right {
-  left: 30px;
+  left: 31px;
 }
 
 .toggle-text {
   display: none;
+}
+
+.toggle-image {
+  width: 16px; 
+  height: 16px;
+  object-fit: contain;
 }

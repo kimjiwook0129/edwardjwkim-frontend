@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
 .body {
   padding-left: 13rem;
   padding-right: 13rem;
