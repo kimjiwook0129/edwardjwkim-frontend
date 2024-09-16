@@ -1,0 +1,165 @@
+{
+  "tech-experiences": [
+    {
+      "duration": "2022-09-06,2023-04-28",
+      "techStacks": [
+        { "name": "Python", "icon": "icons/python.svg" },
+        { "name": "SQL", "icon": "icons/postgresql.svg" },
+        { "name": "R", "icon": "icons/r.svg" },
+        { "name": "Pandas", "icon": "icons/pandas.svg" },
+        { "name": "Numpy", "icon": "icons/numpy.svg" },
+        { "name": "Dataiku", "icon": "icons/dataiku.svg" },
+        { "name": "Jupyter", "icon": "icons/jupyter.svg" }
+      ],
+      "en-company": "Royal Bank of Canada",
+      "en-title": "Data Engineer Intern",
+      "en-location": "Toronto, Canada",
+      "en-summary": [
+        "Collaborated with auditors across the Chief Audit Executive (CAE) group departments to gather business requirements, refining and implementing 100+ Key Risk Indicator (KRI) metrics using Python(Pandas, Numpy), R, and SQL",
+        "Automated 15+ Extract-Transform-Load (ETL) data pipelines using Dataiku for the Risk Assessment Planning Tool Organizer (RaptOR), facilitating monthly and quarterly data ingestion and metrics updates",
+        "Analyzed End User Data Applications (EUDA) across two systems using Natural Language Processing (NLP) techniques, successfully restoring over 8.5%+ of lost data connections with 100% precision through data analysis and modeling",
+        "Managed bugs and data quality checks within agile development for the RaptOR project, overseeing data pipelines through DEV, QA, UAT, and PROD stages, ensuring continuous feedback and iterative progress"
+      ],
+      "en-description": [
+        "[Project RaptOR]",
+        "The audit data team started developing a platform called RaptOR (Risk Assessment Planning Tool Organizer) two years before I joined the team. This platform collects, standardizes, and visualizes risk indicators by country and branch.",
+        "In the RaptOR team, my role involved meeting with internal stakeholders from various departments to gather requirements for new or revised Key Risk Indicators (KRIs), and developing the corresponding ETL processes. I was also responsible for automating the pipeline to ensure that audit data is updated automatically on a quarterly and monthly basis. For this process, I primarily used the Dataiku data science platform and implemented code recipes using Python, R, and SQL.",
+        "[Project EUDA Analysis]",
+        "ESM and IMS are collections of End User Data Applications (EUDAs). Originally, ESM was intended to be a subset of IMS, containing only EUDAs for specific purposes. However, due to prolonged separate updates by internal users, data consistency between ESM and IMS was corrupted. Additionally, there were no foreign keys linking the EUDAs between the two systems or primary keys within each system. My task was to restore as many of these lost EUDA connections as possible.",
+        "First, I collaborated with previous handlers to analyze and model the data, identifying which columns in the two systems should correspond based on the original intent. Through text analysis and parsing, I identified potential key columns that could serve as primary links between the systems. From the remaining columns capable of serving as key columns, I extracted data where all EUDAs matched 1:1 between ESM and IMS. For EUDAs matching in one-to-many or many-to-many relationships, I utilized columns identified in the initial stage to establish secondary links, ensuring data consistency across all EUDAs without discrepancies.",
+        "By repeating this process, I successfully restored over 8% of the EUDA links with 100% precision. While allowing for false positives could have restored more EUDAs, preventing false positives was prioritized to maintain accuracy and reliability, especially important in the context of audits."
+      ],
+      "en-skills": [
+        "Data Engineering",
+        "ETL/ELT Process",
+        "Natural Language Processing",
+        "Data Pipelines",
+        "Data Modeling",
+        "Data Analysis",
+        "Agile Development"
+      ],
+      "ko-company": "Royal Bank of Canada",
+      "ko-title": "데이터 엔지니어 인턴",
+      "ko-location": "캐나다 토론토",
+      "ko-summary": [
+        "감사 그룹(CAE) 부서의 감사원들과 협력하여 비즈니스 요구사항을 수집하고, 100개 이상의 핵심 리스크 지표(KRI) 메트릭스를 Python(Pandas, Numpy), R, SQL을 사용하여 개선 및 구현",
+        "Risk Assessment Planning Tool Organizer(RaptOR) 개발 과정 중 Dataiku를 사용하여 15개 이상의 Extract-Transform-Load(ETL) 데이터 파이프라인을 자동화하여 월간 및 분기별 데이터 수집 및 메트릭스 업데이트 촉진",
+        "자연어 처리(NLP) 기법을 사용하여 두 시스템의 데이터 응용 프로그램(EUDA)을 분석하고, 데이터 분석 및 모델링을 통해 8.5% 이상의 데이터 연결 손실을 100% 정밀도로 복구",
+        "RaptOR 프로젝트의 애자일 개발 내에서 버그 및 데이터 품질 검사를 관리하며, 데이터 파이프라인의 DEV, QA, UAT, PROD 단계에서 지속적인 피드백과 반복적인 진행 보장"
+        ],
+      "ko-description": [
+        "[프로젝트 RaptOR]",
+        "감사 데이터 팀은 제가 팀에 합류하기 2년 전에 RaptOR(Risk Assessment Planning Tool Organizer)라는 플랫폼 개발을 시작했습니다. 이 플랫폼은 국가 및 지점별로 위험 지표를 수집, 표준화 및 시각화합니다.",
+        "RaptOR 팀에서 제 역할은 다양한 부서의 내부 이해 관계자들과 회의를 통해 새로운 또는 수정된 핵심 리스크 지표(KRI)에 대한 요구사항을 수집하고, 해당 ETL 프로세스를 개발하는 것이었습니다. 또한, 감사 데이터가 월간 및 분기별로 자동으로 업데이트되도록 파이프라인을 자동화하는 책임도 있었습니다. 이 과정에서 주로 Dataiku 데이터 과학 플랫폼을 사용하였고, Python, R, SQL을 사용하여 코드 레시피를 구현하였습니다.",
+        "[프로젝트 EUDA 분석]",
+        "두 개의 시스템, ESM과 IMS는 각각 EUDA(End User Data Applications)의 모음입니다. 기존 목적은 ESM을 IMS의 부분 집합으로서, ESM은 특정 목적을 위한 EUDA만 포함하고 있는 것이었습니다. 그러나 내부 유저들이 오랜 기간 동안 ESM과 IMS 시스템을 별도로 업데이트하면서 두 시스템의 데이터 일관성이 어긋났고, 두 시스템 사이 각 EUDA를 연결하는 외래키 및 각 시스템 내 기본키 역시 부재했습니다. 제 임무는 이 두 시스템 내의 가능한 많은 잃어버린 EUDA 연결을 복구하는 것이었습니다.",
+        "먼저 기존 담당자들과 미팅을 통해 두 시스템의 데이터가 기존 목적 기준 서로 어떤 열에 대응되어야 하는지 데이터를 모델링을 통한 분석을 했습니다. 두 시스템 사이 잠재적인 키 열 역할을 할 열들을 찾고, 텍스트 분석 및 파싱을 통해 일차적으로 사용될 수 있는 열을 걸렀습니다. 그런 다음 키 열로서 역할을 수행할 수 있는 남은 열들에서 ESM과 IMS 사이 모든 EUDA가 1:1로 매칭되는 데이터를 복구된 EUDA로서 추출하고, 그 외에 1대다 혹은 다대다 관계로 매칭되는 EUDA 데이터는 첫 번째 단계에서 별도로 기록해 두었던 열들을 이용해 이차적인 대응 관계를 확인해 모든 EUDA가 일치하는 값을 가질 때(불일치를 허용하지 않음) 추출했습니다.",
+        "이 과정을 반복해 8% 이상의 EUDA 링크를 100%의 정밀도로 복원할 수 있었습니다. 물론 허위 양성을 허용하면 대부분의 EUDA를 복원할 수 있었겠지만, 감사의 세계에서는 허위 양성을 방지하는 것이 링크 복원보다 더 중요했습니다."
+        ],
+      "ko-skills": [
+        "데이터 엔지니어링",
+        "ETL/ELT 프로세스",
+        "자연어 처리",
+        "데이터 파이프라인 구축",
+        "데이터 모델링",
+        "데이터 분석",
+        "애자일 기법"
+      ]
+    },
+    {
+      "duration": "2022-01-10,2022-04-29",
+      "techStacks": [
+        { "name": "Python", "icon": "icons/python.svg" },
+        { "name": "SQL", "icon": "icons/postgresql.svg" },
+        { "name": "Airflow", "icon": "icons/apacheairflow.svg" },
+        { "name": "Pandas", "icon": "icons/pandas.svg" },
+        { "name": "Jupyter", "icon": "icons/jupyter.svg" },
+        { "name": "PyTorch", "icon": "icons/pytorch.svg" }
+      ],
+      "en-company": "Wish (Contextlogic Inc.)",
+      "en-title": "Data Scientist Intern",
+      "en-location": "Toronto, Canada",
+      "en-summary": [
+        "Conducted Exploratory Data Analysis (EDA) on sequential user behavior logs, identifying significant differences between fraudulent and normal user patterns using an Long Short-Term Memory (LSTM) model",
+        "Consolidated 1,500+ user actions into 90 categories based on User Experience (UX) behavior chunks and automated the mapping process using Airflow cron jobs to enhance team insights"
+      ],
+      "en-description": [
+        "At Wish, as a data scientist in the customer risk management team, I was responsible for analyzing user session logs and deriving insights to detect fraudulent data. I performed exploratory data analysis (EDA) and data visualization on sequential user behavior log data to meet the team's requirements. Through this process, I identified significant differences between fraudulent user behavior patterns and regular user behavior patterns using an LSTM model.",
+        "Additionally, there were approximately 1,500 types of user actions. Simply grouping these actions into sequences for each user did not provide substantial insights. Further analysis revealed that these user actions were not all possible interactions via the UI but represented all types of signals communicating with the backend of the app. By categorizing these signals into about 90 categories, I significantly contributed to the team's more detailed analysis.",
+        "This approach enabled more efficient analysis of user behavior data and provided the necessary insights for detecting fraudulent data, thereby enhancing the team's data analysis capabilities."
+      ],
+      "en-skills": [
+        "Data Science", 
+        "Machine Learning", 
+        "Deep Learning", 
+        "Data Analysis", 
+        "Data Modeling", 
+        "Data Visualization"
+      ],
+      "ko-company": "Wish (Contextlogic Inc.)",
+      "ko-title": "데이터 사이언티스트 인턴",
+      "ko-location": "캐나다 토론토",
+      "ko-summary": [
+        "연속 사용자 행동 로그에 대한 탐색적 데이터 분석(EDA)을 수행하여 Long Short-Term Memory(LSTM) 모델을 사용해 사기 사용자와 정상 사용자 패턴 간의 유의미한 차이점을 식별",
+        "사용자 경험(UX) 행동 조각을 기반으로 1,500개 이상의 사용자 행동을 90개 카테고리로 통합하고, 팀의 통찰력을 향상시키기 위해 Airflow 크론 작업을 사용하여 매핑 프로세스를 자동화"
+        ],
+      "ko-description": [
+        "Wish에서 고객 위험 관리 팀의 데이터 과학자로서 사용자 세션 로그를 분석하고 사기 데이터를 감지하기 위한 통찰력을 도출하는 역할을 맡았습니다. 팀의 요구사항을 충족시키기 위해 연속 사용자 행동 로그 데이터에 대한 탐색적 데이터 분석(EDA) 및 데이터 시각화를 수행했습니다. 이를 통해 LSTM 모델을 사용하여 사기 사용자 행동 패턴과 정상 사용자 행동 패턴 간의 유의미한 차이점을 식별했습니다.",
+        "약 1,500종의 사용자 행동이 있었으며, 이러한 행동을 단순히 각 사용자별로 시퀀스로 그룹화하는 것은 상당한 통찰력을 제공하지 못했습니다. 그래서 추가 분석을 통해 이러한 사용자 행동이 모두 UI를 통한 상호작용이 아니라 앱 백엔드와 통신하는 모든 유형의 신호를 나타낸다는 것을 밝혀냈습니다. 이러한 신호를 약 90개 카테고리로 분류하여 팀의 더 상세한 분석에 크게 기여했습니다.",
+        "이 접근 방식은 사용자 행동 데이터의 효율적인 분석을 가능하게 했으며, 사기 데이터를 감지하기 위한 필요한 통찰력을 제공함으로써 팀의 데이터 분석 역량을 향상시켰습니다."
+        ],
+      "ko-skills": [
+        "데이터 과학", 
+        "머신러닝", 
+        "딥러닝", 
+        "데이터 분석", 
+        "데이터 모델링", 
+        "데이터 시각화"
+      ]
+    },
+    {
+      "duration": "2019-05-06,2019-08-30",
+      "techStacks": [
+        { "name": "Javascript", "icon": "icons/javascript.svg" },
+        { "name": "HTML", "icon": "icons/html5.svg" },
+        { "name": "CSS", "icon": "icons/css3.svg" },
+        { "name": "PHP", "icon": "icons/php.svg" },
+        { "name": "D3.js", "icon": "icons/d3dotjs.svg" },
+        { "name": "Google Sheets", "icon": "icons/googlesheets.svg" },
+        { "name": "Google Forms", "icon": "icons/googleforms.svg" }
+      ],
+      "en-company": "Barcode of Life Data Systems", 
+      "en-title": "Data Analyst & Programmer Intern",
+      "en-location": "Guelph, Canada",
+      "en-summary": [
+        "Designed, planned, and implemented a comprehensive automated DNA barcode data workflow dashboard using Google Apps API, enhancing data management efficiency by streamlining processes and data visualization",
+        "Compiled taxonomy JSON files to create and visualize responsive multi-node hierarchical trees using D3.js"
+      ],
+      "en-description": [
+        "At BOLD Systems, the lab’s primary task was to collect DNA barcode data for various species of plants and animals, record it on the server, and process it for inclusion in the laboratory archive. At the time, multiple researchers were conducting various DNA barcoding tasks, but inefficiencies arose due to the lack of effective communication regarding the progress of each task. To address this issue, I designed and developed an automated dashboard.",
+        "First, I gathered requirements based on the laboratory's DNA barcoding task manual and recorded the progress of each task. Considering that the primary users were biological researchers, I facilitated easy data entry and verification through Google Forms. I aggregated the collected data according to the type of task and created a dashboard that displayed ongoing tasks and their progress. This dashboard was implemented using Google API (Forms & Sheets) and PHP, and was deployed on the laboratory server to be displayed in real-time on a large TV. Researchers could now easily monitor the progress of tasks in real-time via Google Sheets on their computers."
+      ],
+      "en-skills": [
+        "Data Analysis", 
+        "Data Visualization", 
+        "Dashboard Design"
+      ],
+      "ko-company": "Barcode of Life Data Systems",
+      "ko-title": "데이터 분석 프로그래머 인턴",
+      "ko-location": "캐나다 구웰프",
+      "ko-summary": [
+        "Google Apps API를 사용하여 종합적인 자동화 DNA 바코드 데이터 워크플로우 대시보드를 설계, 계획 및 구현하여 데이터 관리 효율성을 향상하고 프로세스 및 데이터 시각화를 간소화",
+        "D3.js를 사용하여 분류학 JSON 파일을 기반으로 반응형 계층 구조 트리를 시각화"
+        ],
+      "ko-description": [
+        "BOLD Systems에서 연구실의 주요 업무는 다양한 식물 및 동물 종의 DNA 바코드 데이터를 수집하고 서버에 기록한 후 실험실 아카이브에 포함시키는 것이었습니다. 당시 여러 연구자가 다양한 DNA 바코딩 작업을 수행하고 있었지만, 각 작업의 진행 상황에 대한 효과적인 소통 부족으로 인해 비효율이 발생했습니다. 이 문제를 해결하기 위해 저는 자동화된 대시보드를 설계하고 개발했습니다.",
+        "먼저 연구실의 DNA 바코딩 작업 매뉴얼을 바탕으로 요구사항을 수집하고 각 작업의 진행 상황을 기록했습니다. 주 사용자가 생물학 연구자들이었기 때문에 Google Forms를 통해 데이터 입력 및 검증을 쉽게 할 수 있도록 했습니다. 수집된 데이터를 작업 유형에 따라 집계하고 진행 중인 작업과 그 진행 상황을 표시하는 대시보드를 만들었습니다. 이 대시보드는 Google API(Forms 및 Sheets)와 PHP를 사용하여 구현되었으며, 실시간으로 큰 TV에 표시되도록 연구실 서버에 배포되었습니다. 연구자들은 이제 Google Sheets를 통해 컴퓨터에서 작업 진행 상황을 실시간으로 쉽게 모니터링할 수 있었습니다."
+        ],
+      "ko-skills": [
+        "데이터 분석", 
+        "데이터 시각화", 
+        "대시보드 설계"
+      ]
+    }
+  ]
+}

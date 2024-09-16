@@ -1,0 +1,60 @@
+.work-experience-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.experience-item {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.experience-item.expanded {
+    max-height: 1000px; /* Adjust as needed for the content */
+}
+
+.experience-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.view-details-button {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.details-box {
+    margin-top: 15px;
+}
+
+.skills,
+.tech-stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tech-icon {
+    width: 30px;
+    height: 30px;
+}
+
+p {
+    margin: 5px 0;
+}

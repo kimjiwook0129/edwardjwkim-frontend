@@ -18,7 +18,7 @@ const Nav: React.FC<{}> = () => {
         <div className={`${styles['toggle-knob']} ${theme === 'dark' ? styles['toggle-knob-right'] : ''}`}>
           <img 
             src={theme === 'light' ? '/sun.png' : '/moon.png'} 
-            alt={theme === 'light' ? 'Sun' : 'Moon'} 
+            alt={theme === 'light' ? 'Sun icons created by bqlqn - Flaticon' : 'Moon icons created by Good Ware - Flaticon'} 
             className={styles['toggle-image']}
           />
         </div>

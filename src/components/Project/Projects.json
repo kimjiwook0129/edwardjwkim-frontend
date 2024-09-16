@@ -1,0 +1,194 @@
+{
+    "publication": [
+      {
+        "duration": "2023-11-01,2024-02-28",
+        "techStacks": [
+          { "name": "Python", "icon": "icons/python.svg" },
+          { "name": "PyTorch", "icon": "icons/pytorch.svg" },
+          { "name": "Jupyter", "icon": "icons/jupyter.svg" },
+          { "name": "Pandas", "icon": "icons/pandas.svg" },
+          { "name": "Numpy", "icon": "icons/numpy.svg" }
+        ],
+        "en-title": "Dilated SE-DenseNet for Radiographic Classification of Brain Tumors",
+        "en-organization": "University of Waterloo",
+        "en-summary": [
+          "Contributed as First Author",
+          "Currently under Scientific Reports - Nature peer review progress",
+          "Enhanced the DenseNet121 Convolutional DNN architecture for classifying brain tumor types by integrating dilation layers and SE (Squeeze-and-Excitation) modules, resulting in an improved F1-score from 0.834 to 0.967."
+        ],
+        "en-description": [
+          "We have enhanced the DenseNet121 architecture to classify brain tumor types by integrating dilation layers and a Squeeze-and-Excitation (SE) module. This innovation aims to improve the model's capability to process and interpret complex radiographic data effectively.",
+          "By adjusting the DenseNet121 framework, we successfully enhanced its sensitivity to contextual information in brain MRI images, which led to a more accurate classification of various tumor types (f1-score improved from 0.834 to 0.967). This advancement demonstrates the potential of modified neural networks in medical imaging and paves the way for more precise and early detection of brain tumors, potentially improving patient outcomes."
+        ],
+        "en-skills": [
+          "Deep Learning",
+          "Medical Image Classification",
+          "Supervised Learning"
+        ],
+        "ko-title": "Dilated SE-DenseNet for Radiographic Classification of Brain Tumors",
+        "ko-organization": "워털루 대학교",
+        "ko-summary": [
+          "제1 저자로 기여함",
+          "현재 Scientific Reports - Nature Peer Review 진행 중",
+          "확장 레이어와 SE (Squeeze-and-Excitation) 모듈을 통합하여 뇌종양 유형 분류를 위한 DenseNet121 Convolutional DNN 아키텍처를 개선하여 F1-score 0.834에서 0.967로 향상"
+        ],
+        "ko-description": [
+          "확장 레이어와 Squeeze-and-Excitation (SE) 모듈을 통합하여 DenseNet121 아키텍처를 개선함으로써 뇌종양 유형을 분류할 수 있도록 했습니다. 이 혁신은 모델이 복잡한 방사선 데이터를 효과적으로 처리하고 해석할 수 있는 능력을 향상시키는 것을 목표로 합니다.",
+          "DenseNet121 프레임워크를 조정함으로써 저희는 뇌 MRI 이미지의 맥락 정보에 대한 민감도를 성공적으로 향상시켜 다양한 종양 유형의 분류 정확도를 높였습니다 (F1-점수가 0.834에서 0.967로 개선됨). 이 발전은 의료 이미지 분류에 있어 수정된 신경망의 잠재력을 보여주며, 뇌종양의 더 정확하고 조기 발견을 가능하게 함으로써 환자의 결과를 개선할 수 있습니다."
+        ],
+        "ko-skills": [
+          "딥 러닝",
+          "의료 이미지 분류",
+          "지도 학습"
+        ]
+      }
+    ],
+    "projects-major": [
+      {
+        "duration": "2023-04-15,2023-10-30",
+        "techStacks": [
+          { "name": "Python", "icon": "icons/python.svg" },
+          { "name": "Typescript", "icon": "icons/typescript.svg" },
+          { "name": "Django", "icon": "icons/django.svg" },
+          { "name": "React", "icon": "icons/react.svg" },
+          { "name": "Auth0", "icon": "icons/auth0.svg" }
+        ],
+        "en-title": "Project Zone",
+        "en-organization": "Project Zone Team",
+        "en-summary": [
+          "Found a project community platform that connects designers, developers, and enthusiasts.",
+          "Developed Project Zone's backend REST API using Django and Auth0"
+        ],
+        "en-description": [
+          "Young professionals and students often seek opportunities to develop their skills and build projects that can enhance their job market prospects. However, there has been a lack of a dedicated platform for entry-level professionals to connect with others for collaborative projects and learning. To address this gap, we created Project Zone, a platform designed to help users find collaborators and work on meaningful projects together.",
+          "Unfortunately, we have decided to discontinue Project Zone. We halted the project at the beta stage, before proceeding with user acceptance testing, after concluding that it no longer holds a competitive edge in the market."
+        ],
+        "en-skills": [
+          "Backend Development"
+        ],
+        "ko-title": "Project Zone",
+        "ko-organization": "Project Zone Team",
+        "ko-summary": [
+          "디자이너, 개발자 및 기술 애호가들을 연결해주는 프로젝트 커뮤니티 플랫폼인 Project Zone을 개발",
+          "Django와 Auth0를 사용하여 백엔드 REST API 개발"
+        ],
+        "ko-description": [
+          "취업 준비생들, 그리고 학생들은 종종 자신의 기술을 개발하고 취업 시장에서의 경쟁력을 높일 수 있는 프로젝트를 진행할 기회를 찾습니다. 그러나 오직 이런 특정 층의 협력 프로젝트를 위해 사람들을 찾고 배우기 위한 전용 플랫폼은 부족했습니다. 이러한 격차를 해소하기 위해, 저희는 사용자들이 협력자를 찾고 의미 있는 프로젝트를 함께 진행할 수 있도록 도와주는 플랫폼인 Project Zone을 만들었습니다.",
+          "그러나 안타깝게도, 현재는 Project Zone의 개발을 중단하기로 결정했습니다. 시장에서의 경쟁력이 더 이상 없다고 판단하여 사용자 수용 테스트를 진행하기 전 베타 단계에서 프로젝트를 중단하게 되었습니다."
+        ],
+        "ko-skills": [
+          "백엔드 개발"
+        ]
+      },
+      {
+        "duration": "2024-08-01,2024-09-15",
+        "techStacks": [
+          { "name": "Typescript", "icon": "icons/typescript.svg" },
+          { "name": "React", "icon": "icons/react.svg" },
+          { "name": "AWS", "icon": "icons/amazonwebservices.svg" },
+          { "name": "Amazon S3", "icon": "icons/amazons3.svg" },
+          { "name": "Amazon Route 53", "icon": "icons/amazonroute53.svg" }
+        ],
+        "en-title": "Portfolio Website",
+        "en-organization": "Personal Use",
+        "en-summary": [
+          "This website you are looking at"
+        ],
+        "en-description": [
+          "This website you are looking at"
+        ],
+        "en-skills": [
+          "Frontend Development"
+        ],
+        "ko-title": "포트폴리오 웹사이트",
+        "ko-organization": "개인 용도",
+        "ko-summary": [
+          "지금 보고 계신 웹사이트"
+        ],
+        "ko-description": [
+          "지금 보고 계신 웹사이트"
+        ],
+        "ko-skills": [
+          "프론트엔드 개발"
+        ]
+      },
+      {
+        "duration": "2024-01-26,2024-02-02",
+        "techStacks": [
+          { "name": "Python", "icon": "icons/python.svg" },
+          { "name": "OpenAI", "icon": "icons/openai.svg" },
+          { "name": "Dataiku", "icon": "icons/dataiku.svg" },
+          { "name": "Jupyter", "icon": "icons/jupyter.svg" }
+        ],
+        "en-title": "Scotiabank Data Discovery Days 2024 AI-thon",
+        "en-organization": "Scotiabank",
+        "en-summary": [
+          ""
+        ],
+        "en-description": [
+          "AI-thon"
+        ],
+        "en-skills": [
+          "AI/LLMs",
+          "Fine-tuning",
+          "Prompt Engineering",
+          "Natural Language Processing (NLP)",
+          "Sentiment Analysis",
+          "Data Science",
+          "Data Engineering"
+        ],
+        "ko-title": "Scotiabank Data Discovery Days 2024 AI-thon",
+        "ko-organization": "Scotiabank",
+        "ko-summary": [
+          ""
+        ],
+        "ko-description": [
+          ""
+        ],
+        "ko-skills": [
+          "AI/LLMs",
+          "파인튜닝",
+          "프롬프트 엔지니어링",
+          "자연어 처리",
+          "정서 분석",
+          "데이터 사이언스",
+          "데이터 엔지니어링"
+        ]
+      }
+    ],
+    "projects-minor": [
+      {
+        "duration": "2024-07-25,2024-07-26",
+        "techStacks": [
+          { "name": "Typescript", "icon": "icons/typescript.svg" },
+          { "name": "React", "icon": "icons/react.svg" },
+          { "name": "AWS", "icon": "icons/amazonwebservices.svg" },
+          { "name": "Amazon S3", "icon": "icons/amazons3.svg" },
+          { "name": "Amazon Route 53", "icon": "icons/amazonroute53.svg" }
+        ],
+        "link": "https://grocerysplit.edwardjwkim.com/",
+        "en-title": "Grocery Split",
+        "en-organization": "Personal Use",
+        "en-summary": [
+          "For splitting bills"
+        ],
+        "en-description": [
+          "For splitting bills"
+        ],
+        "en-skills": [
+          "Frontend Development"
+        ],
+        "ko-title": "Grocery Split",
+        "ko-organization": "개인 용도",
+        "ko-summary": [
+          "친구들과 식료품을 사고 산만큼/먹은만큼 쉽게 돈을 나누게 하기 위함"
+        ],
+        "ko-description": [
+          "친구들과 식료품을 사고 산만큼/먹은만큼 쉽게 돈을 나누게 하기 위함"
+        ],
+        "ko-skills": [
+          "프론트엔드 개발"
+        ]
+      }
+    ]
+  }
