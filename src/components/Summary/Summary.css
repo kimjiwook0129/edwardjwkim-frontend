@@ -1,77 +1,102 @@
 .summary-container {
-    margin-top:10px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* color: #ffffff; */
     padding: 2rem;
     border-radius: 8px;
     max-width: 900px;
     margin: 0 auto;
-    /* background-color: #1e1e1e; */
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #b1b1b1;
+}
 
-  }
-
-  body.light .summary-container {
-    background-color: #1e1e1e;
-    color: #ffffff; 
-  }
-  
-  body.dark .summary-container {
-     
-    background-color: #d4d4d4; 
+body.light .summary-container {
+    background-color: #f9f9f9;
     color: #000000;
-    
-  }
+}
 
-  
-  
-  .text-container {
+body.dark .summary-container {
+    background-color: #232323;
+    color: #ffffff;
+}
+
+.image-container {
     flex: 1;
-    text-align: left;
-  }
-  
-  .text-container h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-  }
-  .text-container h1 strong {
-    font-size: 2.5rem;
-    color: #ffffff;
-  }
-  
-  .text-container p {
-    font-size: 1rem;
-    margin-bottom: 0;
-    /* color: #ffffff; */
-    line-height: 1.5;
-  }
-  
-  .image-container {
-    margin-left: 0rem;
-  }
-  
-  .profile-image {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
     width: 300px;
     height: auto;
     border-radius: 50%;
-  }
-
-
-@media (max-width: 1199px) {
 }
-  
-  @media (max-width: 991px) {
-  }
-  
-  @media (max-width: 767px) {
+
+.content-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.text-container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.text-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: inherit;
+}
+
+.text-container h3 strong {
+    font-size: 1.6rem;
+    color: inherit;
+}
+
+.text-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: inherit; 
+}
+
+.links-container {
+    display: flex;
+    gap: 10px;
+}
+
+.link-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+
+.link-circle {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: background-color 0.3s, transform 0.3s;
+  line-height: 0;
+  border: 1px solid #dadada;
+}
+
+.link-circle:hover {
+  transform: scale(1.1);
+  background-color: #dadada;
+}
+
+@media (max-width: 767px) {
     .summary-container {
         flex-direction: column;
-      }
-  }
-  
-  @media (max-width: 575px) {
-  }
-  
+    }
+}
+
+

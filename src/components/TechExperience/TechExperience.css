@@ -1,37 +1,93 @@
-.work-experience-container {
-    padding: 20px;
+.tech-experience-container {
+    padding: 10px;
     max-width: 800px;
     margin: 0 auto;
+    padding-top: 0;
+    margin-top: 0;
 }
 
-.header {
-    margin-bottom: 20px;
+.job-company {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
 }
 
-.experience-list {
+.job-title {
+    display: flex;
+}
+
+.job-role {
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.job-type {
+    font-size: 16px;
+    font-style: italic;
+    align-self: flex-end;
+    margin-left: 4px;
+}
+
+
+
+.tech-experience-list {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.experience-item {
-    background-color: #f4f4f4;
+.tech-experience-item {
     padding: 15px;
     border-radius: 8px;
     cursor: pointer;
-    transition: max-height 0.3s ease;
-    overflow: hidden;
     border: 1px solid #ddd;
+    position: relative;
+    margin-bottom: 20px;
+    max-height:auto;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.experience-item.expanded {
-    max-height: 1000px; /* Adjust as needed for the content */
+.tech-experience-item.light {
+    background-color: #f9f9f9;
+}
+.tech-experience-item.light:hover {
+    background-color: #e0e0e0; 
+}
+.tech-experience-item.dark {
+    background-color: #232323;
+}
+.tech-experience-item.dark:hover {
+    background-color: #303030; 
 }
 
-.experience-summary {
+.tech-experience-item.expanded {
+    max-height:auto;
+}
+
+.tech-experience-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tech-summary-left, .tech-summary-right {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    align-items: flex-start;
+}
+
+@media (max-width: 650px) {
+    .tech-experience-summary {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .tech-summary-right {
+        align-items: flex-start;
+        width: 100%;
+    }
 }
 
 .view-details-button {
@@ -39,15 +95,41 @@
     margin-top: 10px;
 }
 
-.details-box {
+.tech-details-box {
     margin-top: 15px;
+    position: relative;
+    display: block;
 }
 
-.skills,
-.tech-stack-list {
+.skills {
     display: flex;
-    flex-wrap: wrap;
+    align-items: first baseline;
+}
+
+.skills > span {
+    margin-right: 5px;
+}
+
+.skills-list {
+    display: inline; 
+    text-align: left;
+}
+
+.tech-stacks {
+    display: flex;
+    align-items: first baseline;
+}
+
+.tech-stacks-list,
+.tech-stacks {
+    display: flex;
+    align-items: flex-start;
     gap: 5px;
+    margin-top: 10px;
+}
+.tech-stacks-list {
+    margin-left: 5px;
+    flex-wrap: wrap;
 }
 
 .tech-icon {
@@ -55,6 +137,65 @@
     height: 30px;
 }
 
-p {
-    margin: 5px 0;
+.job-location-duration {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.tech-detail-box-header {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.tech-stack-circle {
+    width: 40px; /* Size of the circle */
+    height: 40px; /* Size of the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* White background for the circle */
+    border-radius: 50%; /* Make it a circle */
+    border: 1px solid #ddd; /* Optional: Add a border to the circle */
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.tech-icon {
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+}
+
+/* Optional: Add hover effect for the circle */
+.tech-stack-circle:hover {
+    background-color: #f0f0f0;
+}
+
+
+.tech-tooltip {
+    position: absolute;
+    bottom: -25px; /* Position below the circle */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #131313;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 12px; /* Smaller text */
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Prevent tooltip from interfering with hover */
+    z-index: 1;
+}
+
+.tech-stack-circle:hover .tech-tooltip {
+    opacity: 1;
+}
+
+/* Optional: Add hover effect for the circle */
+.tech-stack-circle:hover {
+    background-color: #cbcbcb;
+    transform: scale(1.1);
 }

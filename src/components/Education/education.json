@@ -1,70 +1,66 @@
 {
-    "en-title": "Education",
-    "en": [
+    "en-header": "Education",
+    "ko-header": "학력",
+    "en-summary": "",
+    "ko-summary": "",
+    "en-instruction": "You can open or close the details by clicking each box quickly. It’s designed to ignore slow clicks, allowing you to drag the text for reading or copying.",
+    "ko-instruction": "각 박스를 빠르게 클릭하면 세부 정보를 열거나 닫을 수 있습니다. 느린 클릭에는 반응하지 않도록 하여, 텍스트를 드래그하여 읽거나 복사하실 수 있도록 만들었습니다.",
+    "educations": [
         {
-            "school": "University of Waterloo", 
-            "program": "Bachelor of Mathematics, Applied Mathematics with Computing Option",
             "duration": "2017-09-01,2024-04-30",
-            "location": "Waterloo, Canada",
-            "summary": [
+            "en-school": "University of Waterloo",
+            "ko-school": "워털루 대학교",
+            "en-location": "Waterloo, Canada",
+            "ko-location": "캐나다 워털루",
+            "en-program": "Bachelor of Mathematics",
+            "ko-program": "응용수학 전공, 컴퓨터공학 부전공 (학사)",
+            "en-summary": [
                 "Grade: CGPA 85.95 / 100",
                 "Bachelor of Mathematics, Honours Applied Mathematics - Computing Option - Co-operative Program (Distinction)",
                 "Received Excellent Standing during all academic terms",
                 "Leave of absence from Sep 2019 to Aug 2021 due to mandatory military service"
             ],
-            "description": [
+            "en-description": [
                 "I graduated from the University of Waterloo with a Bachelor of Mathematics, majoring in Applied Mathematics with a Computing Option. My academic journey spanned from September 2017 to April 2024, during which I maintained a CGPA of 85.95 out of 100. I was awarded a distinction for my outstanding performance and received Excellent Standing during all academic terms. I took a leave of absence from September 2019 to August 2021 to fulfill my mandatory military service, after which I resumed my studies and successfully completed my degree.",
                 "During my time at the University of Waterloo, I completed nine academic terms and five co-op terms. These co-op terms, which refer to internships at various companies, provided me with practical industry experience and complemented my academic learning. The combination of rigorous coursework and hands-on experience through co-op placements significantly enhanced my skills and prepared me for a career in data science and engineering.",
                 "Relevant coursework that has been instrumental in shaping my career includes Applications of Deep Learning, Distributed Analytics, Management Information Systems, Algorithmic Problem Solving, Computational Statistics and Data Analysis, Databases, Data Structures, Statistics, and Object-Oriented Programming. These courses provided a solid foundation in both theoretical and practical aspects of data science and computing, enabling me to develop a comprehensive understanding of the field and apply my knowledge effectively in real-world scenarios."
-            ]
-        },
-        {
-            "school": "Cairo American College",
-            "program": "High School Diploma",
-            "duration": "2013-03-20,2017-06-02",
-            "location": "Cairo, Egypt",
-            "summary": [
-                "Consistently received subject-specific awards and Top 10 Scholar recognition each semester in the 11th and 12th grades, culminating in the Senior Mathematics Award upon graduation",
-                "Active in extracurricular activities, including the Varsity Track and Field team, Varsity Cross-Country team, and Varsity Dance team",
-                "Achieved perfect scores in all IB and AP courses taken (IB HL Physics, IB HL Mathematics, AP Statistics) and scored 1490 on the SAT"
             ],
-            "description": [
-                "At Cairo American College, I initially struggled with my studies due to the language barrier and adjusting to the American school system after living in Korea. However, as I progressed through the grades, my academic performance significantly improved. From the 10th grade onwards, I began receiving top awards in various subjects. By the 11th and 12th grades, I not only received subject-specific awards but also consistently ranked as a Top 10 Scholar each semester. Upon graduating in the 12th grade, I was honored with the Senior Mathematics Award.",
-                "In addition to my academic achievements, I was actively involved in extracurricular activities. I was a member of the Varsity Track and Field team, the Varsity Cross-Country team, and the Varsity Dance team. These activities helped me develop teamwork, leadership, and time management skills, which complemented my academic pursuits and personal growth.",
-                "Moreover, I excelled in rigorous courses, achieving perfect scores in all IB and AP subjects I undertook, such as IB HL Physics, IB HL Mathematics, and AP Statistics."
-            ]
-        }
-    ],
-    "ko-title": "학력",
-    "ko": [
-        {
-            "school": "워털루대학교", 
-            "program": "응용수학 전공, 컴퓨터공학 부전공 학사과정",
-            "duration": "2017-09-01,2024-04-30",
-            "location": "캐나다 워털루",
-            "summary": [
+            "ko-summary": [
                 "학점: CGPA 85.95 / 100",
                 "수학 학사, 응용 수학 - 컴퓨팅 부전공 - 코업 과정 (우수 졸업)",
                 "모든 학기 동안 우수 성적 유지",
                 "2019년 9월부터 2021년 8월까지 의무 군복무로 인한 휴학"
             ],
-            "description": [
+            "ko-description": [
                 "저는 워털루 대학교에서 수학 학사 학위를 취득하였으며, 전공은 컴퓨팅 옵션을 포함한 응용 수학입니다. 제 학업 기간은 2017년 9월부터 2024년 4월까지였으며, 이 기간 동안 평균(CGPA) 85.95/100을 유지했습니다. 학업 성과가 우수하여 우등 졸업(Distinction)으로 학위를 받았고, 모든 학기 동안 우수(Excellent Standing) 성적을 유지했습니다. 2019년 9월부터 2021년 8월까지는 의무 군복무를 위해 휴학하였으며, 복학 후 학업을 성공적으로 마쳤습니다.",
                 "워털루 대학교에서 공부하는 동안 저는 9개의 학기와 5개의 코업 학기를 완료했습니다. 코업 학기(Co-op terms)는 다양한 회사에 취업해 인턴십을 수행하는 학기로, 이를 통해 실제 산업 경험을 쌓을 수 있었습니다. 엄격한 학업 과정과 실무 경험을 결합하여 제 기술을 크게 향상시켰고, 데이터 과학 및 엔지니어링 분야에서의 경력을 준비하는 데 큰 도움이 되었습니다.",
                 "제 경력에 중요한 역할을 한 관련 과목으로는 딥러닝 응용, 분산 분석, 경영 정보 시스템, 알고리즘 문제 해결, 계산 통계 및 데이터 분석, 데이터베이스, 자료 구조, 통계학, 객체 지향 프로그래밍 등이 있습니다. 이 과목들은 데이터 과학 및 컴퓨팅의 이론적, 실용적 측면에서 견고한 기초를 제공하여, 제가 실제 상황에서 지식을 효과적으로 적용할 수 있도록 도와주었습니다."
             ]
         },
         {
-            "school": "Cairo American College",
-            "program": "고등학교",
             "duration": "2013-03-20,2017-06-02",
-            "location": "이집트 카이로",
-            "summary": [
+            "en-school": "Cairo American College",
+            "ko-school": "Cairo American College",
+            "en-location": "Cairo, Egypt",
+            "ko-location": "이집트 카이로",
+            "en-program": "High School Diploma",
+            "ko-program": "고등학교",
+            "en-summary": [
+                "Consistently received subject-specific awards and Top 10 Scholar recognition each semester in the 11th and 12th grades, culminating in the Senior Mathematics Award upon graduation",
+                "Active in extracurricular activities, including the Varsity Track and Field team, Varsity Cross-Country team, and Varsity Dance team",
+                "Achieved perfect scores in all IB and AP courses taken (IB HL Physics, IB HL Mathematics, AP Statistics) and scored 1490 on the SAT"
+            ],
+            "en-description": [
+                "At Cairo American College, I initially struggled with my studies due to the language barrier and adjusting to the American school system after living in Korea. However, as I progressed through the grades, my academic performance significantly improved. From the 10th grade onwards, I began receiving top awards in various subjects. By the 11th and 12th grades, I not only received subject-specific awards but also consistently ranked as a Top 10 Scholar each semester. Upon graduating in the 12th grade, I was honored with the Senior Mathematics Award.",
+                "In addition to my academic achievements, I was actively involved in extracurricular activities. I was a member of the Varsity Track and Field team, the Varsity Cross-Country team, and the Varsity Dance team. These activities helped me develop teamwork, leadership, and time management skills, which complemented my academic pursuits and personal growth.",
+                "Moreover, I excelled in rigorous courses, achieving perfect scores in all IB and AP subjects I undertook, such as IB HL Physics, IB HL Mathematics, and AP Statistics."
+            ],
+            "ko-summary": [
                 "11학년과 12학년 동안 과목별 최우수상 및 매 학기 Top 10 Scholar 수상, Senior Mathematics Award 수상",
                 "Varisty 육상부, Varisty 크로스컨트리팀, Varisty 댄스팀에서 활동",
                 "IB HL 물리, IB HL 수학, AP 통계 등 모든 IB 및 AP 과목에서 만점, SAT 1490점 획득"
             ],
-            "description": [
+            "ko-description": [
                 "처음에는 한국에서 살다가 미국 학교에 적응하느라 언어 장벽과 학업에 어려움을 겪었지만, 학년이 올라갈수록 성적이 크게 향상되었습니다. 10학년부터 여러 과목에서 최우수상을 받기 시작했습니다. 11학년과 12학년에는 매 학기 과목별 최우수상뿐만 아니라 Top 10 Scholar로 꾸준히 선정되었습니다. 졸업하며 Senior Mathematics Award을 수상했습니다.",
                 "학업 성취 외에도, Varisty 육상부, 크로스컨트리 팀, 댄스 팀 등 다양한 교외 활동에 적극적으로 참여했습니다. 이러한 활동을 통해 팀워크, 리더십, 시간 관리 능력을 개발하여 학업과 개인적인 성장을 동시에 이룰 수 있었습니다.",
                 "또한, IB HL 물리, IB HL 수학, AP 통계 등 제가 수강한 모든 IB 및 AP 과목에서 만점을 받았고, 우수한 성적으로 고등학교를 마쳤습니다."

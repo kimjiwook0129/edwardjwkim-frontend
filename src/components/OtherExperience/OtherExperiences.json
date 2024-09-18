@@ -1,10 +1,16 @@
 {
-    "summary": "",
+    "en-header": "Other Experiences",
+    "ko-header": "기타 경력",
+    "en-summary": "",
+    "ko-summary": "",
+    "en-instruction": "You can open or close the details by clicking each box quickly. It’s designed to ignore slow clicks, allowing you to drag the text for reading or copying.",
+    "ko-instruction": "각 박스를 빠르게 클릭하면 세부 정보를 열거나 닫을 수 있습니다. 느린 클릭에는 반응하지 않도록 하여, 텍스트를 드래그하여 읽거나 복사하실 수 있도록 만들었습니다.",
     "other-experiences": [
       {
         "duration": "2020-01-28,2021-08-07",
         "en-company": "Ministry of National Defense, Republic of Korea",
-        "en-title": "Sergeant, Squad Leader, Administrative",
+        "en-role": "Sergeant",
+        "en-type": "Full-Time (Mandatory Service)",
         "en-location": "Busan, South Korea",
         "en-summary": [
             "Independently managed daily transactions and prepared monthly financial settlements as an Administrative Soldier",
@@ -27,7 +33,8 @@
             "Logistics Management"
         ],
         "ko-company": "국군복지단",
-        "ko-title": "육군 병장 만기전역",
+        "ko-role": "육군 병장",
+        "ko-type": "만기 전역",
         "ko-location": "대한민국 부산",
         "ko-summary": [
             "행정병으로서 일일 거래를 관리하고 월말 재정 결산을 담당했습니다",
@@ -53,7 +60,8 @@
       {
         "duration": "2019-12-09,2020-01-27",
         "en-company": "ASAP Academy",
-        "en-title": "IB / SAT Mathematics Instructor",
+        "en-role": "IB / SAT Mathematics Instructor",
+        "en-type": "Part-time",
         "en-location": "Seoul, South Korea",
         "en-summary": [
           "Instructed International Baccalaureate Higher Level (IB HL) Mathematics I & II, and SAT Mathematics",
@@ -69,7 +77,8 @@
           "IB/SAT Mathematics"
         ],
         "ko-company": "프리미엄 맞춤수업 학원",
-        "ko-title": "IB/SAT 수학 강사",
+        "ko-role": "IB/SAT 수학 강사",
+        "ko-type": "시간제",
         "ko-location": "대한민국 서울",
         "ko-summary": [
           "International Baccalaureate Higher Level (IB HL) 수학 I & II 및 SAT 수학 지도",
@@ -88,7 +97,8 @@
       {
         "duration": "2018-05-07,2018-08-24",
         "en-company": "Sheridan College",
-        "en-title": "Computer Mathematics Learning Assistant",
+        "en-role": "Computer Mathematics Learning Assistant",
+        "en-type": "Internship",
         "en-location": "Oakville, Canada",
         "en-summary": [
           "Conducted 40% of the tutorials and managed all computer mathematics drop-in sessions at the Trafalgar campus",
@@ -105,7 +115,8 @@
           "Computer Mathematics"
         ],
         "ko-company": "쉐리든 대학교", 
-        "ko-title": "컴퓨터수학 조교",
+        "ko-role": "컴퓨터수학 조교",
+        "ko-type": "인턴쉽",
         "ko-location": "캐나다 옥빌",
         "ko-summary": [
           "쉐리던 대학교 Trafalgar 캠퍼스에서 전체 수학 과목 튜토리얼의 40%를 진행하고 모든 컴퓨터 수학 드롭인 세션을 관리함",
@@ -125,97 +136,107 @@
       {
         "duration": "2019-12-01,2020-01-27",
         "en-company": "Top Star Entertainment",
-        "en-title": "",
+        "en-role": "Background Actor, AD Assistant",
+        "en-type": "Contract",
         "en-location": "Seoul, South Korea",
         "en-summary": [
-          
+          "Dramas featured in: Dr. Romantic, Crash Landing on You, Welcome",
+          "[External] Audience: Seafood User Guide, Immortal Songs"
         ],
         "en-description": [
-          
+          "Student @ Dr. Romantic 2 Ep 3 Epilogue",
+          "Reporter & office worker @ Crash Landing on You Ep 12",
+          "AD Assistant @ Welcome",
+          "Audience @ Seafood User Guide [External]",
+          "Audience @ Immortal Songs [External]"
         ],
         "en-skills": [
+          "Acting"
         ],
         "ko-company": "탑스타엔터테인먼트", 
-        "ko-title": "엑스트라, 보조연기자, AD보조",
+        "ko-role": "엑스트라, AD보조",
+        "ko-type": "계약직",
         "ko-location": "대한민국 서울",
         "ko-summary": [
-          "출연 작품: 낭만닥터, 사랑의 불시착",
-          "AD보조 작품: 어서와"
+          "작품: 낭만닥터2, 사랑의 불시착, 어서와",
+          "월드기획 방청객 출연: 수산물 사용설명서, 불후의 명곡"
         ],
         "ko-description": [
-          "",
-          ""
+          "낭만닥터2) 강의실 및 도서관 학생 역을 맡았습니다: 3화 에필로그",
+          "사랑의 불시착) 기자 및 직장인 역을 맡았습니다: 12화",
+          "어서와) AD보조",
+          "수산물 사용설명서) 방청객 [월드기획]",
+          "불후의 명곡) 방청객 [월드기획]"
           ],
         "ko-skills": [
-          
+          "엑스트라 연기"
         ]
       }
     ],
+    "en-header2": "Part-time Experiences",
+    "ko-header2": "알바 경력",
+    "en-summary2": "",
+    "ko-summary2": "",
     "part-time-experiences": [
       {
         "duration": "2023-09",
         "ko-info": "울산문수야구장 롯데자이언트 진행요원, 1루 엠뷸런스 담당",
-        "en-info": ""
+        "en-info": "Baseball Stadium Staff"
       },
       {
         "duration": "2021-08",
         "ko-info": "한국동서발전 채용필기시험 시험운영위원",
-        "en-info": ""
+        "en-info": "Test Proctor"
       },
       {
         "duration": "2021-08",
         "ko-info": "울산사랑 환경 콘서트 무대입구 보안요원",
-        "en-info": ""
-      },
-      {
-        "duration": "2019-12",
-        "ko-info": "방청객 출연) 수산물 사용설명서, 불후의 명곡",
-        "en-info": ""
+        "en-info": "Concert Security Guard"
       },
       {
         "duration": "2019-09",
         "ko-info": "울산태화강둔치 콘서트 진행요원, 출연PD 보조, MR 전달 및 무대관리",
-        "en-info": ""
+        "en-info": "Concert Staff - PD Assistant"
       },
       {
         "duration": "2019-09",
         "ko-info": "포토샾 보조 & 설치",
-        "en-info": ""
+        "en-info": "Photoshop Assistant"
       },
       {
         "duration": "2019-09",
-        "ko-info": "KCC 모델하우스 카페테리아 담당",
-        "en-info": ""
+        "ko-info": "KCC 모델하우스 카페테리아",
+        "en-info": "Cafeteria"
       },
       {
         "duration": "2019-09",
         "ko-info": "주차안내",
-        "en-info": ""
+        "en-info": "Parking Attendant"
       },
       {
         "duration": "2019-09",
         "ko-info": "울산 전국 우수시장박람회 진행요원 (통역 및 인포메이션)",
-        "en-info": ""
+        "en-info": "Information & Interpreter"
       },
       {
         "duration": "2019-09",
         "ko-info": "페스티발 진행 스텝",
-        "en-info": ""
+        "en-info": "Festival Staff"
       },
       {
         "duration": "2019-09",
         "ko-info": "신바람에너지놀이터 지역통합축제 멘토",
-        "en-info": ""
+        "en-info": "Community Festival Mentor"
       },
       {
         "duration": "2019-09",
         "ko-info": "인형탈",
-        "en-info": ""
+        "en-info": "Mascot Performer"
       },
       {
         "duration": "2019-09",
         "ko-info": "소형화물단순 하차",
-        "en-info": ""
+        "en-info": "Logistics laborer"
       }
     ]
   }

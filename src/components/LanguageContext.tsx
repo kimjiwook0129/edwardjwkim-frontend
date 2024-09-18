@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
 type LanguageContextType = {
   language: string;
@@ -10,8 +10,17 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState('en');
 
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('app-language');
+    if (savedLanguage) {
+      setLanguage(savedLanguage);
+    }
+  }, []);
+
   const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === 'en' ? 'ko' : 'en'));
+    const newLanguage = language === 'en' ? 'ko' : 'en';
+    setLanguage(newLanguage);
+    localStorage.setItem('app-language', newLanguage);
   };
 
   return (

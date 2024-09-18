@@ -1,0 +1,26 @@
+{
+    "en-summary-intro": "",
+    "ko-summary-intro": "",
+    "icons": [
+        {
+            "type": "linkedin",
+            "link": "https://linkedin.com/in/edwardjiwookkim",
+            "icon": "icons/linkedin.svg"
+        },
+        {
+            "type": "github",
+            "link": "https://github.com/kimjiwook0129",
+            "icon":"icons/github.svg"
+        },
+        {
+            "type": "leetcode",
+            "link": "https://leetcode.com/u/kimjiwook129/",
+            "icon":"icons/leetcode.svg"
+        },
+        {
+            "type": "email",
+            "icon": "icons/gmail.svg",
+            "link": "mailto:j533kim@uwaterloo.ca"
+        }
+    ]
+}

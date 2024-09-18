@@ -1,0 +1,46 @@
+{
+    "menu": [
+        {
+            "option": "Home",
+            "en-topic": "Home",
+            "ko-topic": "홈",
+            "image": "home.png",
+            "attribute": "Home button icons created by Kiranshastry - Flaticon (https://www.flaticon.com/free-icons/home-button)"
+        },
+        {
+            "option": "TechExperience",
+            "en-topic": "Technical Experience",
+            "ko-topic": "기술 경력",
+            "image": "professional.png",
+            "attribute": "Professional icons created by Uniconlabs - Flaticon (https://www.flaticon.com/free-icons/professional)"
+        },
+        {
+            "option": "OtherExperience",
+            "en-topic": "Other Experience",
+            "ko-topic": "기타 경력",
+            "image": "leadership.png",
+            "attribute": "Mission icons created by Uniconlabs - Flaticon (https://www.flaticon.com/free-icons/mission)"
+        },
+        {
+            "option": "NumericalSpecifications",
+            "en-topic": "Numerical Specifications",
+            "ko-topic": "기타 스펙",
+            "image": "specifications.png",
+            "attribute": "Graphic icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/graphic)"
+        },
+        {
+            "option": "ProjectsAndPublication",
+            "en-topic": "Projects & Publication",
+            "ko-topic": "출판 & 프로젝트",
+            "image": "projects.png",
+            "attribute": "Project icons created by dDara - Flaticon (https://www.flaticon.com/free-icons/project)"
+        },
+        {
+            "option": "Education",
+            "en-topic": "Education",
+            "ko-topic": "학력",
+            "image": "education.png",
+            "attribute": "Mortarboard icons created by Good Ware - Flaticon (https://www.flaticon.com/free-icons/mortarboard)"
+        }
+    ]
+}

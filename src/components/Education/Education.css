@@ -1,138 +1,119 @@
-/* .work-experience-container {
-    padding: 1rem;
-    
-} */
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
+.education-container {
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 0;
+    margin-top: 0;
 }
 
-.experience-list {
+.education-institution {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.program-title {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 0rem;
+}
+
+.program-role {
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+.program-type {
+    font-size: 16px;
+    font-style: italic;
+    align-self: flex-end;
+    margin-left: 4px;
+}
+
+
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .education-item {
-    padding: 1rem;
-    border-radius: 5px;
-    width: 450px;
-    box-sizing: border-box;
-    text-align: left;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #ddd;
     position: relative;
+    margin-bottom: 20px;
+    max-height:auto;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.education-school {
-    height: 40px;
-    font-weight: bold;
+.education-item.light {
+    background-color: #f9f9f9;
+}
+.education-item.light:hover {
+    background-color: #e0e0e0; 
+}
+.education-item.dark {
+    background-color: #232323;
+}
+.education-item.dark:hover {
+    background-color: #303030; 
+}
+
+.education-item.expanded {
+    max-height:auto;
+}
+
+.education-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education-left, .education-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.education-summary-left, .education-summary-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.eduation-detail-box-header {
     font-size: 20px;
-}
-
-.education-program {
-    height: 40px;
-    margin: 0;
-    font-style: italic;
     font-weight: bold;
-    font-size: 15px;
-}
-
-.job-duration {
-    height: 15px;
-    margin: 0;
-    font-size: 14px;
-}
-
-.job-location {
-    height: 10px;
-    margin: 0;
-    font-size: 14px;
     font-style: italic;
+}
+
+@media (max-width: 650px) {
+    .education-summary {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .education-summary-right {
+        align-items: flex-start;
+        width: 100%;
+    }
 }
 
 .view-details-button {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    padding: 0.5rem 1rem;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 10px;
 }
 
-.details-box {
-    margin-top: 1rem;
-    padding: 1rem;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: opacity 1s ease, height 1s ease;
-    text-align: left;
+.eduation-details-box {
+    margin-top: 15px;
+    position: relative;
+    display: block;
 }
 
-.details-box.visible {
-    opacity: 1;
-    height: auto;
-    padding-top: 0;
-    line-height: 1;
-}
-
-
-.skills {
-    margin-top: 0.5rem;
-}
-
-.skills p {
-    margin-bottom: 0.2rem;
-}
-
-.skills span {
-    margin-right: 0.5rem;
-}
-
-.tech-stacks {
-    flex-direction: column;
-    margin-top: 0rem;
-    padding-top:0;
-}
-
-.tech-stacks p {
-    margin-bottom: 0.2rem;
-}
-
-.tech-stack-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.3rem;
-    margin-top: 1rem;
-    clear: both; 
-    padding-left: 10px;
-}
-.tech-stack {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.tech-icon {
-    width: 40px;
-    height: 40px;
-}
-
-
-@media (max-width: 1150px) {
-    .experience-list {
-        flex-direction: column;
-        align-items: stretch; 
-    }
-    .education-item {
-        width: 100%; 
-    }
+.program-location-duration {
+    font-size: 16px;
+    font-style: italic;
 }

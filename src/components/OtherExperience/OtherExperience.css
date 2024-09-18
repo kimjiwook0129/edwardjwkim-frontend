@@ -1,60 +1,181 @@
-.work-experience-container {
-    padding: 20px;
+.other-experience-container {
+    padding: 10px;
     max-width: 800px;
     margin: 0 auto;
+    padding-top: 0;
+    margin-top: 0;
 }
 
-.header {
-    margin-bottom: 20px;
+.job-company {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
 }
 
-.experience-list {
+.job-title {
+    display: flex;
+}
+
+.job-role {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.job-type {
+    font-size: 16px;
+    font-style: italic;
+    align-self: flex-end;
+    margin-left: 4px;
+}
+
+
+
+.other-experience-list {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.experience-item {
-    background-color: #f4f4f4;
+.other-experience-item {
     padding: 15px;
     border-radius: 8px;
     cursor: pointer;
-    transition: max-height 0.3s ease;
-    overflow: hidden;
     border: 1px solid #ddd;
+    position: relative;
+    margin-bottom: 20px;
+    max-height:auto;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.experience-item.expanded {
-    max-height: 1000px; /* Adjust as needed for the content */
+.other-experience-item.light {
+    background-color: #f9f9f9;
+}
+.other-experience-item.light:hover {
+    background-color: #e0e0e0; 
+}
+.other-experience-item.dark {
+    background-color: #232323;
+}
+.other-experience-item.dark:hover {
+    background-color: #303030; 
 }
 
-.experience-summary {
+.other-experience-item.expanded {
+    max-height:auto;
+}
+
+.other-experience-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.other-summary-left, .other-summary-right {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    align-items: flex-start;
 }
+
+
+
 
 .view-details-button {
     align-self: flex-start;
     margin-top: 10px;
 }
 
-.details-box {
+.other-details-box {
     margin-top: 15px;
+    position: relative;
+    display: block;
 }
 
-.skills,
-.tech-stack-list {
+.skills {
     display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+    align-items: first baseline;
 }
 
-.tech-icon {
-    width: 30px;
-    height: 30px;
+.skills > span {
+    margin-right: 5px;
 }
 
-p {
-    margin: 5px 0;
+.skills-list {
+    display: inline; 
+    text-align: left;
+}
+
+
+.job-location-duration {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.other-detail-box-header {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media (max-width: 750px) {
+    .other-experience-summary {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .other-summary-right {
+        align-items: flex-start;
+        width: 100%;
+    }
+}
+
+
+.parttime-experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.parttime-experience-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.parttime-info {
+    font-size: 16px;
+    font-weight: bold;
+    color: inherit;
+    margin: 0;
+    flex: 1; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    text-align: left;
+}
+
+.parttime-duration {
+    font-size: 14px;
+    font-style: italic;
+    color: inherit; 
+    margin: 0;
+    text-align: right;
+    white-space: nowrap; 
+}
+
+@media (max-width: 600px) {
+    .parttime-experience-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .parttime-duration {
+        text-align: left;
+        margin-top: 5px;
+    }
 }

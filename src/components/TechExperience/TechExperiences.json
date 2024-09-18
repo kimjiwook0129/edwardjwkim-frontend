@@ -1,10 +1,16 @@
 {
+  "en-header": "Tech Experiences",
+  "ko-header": "기술 경력",
+  "en-summary": "",
+  "ko-summary": "",
+  "en-instruction": "You can open or close the details by clicking each box quickly. It’s designed to ignore slow clicks, allowing you to drag the text for reading or copying.",
+  "ko-instruction": "각 박스를 빠르게 클릭하면 세부 정보를 열거나 닫을 수 있습니다. 느린 클릭에는 반응하지 않도록 하여, 텍스트를 드래그하여 읽거나 복사하실 수 있도록 만들었습니다.",
   "tech-experiences": [
     {
       "duration": "2022-09-06,2023-04-28",
       "techStacks": [
         { "name": "Python", "icon": "icons/python.svg" },
-        { "name": "SQL", "icon": "icons/postgresql.svg" },
+        { "name": "SQL", "icon": "icons/sql.png", "attribute": "Sql icons created by juicy_fish - Flaticon"},
         { "name": "R", "icon": "icons/r.svg" },
         { "name": "Pandas", "icon": "icons/pandas.svg" },
         { "name": "Numpy", "icon": "icons/numpy.svg" },
@@ -12,7 +18,8 @@
         { "name": "Jupyter", "icon": "icons/jupyter.svg" }
       ],
       "en-company": "Royal Bank of Canada",
-      "en-title": "Data Engineer Intern",
+      "en-role": "Data Engineer",
+      "en-type": "Internship",
       "en-location": "Toronto, Canada",
       "en-summary": [
         "Collaborated with auditors across the Chief Audit Executive (CAE) group departments to gather business requirements, refining and implementing 100+ Key Risk Indicator (KRI) metrics using Python(Pandas, Numpy), R, and SQL",
@@ -39,7 +46,8 @@
         "Agile Development"
       ],
       "ko-company": "Royal Bank of Canada",
-      "ko-title": "데이터 엔지니어 인턴",
+      "ko-role": "데이터 엔지니어",
+      "ko-type": "인턴쉽",
       "ko-location": "캐나다 토론토",
       "ko-summary": [
         "감사 그룹(CAE) 부서의 감사원들과 협력하여 비즈니스 요구사항을 수집하고, 100개 이상의 핵심 리스크 지표(KRI) 메트릭스를 Python(Pandas, Numpy), R, SQL을 사용하여 개선 및 구현",
@@ -70,14 +78,15 @@
       "duration": "2022-01-10,2022-04-29",
       "techStacks": [
         { "name": "Python", "icon": "icons/python.svg" },
-        { "name": "SQL", "icon": "icons/postgresql.svg" },
+        { "name": "SQL", "icon": "icons/sql.png" },
         { "name": "Airflow", "icon": "icons/apacheairflow.svg" },
         { "name": "Pandas", "icon": "icons/pandas.svg" },
         { "name": "Jupyter", "icon": "icons/jupyter.svg" },
         { "name": "PyTorch", "icon": "icons/pytorch.svg" }
       ],
       "en-company": "Wish (Contextlogic Inc.)",
-      "en-title": "Data Scientist Intern",
+      "en-role": "Data Scientist",
+      "en-type": "Internship",
       "en-location": "Toronto, Canada",
       "en-summary": [
         "Conducted Exploratory Data Analysis (EDA) on sequential user behavior logs, identifying significant differences between fraudulent and normal user patterns using an Long Short-Term Memory (LSTM) model",
@@ -97,7 +106,8 @@
         "Data Visualization"
       ],
       "ko-company": "Wish (Contextlogic Inc.)",
-      "ko-title": "데이터 사이언티스트 인턴",
+      "ko-role": "데이터 사이언티스트",
+      "ko-type": "인턴쉽",
       "ko-location": "캐나다 토론토",
       "ko-summary": [
         "연속 사용자 행동 로그에 대한 탐색적 데이터 분석(EDA)을 수행하여 Long Short-Term Memory(LSTM) 모델을 사용해 사기 사용자와 정상 사용자 패턴 간의 유의미한 차이점을 식별",
@@ -129,7 +139,8 @@
         { "name": "Google Forms", "icon": "icons/googleforms.svg" }
       ],
       "en-company": "Barcode of Life Data Systems", 
-      "en-title": "Data Analyst & Programmer Intern",
+      "en-role": "Data Analyst",
+      "en-type": "Internship",
       "en-location": "Guelph, Canada",
       "en-summary": [
         "Designed, planned, and implemented a comprehensive automated DNA barcode data workflow dashboard using Google Apps API, enhancing data management efficiency by streamlining processes and data visualization",
@@ -145,7 +156,8 @@
         "Dashboard Design"
       ],
       "ko-company": "Barcode of Life Data Systems",
-      "ko-title": "데이터 분석 프로그래머 인턴",
+      "ko-role": "데이터 분석 프로그래머",
+      "ko-type": "인턴쉽",
       "ko-location": "캐나다 구웰프",
       "ko-summary": [
         "Google Apps API를 사용하여 종합적인 자동화 DNA 바코드 데이터 워크플로우 대시보드를 설계, 계획 및 구현하여 데이터 관리 효율성을 향상하고 프로세스 및 데이터 시각화를 간소화",

@@ -1,0 +1,67 @@
+.summary-paragraph {
+    margin: 10px 0 20px;
+    text-align: left;
+}
+
+.summary-content,
+.description-content {
+    text-align: left;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.header {
+    margin-top:0;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.location-calendar-icon {
+    width: 13px; 
+    height: 13px;
+    margin-right: 5px;
+    align-self: flex-end;
+}
+
+
+.summary-content {
+    margin-top: 10px;
+}
+
+.summary-point {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    margin: 10px 0;
+}
+
+.summary-icon {
+    width: 12px; /* Adjust the icon size as needed */
+    height: 12px;
+    margin-right: 10px; /* Space between icon and text */
+    flex-shrink: 0; /* Prevent the icon from shrinking */
+    margin-top: 3px;
+}
+
+.summary-text {
+    margin: 0; /* Remove default margin from paragraph */
+    word-break: break-word; /* Break long words if necessary */
+}
+
+
+.instruction {
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    font-size:12px;
+}
+
+body.light .instruction {
+    color: #228B22;
+}
+
+body.dark .instruction {
+    color: #98FF98;
+}

@@ -1,5 +1,19 @@
 {
-    "publication": [
+    "en-header1": "Publication & Major Projects",
+    "ko-header1": "논문 및 메이저 프로젝트",
+    "en-header2": "Minor Projects",
+    "ko-header2": "마이너 프로젝트",
+    "en-header3": "Toy Projects",
+    "ko-header3": "토이 프로젝트",
+    "en-summary1": "These are projects that are either research papers, have required a significant amount of time, or are considered most important.",
+    "ko-summary1": "논문이나 오랜 시간을 투자했거나 가장 중요하다고 생각하는 프로젝트입니다.",
+    "en-summary2": "Included here are projects involving active participation in hackathons, or those that took more than a month to complete.",
+    "ko-summary2": "참가했던 해커톤에서의 활약, 한 달 이상의 시간이 소요되었던 경우 여기 포함했습니다.",
+    "en-summary3": "Included here are simple projects that took less than a month to complete or were done purely for learning purposes.",
+    "ko-summary3": "한 달 이하로 걸렸거나 순수하게 공부하는 목적에서 했던 간단한 프로젝트를 여기 포함했습니다.", 
+    "en-instruction": "You can open or close the details by clicking each box quickly. It's designed to ignore slow clicks, allowing you to drag the text for reading or copying.",
+    "ko-instruction": "각 박스를 빠르게 클릭하면 세부 정보를 열거나 닫을 수 있습니다. 느린 클릭에는 반응하지 않도록 하여, 텍스트를 드래그하여 읽거나 복사하실 수 있도록 만들었습니다.",
+    "publication-major-projects": [
       {
         "duration": "2023-11-01,2024-02-28",
         "techStacks": [
@@ -10,6 +24,8 @@
           { "name": "Numpy", "icon": "icons/numpy.svg" }
         ],
         "en-title": "Dilated SE-DenseNet for Radiographic Classification of Brain Tumors",
+        "en-type": "Deep Learning & Medical Image Classification",
+        "ko-type": "딥러닝 & 의료 이미지 분류",
         "en-organization": "University of Waterloo",
         "en-summary": [
           "Contributed as First Author",
@@ -41,9 +57,7 @@
           "의료 이미지 분류",
           "지도 학습"
         ]
-      }
-    ],
-    "projects-major": [
+      },
       {
         "duration": "2023-04-15,2023-10-30",
         "techStacks": [
@@ -55,6 +69,8 @@
         ],
         "en-title": "Project Zone",
         "en-organization": "Project Zone Team",
+        "en-type": "Backend Development",
+        "ko-type": "백엔드",
         "en-summary": [
           "Found a project community platform that connects designers, developers, and enthusiasts.",
           "Developed Project Zone's backend REST API using Django and Auth0"
@@ -64,7 +80,7 @@
           "Unfortunately, we have decided to discontinue Project Zone. We halted the project at the beta stage, before proceeding with user acceptance testing, after concluding that it no longer holds a competitive edge in the market."
         ],
         "en-skills": [
-          "Backend Development"
+          "Backend Development", "REST API"
         ],
         "ko-title": "Project Zone",
         "ko-organization": "Project Zone Team",
@@ -77,7 +93,7 @@
           "그러나 안타깝게도, 현재는 Project Zone의 개발을 중단하기로 결정했습니다. 시장에서의 경쟁력이 더 이상 없다고 판단하여 사용자 수용 테스트를 진행하기 전 베타 단계에서 프로젝트를 중단하게 되었습니다."
         ],
         "ko-skills": [
-          "백엔드 개발"
+          "백엔드 개발", "REST API"
         ]
       },
       {
@@ -90,12 +106,15 @@
           { "name": "Amazon Route 53", "icon": "icons/amazonroute53.svg" }
         ],
         "en-title": "Portfolio Website",
+        "en-type": "Frontend Development",
+        "ko-type": "프론트엔드",
         "en-organization": "Personal Use",
         "en-summary": [
-          "This website you are looking at"
+          "This is the website you are currently viewing.",
+          "I created this project to serve as my portfolio and to learn frontend development using React and TypeScript."
         ],
         "en-description": [
-          "This website you are looking at"
+          "This website serves as both a personal portfolio and a learning project. It was developed using React and TypeScript to enhance my frontend development skills while showcasing my work."
         ],
         "en-skills": [
           "Frontend Development"
@@ -103,15 +122,18 @@
         "ko-title": "포트폴리오 웹사이트",
         "ko-organization": "개인 용도",
         "ko-summary": [
-          "지금 보고 계신 웹사이트"
+          "이것은 지금 보고 계신 웹사이트입니다.",
+          "이 프로젝트는 포트폴리오 용도와 React와 TypeScript를 활용한 프론트엔드 개발을 공부하기 위해 만들었습니다."
         ],
         "ko-description": [
-          "지금 보고 계신 웹사이트"
+          "이 웹사이트는 개인 포트폴리오이자 학습 프로젝트로서, React와 TypeScript를 활용하여 프론트엔드 개발 역량을 향상하고 제 작업을 보여주기 위해 제작되었습니다."
         ],
         "ko-skills": [
           "프론트엔드 개발"
         ]
-      },
+      }
+    ],
+    "minor-projects": [
       {
         "duration": "2024-01-26,2024-02-02",
         "techStacks": [
@@ -122,8 +144,11 @@
         ],
         "en-title": "Scotiabank Data Discovery Days 2024 AI-thon",
         "en-organization": "Scotiabank",
+        "en-type": "AI/LLM, Prompt Engineering, Fine-Tuning",
+        "ko-type": "AI/LLM, 프롬프트 엔지니어링, 파인튜닝",
         "en-summary": [
-          ""
+          "Applied prompt engineering techniques, including Chain-of-Thought and Few-Shot learning, for multi-label classification on unlabeled data.",
+          "Fine-tuned BERT to extract irrelevant data (easter eggs) from the given dataset."
         ],
         "en-description": [
           "AI-thon"
@@ -140,10 +165,11 @@
         "ko-title": "Scotiabank Data Discovery Days 2024 AI-thon",
         "ko-organization": "Scotiabank",
         "ko-summary": [
-          ""
+          "Chain-of-Thought 및 Few-Shot 학습과 같은 프롬프트 엔지니어링 기법을 활용하여 비레이블 데이터의 다중 레이블 분류를 수행했습니다.",
+          "BERT를 파인튜닝하여 주어진 데이터에서 이스터에그(관련 없는 데이터)를 추출했습니다."
         ],
         "ko-description": [
-          ""
+          "Coming Soon..."
         ],
         "ko-skills": [
           "AI/LLMs",
@@ -154,40 +180,180 @@
           "데이터 사이언스",
           "데이터 엔지니어링"
         ]
+      },
+      {
+        "duration": "2022-04-28,2022-05-01",
+        "techStacks": [
+          { "name": "Python", "icon": "icons/python.svg" },
+          { "name": "PyTorch", "icon": "icons/pytorch.svg" },
+          { "name": "Jupyter", "icon": "icons/jupyter.svg" },
+          { "name": "Google Slides", "icon": "icons/googleslides.svg" }
+        ],
+        "en-title": "ASA DataFest 2022",
+        "en-organization": "UW & ASA",
+        "en-type": "Unsupervised Learning, UMAP Clustering",
+        "ko-type": "비지도학습, UMAP 클러스터링",
+        "en-summary": [
+          "Coming Soon..."
+        ],
+        "en-description": [
+          "Coming Soon..."
+        ],
+        "en-skills": [
+          "Data Engineering",
+          "Data Science",
+          "Unsupervised Learning"
+        ],
+        "ko-title": "ASA DataFest 2022",
+        "ko-organization": "ASA",
+        "ko-summary": [
+          "Coming Soon..."
+        ],
+        "ko-description": [
+          "Coming Soon..."
+        ],
+        "ko-skills": [
+          "데이터 엔지니어링",
+          "데이터 사이언스",
+          "비지도학습"
+        ]
+      },
+      {
+        "duration": "2019-07-12,2019-08-14",
+        "techStacks": [
+          { "name": "HTML", "icon": "icons/html5.svg" },
+          { "name": "CSS", "icon": "icons/css3.svg" },
+          { "name": "Bootstrap", "icon": "icons/bootstrap.svg" },
+          { "name": "Javascript", "icon": "icons/javascript.svg" },
+          { "name": "jQuery", "icon": "icons/jquery.svg" },
+          { "name": "PHP", "icon": "icons/php.svg" }
+        ],
+        "en-title": "Porfolio Website (Old Version)",
+        "en-organization": "Personal Use",
+        "en-type": "Full-Stack Development",
+        "ko-type": "풀스택",
+        "en-summary": [
+          "Coming Soon..."
+        ],
+        "en-description": [
+          "Coming Soon..."
+        ],
+        "en-skills": [
+          "Coming Soon..."
+        ],
+        "ko-title": "프로폴리오 웹사이트 (구버전)",
+        "ko-organization": "개인 용도",
+        "ko-summary": [
+          "Coming Soon..."
+        ],
+        "ko-description": [
+          "Coming Soon..."
+        ],
+        "ko-skills": [
+          "Coming Soon..."
+        ]
+      },
+      {
+        "duration": "2019-03-30,2019-04-10",
+        "techStacks": [
+          { "name": "C++", "icon": "icons/cplusplus.svg" }
+        ],
+        "en-title": "CS246 Chess Project",
+        "en-type": "Object-Oriented Programming",
+        "ko-type": "객체지향 프로그래밍",
+        "en-organization": "University of Waterloo",
+        "en-summary": [
+          "Coming Soon..."
+        ],
+        "en-description": [
+          "Coming Soon..."
+        ],
+        "en-skills": [
+          "C++",
+          "Object-Oriented Programming"
+        ],
+        "ko-title": "CS246 체스 프로젝트",
+        "ko-organization": "워털루 대학교",
+        "ko-summary": [
+          "Coming Soon..."
+        ],
+        "ko-description": [
+          "Coming Soon..."
+        ],
+        "ko-skills": [
+          "C++",
+          "객체지향 프로그래밍"
+        ]
       }
     ],
-    "projects-minor": [
+    "toy-projects": [
       {
-        "duration": "2024-07-25,2024-07-26",
+        "duration": "2024-08",
+        "en-title": "Grocery Split",
+        "ko-title": "Grocery Split",
+        "en-info": "Coming Soon...",
+        "ko-info": "Coming Soon...",
         "techStacks": [
           { "name": "Typescript", "icon": "icons/typescript.svg" },
           { "name": "React", "icon": "icons/react.svg" },
           { "name": "AWS", "icon": "icons/amazonwebservices.svg" },
           { "name": "Amazon S3", "icon": "icons/amazons3.svg" },
           { "name": "Amazon Route 53", "icon": "icons/amazonroute53.svg" }
-        ],
-        "link": "https://grocerysplit.edwardjwkim.com/",
-        "en-title": "Grocery Split",
-        "en-organization": "Personal Use",
-        "en-summary": [
-          "For splitting bills"
-        ],
-        "en-description": [
-          "For splitting bills"
-        ],
-        "en-skills": [
-          "Frontend Development"
-        ],
-        "ko-title": "Grocery Split",
-        "ko-organization": "개인 용도",
-        "ko-summary": [
-          "친구들과 식료품을 사고 산만큼/먹은만큼 쉽게 돈을 나누게 하기 위함"
-        ],
-        "ko-description": [
-          "친구들과 식료품을 사고 산만큼/먹은만큼 쉽게 돈을 나누게 하기 위함"
-        ],
-        "ko-skills": [
-          "프론트엔드 개발"
+        ]
+      },
+      {
+        "duration": "2024-08",
+        "en-title": "Cover Letter Prompt Generator",
+        "ko-title": "Cover Letter Prompt Generator",
+        "en-info": "Coming Soon...",
+        "ko-info": "Coming Soon...",
+        "techStacks": [
+          { "name": "Python", "icon": "icons/python.svg" },
+          { "name": "Streamlit", "icon": "icons/streamlit.svg" }
+        ]
+      },
+      {
+        "duration": "2021-08",
+        "en-title": "Keyword-Analysis-using-Twitter-API",
+        "ko-title": "Twitter API를 이용한 키워드 분석",
+        "en-info": "Visualizing keyword network using extracted keywords using Twitter API, and analyzing keyword using association rule",
+        "ko-info": "Coming Soon...",
+        "techStacks": [
+          { "name": "Python", "icon": "icons/python.svg" },
+          { "name": "Pandas", "icon": "icons/pandas.svg" }
+        ]
+      },
+      {
+        "duration": "2021-08",
+        "en-title": "Lottery-Number-Analysis",
+        "ko-title": "로또번호 분석",
+        "en-info": "Coming Soon...",
+        "ko-info": "Coming Soon...",
+        "techStacks": [
+          { "name": "Python", "icon": "icons/python.svg" },
+          { "name": "Pandas", "icon": "icons/pandas.svg" }
+        ]
+      },
+      {
+        "duration": "2021-07",
+        "en-title": "Text-Mining-with-ChromeDriver",
+        "ko-title": "크롬드라이버를 이용한 텍스트 마이닝",
+        "en-info": "Developed web crawler, collecting data on Wiki's recent changes, and extracting their keywords for forming wordcloud for visualization",
+        "ko-info": "Coming Soon...",
+        "techStacks": [
+          { "name": "Python", "icon": "icons/python.svg" },
+          { "name": "Selenium", "icon": "icons/selenium.svg" }
+        ]
+      },
+      {
+        "duration": "2018-06",
+        "en-title": "Sudoku Solver",
+        "ko-title": "스토쿠 해결사",
+        "en-info": "Coming Soon...",
+        "ko-info": "Coming Soon...",
+        "techStacks": [
+          { "name": "C", "icon": "icons/c.svg" },
+          { "name": "Node.js", "icon": "icons/nodedotjs.svg" }
         ]
       }
     ]
