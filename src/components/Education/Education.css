@@ -10,10 +10,12 @@
     font-size: 20px;
     font-weight: bold;
     font-style: italic;
+    text-align: left;
 }
 
 .program-title {
     display: flex;
+    text-align: left;
 }
 
 .program-role {

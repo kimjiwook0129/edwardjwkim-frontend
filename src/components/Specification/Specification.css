@@ -1,0 +1,107 @@
+.specifications-container {
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.certificates-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.certificate-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: inherit;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    text-align: left;
+    white-space: normal;
+}
+
+
+.certificate-organization {
+    font-size: 14px;
+    font-style: italic;
+    color: inherit;
+    margin: 0;
+    flex: 1; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    text-align: right;
+    margin-right: 50px;
+}
+
+.certificate-date {
+    font-size: 14px;
+    font-style: italic;
+    color: inherit; 
+    margin: 0;
+    text-align: right;
+    white-space: nowrap; 
+}
+
+.certificate-item.light {
+    background-color: #f9f9f9;
+}
+.certificate-item.light:hover {
+    background-color: #e0e0e0; 
+}
+.certificate-item.dark {
+    background-color: #232323;
+}
+.certificate-item.dark:hover {
+    background-color: #303030; 
+}
+
+.certificate-top-line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+}
+
+@media (max-width: 600px) {
+    .certificate-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .certificate-top-line {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .certificate-date {
+        text-align: left;
+        margin-top: 0px;
+    }
+}
+
+
+.certificate-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.test-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+

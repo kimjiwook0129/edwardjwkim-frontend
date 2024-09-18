@@ -10,23 +10,21 @@
     font-size: 16px;
     font-weight: bold;
     font-style: italic;
+    text-align: left;
 }
 
 .job-title {
-    display: flex;
+    text-align: left;
 }
 
 .job-role {
     font-weight: bold;
     font-size: 20px;
-    
 }
 
 .job-type {
     font-size: 16px;
     font-style: italic;
-    align-self: flex-end;
-    margin-left: 4px;
 }
 
 
@@ -160,6 +158,8 @@
     border: 1px solid #ddd; /* Optional: Add a border to the circle */
     position: relative;
     transition: background-color 0.3s, transform 0.3s;
+    overflow: visible;
+    z-index: 2;
 }
 
 .tech-icon {
@@ -175,7 +175,8 @@
 
 .tech-tooltip {
     position: absolute;
-    bottom: -25px; /* Position below the circle */
+    
+    /* bottom: -25px; */
     left: 50%;
     transform: translateX(-50%);
     background-color: #131313;
@@ -187,7 +188,8 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none; /* Prevent tooltip from interfering with hover */
-    z-index: 1;
+    top: -20px;
+    z-index: 3;
 }
 
 .tech-stack-circle:hover .tech-tooltip {

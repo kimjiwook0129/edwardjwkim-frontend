@@ -8,9 +8,9 @@
     "en-summary1": "These are projects that are either research papers, have required a significant amount of time, or are considered most important.",
     "ko-summary1": "논문이나 오랜 시간을 투자했거나 가장 중요하다고 생각하는 프로젝트입니다.",
     "en-summary2": "Included here are projects involving active participation in hackathons, or those that took more than a month to complete.",
-    "ko-summary2": "참가했던 해커톤에서의 활약, 한 달 이상의 시간이 소요되었던 경우 여기 포함했습니다.",
+    "ko-summary2": "참가했던 해커톤에서의 활약, 혹은 한 달 이상의 시간이 소요되었던 경우 여기 포함했습니다.",
     "en-summary3": "Included here are simple projects that took less than a month to complete or were done purely for learning purposes.",
-    "ko-summary3": "한 달 이하로 걸렸거나 순수하게 공부하는 목적에서 했던 간단한 프로젝트를 여기 포함했습니다.", 
+    "ko-summary3": "한 달 이하로 걸렸거나, 제 개인 용도로 빠르게 만들었거나, 순수하게 공부하는 목적에서 했던 간단한 프로젝트를 여기 포함했습니다.", 
     "en-instruction": "You can open or close the details by clicking each box quickly. It's designed to ignore slow clicks, allowing you to drag the text for reading or copying.",
     "ko-instruction": "각 박스를 빠르게 클릭하면 세부 정보를 열거나 닫을 수 있습니다. 느린 클릭에는 반응하지 않도록 하여, 텍스트를 드래그하여 읽거나 복사하실 수 있도록 만들었습니다.",
     "publication-major-projects": [
@@ -147,11 +147,20 @@
         "en-type": "AI/LLM, Prompt Engineering, Fine-Tuning",
         "ko-type": "AI/LLM, 프롬프트 엔지니어링, 파인튜닝",
         "en-summary": [
-          "Applied prompt engineering techniques, including Chain-of-Thought and Few-Shot learning, for multi-label classification on unlabeled data.",
-          "Fine-tuned BERT to extract irrelevant data (easter eggs) from the given dataset."
+          "Manually labeled a small subset of data to create a base for fine-tuning BERT to detect and filter out irrelevant reviews (easter eggs) with 99.3% accuracy.",
+          "Applied prompt engineering techniques, including Chain-of-Thought and Few-Shot learning, for multi-label classification on initially unlabeled app review data."
+        ],
+        "ko-summary": [
+          "데이터의 소량을 수동으로 라벨링하여 BERT를 파인튜닝할 기반을 마련하였고, 이를 통해 99.3%의 정확도로 관련 없는 리뷰(이스터에그)를 감지 및 제거했습니다.",
+          "Chain-of-Thought 및 Few-Shot 학습과 같은 프롬프트 엔지니어링 기법을 활용하여 처음에는 비레이블된 앱 리뷰 데이터의 다중 레이블 분류를 수행했습니다."
         ],
         "en-description": [
-          "AI-thon"
+          "Participated in Scotiabank's AI-thon to analyze initially unlabeled app store review data using prompt engineering + OpenAI's GPT4.0. Started by manually labeling a small subset of data to serve as the foundation for training. Implemented prompt engineering methods, such as Chain-of-Thought reasoning and Few-Shot learning, for multi-label classification.",
+          "Fine-tuned a BERT model to identify and remove irrelevant 'easter egg' reviews, achieving high accuracy of 99.3%. Conducted topic labeling using GPT-4 with the manually labeled dataset, and used evaluation metrics like RMSE, Jaccard distance, and accuracy to assess the model's performance. Performed time-series analysis on average ratings to identify key factors affecting customer satisfaction."
+        ],
+        "ko-description": [
+          "Scotiabank의 AI-thon에 참여하여 처음에는 비레이블된 앱 스토어 리뷰 데이터를 프롬프트 엔지니어링 + OpenAI의 GPT4.0으로 분석했습니다. 먼저 데이터의 소량을 수동으로 라벨링하여 학습의 기반을 마련했습니다. Chain-of-Thought 추론과 Few-Shot 학습과 같은 프롬프트 엔지니어링 방법을 사용하여 다중 레이블 분류를 수행했습니다.",
+          "BERT 모델을 파인튜닝하여 관련 없는 '이스터에그' 리뷰를 99.3%의 정확도로 감지 및 제거했습니다. 수동 라벨링한 데이터를 토대로 GPT-4를 사용하여 토픽 라벨링을 수행했으며, RMSE, Jaccard 거리, 정확도와 같은 평가 지표를 활용하여 모델 성능을 평가했습니다. 시계열 분석을 통해 고객 만족도에 영향을 미치는 주요 요소를 파악했습니다."
         ],
         "en-skills": [
           "AI/LLMs",
@@ -164,13 +173,6 @@
         ],
         "ko-title": "Scotiabank Data Discovery Days 2024 AI-thon",
         "ko-organization": "Scotiabank",
-        "ko-summary": [
-          "Chain-of-Thought 및 Few-Shot 학습과 같은 프롬프트 엔지니어링 기법을 활용하여 비레이블 데이터의 다중 레이블 분류를 수행했습니다.",
-          "BERT를 파인튜닝하여 주어진 데이터에서 이스터에그(관련 없는 데이터)를 추출했습니다."
-        ],
-        "ko-description": [
-          "Coming Soon..."
-        ],
         "ko-skills": [
           "AI/LLMs",
           "파인튜닝",
@@ -194,28 +196,34 @@
         "en-type": "Unsupervised Learning, UMAP Clustering",
         "ko-type": "비지도학습, UMAP 클러스터링",
         "en-summary": [
-          "Coming Soon..."
+          "Conducted time-based analysis on user behavior in the game \"playForward: Elm City\" to understand its impact on real-life actions.",
+          "Employed clustering techniques to identify behavioral changes over 4-5 weeks, using aggregated session log data to track student progress and strategies."
         ],
         "en-description": [
-          "Coming Soon..."
+          "Analyzed session log data of \"playForward: Elm City\" to predict and understand student behaviors and determine the game's influence on real-life actions. Aggregated data to calculate the number of weeks since each player's first interaction.",
+          "Utilized clustering and dimensionality reduction (UMAP) techniques to identify patterns and behavioral changes. Found two distinct groups: those who changed behavior through gameplay and those who did not, providing insights for potential game interventions."
         ],
         "en-skills": [
-          "Data Engineering",
-          "Data Science",
-          "Unsupervised Learning"
+          "Data Analysis",
+          "Unsupervised Learning",
+          "Dimensionality Reduction (UMAP)",
+          "Data Visualization"
         ],
         "ko-title": "ASA DataFest 2022",
         "ko-organization": "ASA",
         "ko-summary": [
-          "Coming Soon..."
+          "게임 \"playForward: Elm City\"에서 사용자의 행동 변화를 분석하여 실제 생활에 미치는 영향을 파악하였습니다.",
+          "학생들의 진행 상황과 전략을 추적하기 위해 세션 로그 데이터를 집계하고 클러스터링 기법을 사용하여 4-5주 간의 행동 변화를 파악하였습니다."
         ],
         "ko-description": [
-          "Coming Soon..."
+          "\"playForward: Elm City\"의 세션 로그 데이터를 분석하여 학생들의 행동을 예측하고 게임이 실제 행동에 미치는 영향을 파악했습니다. 각 플레이어의 첫 상호작용 이후 몇 주가 지났는지 계산하기 위해 데이터를 집계했습니다.",
+          "클러스터링 및 차원 축소(UMAP) 기법을 사용하여 패턴과 행동 변화를 식별했습니다. 게임 플레이를 통해 행동을 변화시킨 그룹과 그렇지 않은 그룹을 발견하여 게임 개입의 가능성을 제시했습니다."
         ],
         "ko-skills": [
-          "데이터 엔지니어링",
-          "데이터 사이언스",
-          "비지도학습"
+          "데이터 분석",
+          "비지도학습",
+          "차원 축소 (UMAP)",
+          "데이터 시각화"
         ]
       },
       {
@@ -226,31 +234,34 @@
           { "name": "Bootstrap", "icon": "icons/bootstrap.svg" },
           { "name": "Javascript", "icon": "icons/javascript.svg" },
           { "name": "jQuery", "icon": "icons/jquery.svg" },
-          { "name": "PHP", "icon": "icons/php.svg" }
+          { "name": "PHP", "icon": "icons/php.svg" },
+          { "name": "D3.js", "icon": "icons/d3dotjs.svg" }
         ],
-        "en-title": "Porfolio Website (Old Version)",
+        "en-title": "Portfolio Website (Old Version)",
         "en-organization": "Personal Use",
         "en-type": "Full-Stack Development",
         "ko-type": "풀스택",
         "en-summary": [
-          "Coming Soon..."
+          "Built a responsive portfolio website using vanilla JavaScript, jQuery, and Bootstrap."
+        ],
+        "ko-summary": [
+          "Vanilla JavaScript, jQuery, 그리고 Bootstrap을 사용하여 반응형 포트폴리오 웹사이트를 개발하였습니다."
         ],
         "en-description": [
-          "Coming Soon..."
-        ],
-        "en-skills": [
-          "Coming Soon..."
-        ],
-        "ko-title": "프로폴리오 웹사이트 (구버전)",
-        "ko-organization": "개인 용도",
-        "ko-summary": [
-          "Coming Soon..."
+          "Developed an old version of my personal portfolio website using HTML, CSS, JavaScript, and jQuery to ensure responsiveness across different devices. Incorporated Bootstrap for layout and styling, and utilized D3.js for data visualizations. The website was hosted on Hostinger until June 2023. Currently, the website is not being hosted."
         ],
         "ko-description": [
-          "Coming Soon..."
+          "HTML, CSS, JavaScript, jQuery를 사용하여 반응형 포트폴리오 웹사이트의 구버전을 개발하였습니다. 레이아웃과 스타일링을 위해 Bootstrap을 사용하였고, D3.js를 활용하여 데이터 시각화를 구현하였습니다. 이 웹사이트는 2019년부터 2021년까지 Hostinger에서 호스팅되었으며, 현재는 호스팅 중단 상태입니다."
         ],
+        "en-skills": [
+          "Responsive Web Design",
+          "Front-End Development"
+        ],
+        "ko-title": "포트폴리오 웹사이트 (구버전)",
+        "ko-organization": "개인 용도",
         "ko-skills": [
-          "Coming Soon..."
+          "반응형 웹 디자인",
+          "프론트엔드 개발"
         ]
       },
       {
@@ -263,36 +274,42 @@
         "ko-type": "객체지향 프로그래밍",
         "en-organization": "University of Waterloo",
         "en-summary": [
-          "Coming Soon..."
+          "Developed a fully functional chess game as the final project for the CS246 - Object-Oriented Software Development course.",
+          "Implemented all chess functionalities, including Player vs Player, Player vs Computer, and Computer vs Computer modes, with four levels of AI difficulty."
+        ],
+        "ko-summary": [
+          "CS246 - 객체지향 소프트웨어 개발 수업의 마지막 프로젝트로 체스 게임을 완성하였고, 만점을 받았습니다.",
+          "기본적인 체스 기능과 더불어 4단계의 컴퓨터 AI 난이도를 포함하여 플레이어 대 플레이어, 플레이어 대 컴퓨터, 컴퓨터 대 컴퓨터 모드를 모두 구현하였습니다."
         ],
         "en-description": [
-          "Coming Soon..."
+          "Our team developed this chess game for the final group assignment in CS246. The project involved implementing all standard chess functionalities, including different play modes (Player vs Player, Player vs Computer, and Computer vs Computer) and computer AI with four difficulty levels.",
+          "Additionally, we implemented a graphical interface using X11, a setup mode for custom board configurations, move history, and a command interpreter. We followed the Observer design pattern to enhance the game's object-oriented structure. Our comprehensive implementation met all the project requirements and included bonus features like graphics, earning us a perfect score."
+        ],
+        "ko-description": [
+          "CS246 - 객체지향 프로그래밍 과목의 마지막 그룹 과제로 이 체스 게임을 개발했습니다. 이 프로젝트는 플레이어 대 플레이어, 플레이어 대 컴퓨터, 컴퓨터 대 컴퓨터 등의 다양한 플레이 모드와 4단계의 컴퓨터 AI 난이도를 포함하여 모든 표준 체스 기능을 구현하는 것이었습니다.",
+          "추가로, X11을 사용한 그래픽 인터페이스, 사용자 정의 보드 구성을 위한 설정 모드, 이동 기록 및 명령 인터프리터를 구현했습니다. 게임의 객체지향 구조를 향상시키기 위해 Observer 디자인 패턴을 적용했습니다. 이 프로젝트는 모든 요구 사항을 충족하고 그래픽과 같은 보너스 기능을 포함하여 만점을 받았습니다."
         ],
         "en-skills": [
           "C++",
-          "Object-Oriented Programming"
+          "Object-Oriented Programming",
+          "Design Patterns (Observer)"
         ],
         "ko-title": "CS246 체스 프로젝트",
         "ko-organization": "워털루 대학교",
-        "ko-summary": [
-          "Coming Soon..."
-        ],
-        "ko-description": [
-          "Coming Soon..."
-        ],
         "ko-skills": [
           "C++",
-          "객체지향 프로그래밍"
+          "객체지향 프로그래밍",
+          "디자인 패턴 (Observer)"
         ]
-      }
+      }      
     ],
     "toy-projects": [
       {
         "duration": "2024-08",
         "en-title": "Grocery Split",
         "ko-title": "Grocery Split",
-        "en-info": "Coming Soon...",
-        "ko-info": "Coming Soon...",
+        "en-info": "A tool to split grocery costs based on item quantity, discounts, and taxes for group shopping at Costco: https://grocerysplit.edwardjwkim.com/",
+        "ko-info": "친구들이랑 코스트코에서 단체 쇼핑 시 품목별 수량, 할인 및 세금을 나누기 위해 만든 도구입니다: https://grocerysplit.edwardjwkim.com/",
         "techStacks": [
           { "name": "Typescript", "icon": "icons/typescript.svg" },
           { "name": "React", "icon": "icons/react.svg" },
@@ -305,8 +322,8 @@
         "duration": "2024-08",
         "en-title": "Cover Letter Prompt Generator",
         "ko-title": "Cover Letter Prompt Generator",
-        "en-info": "Coming Soon...",
-        "ko-info": "Coming Soon...",
+        "en-info": "A Streamlit tool that generates prompts for LLMs to create cover letters based on user input: https://cover-letter-prompt-generator.streamlit.app/",
+        "ko-info": "유저가 입력한 정보로 LLM에 넣을 프롬프트를 자동 생성하는 Streamlit 기반 도구입니다: https://cover-letter-prompt-generator.streamlit.app/",
         "techStacks": [
           { "name": "Python", "icon": "icons/python.svg" },
           { "name": "Streamlit", "icon": "icons/streamlit.svg" }
@@ -316,8 +333,8 @@
         "duration": "2021-08",
         "en-title": "Keyword-Analysis-using-Twitter-API",
         "ko-title": "Twitter API를 이용한 키워드 분석",
-        "en-info": "Visualizing keyword network using extracted keywords using Twitter API, and analyzing keyword using association rule",
-        "ko-info": "Coming Soon...",
+        "en-info": "Collected Twitter data, extracted keywords, analyzed using association rules, and visualized the keyword network.",
+        "ko-info": "Twitter 데이터를 수집하고 키워드를 추출하여 연관 분석 및 키워드 네트워크를 시각화하였습니다.",
         "techStacks": [
           { "name": "Python", "icon": "icons/python.svg" },
           { "name": "Pandas", "icon": "icons/pandas.svg" }
@@ -327,8 +344,8 @@
         "duration": "2021-08",
         "en-title": "Lottery-Number-Analysis",
         "ko-title": "로또번호 분석",
-        "en-info": "Coming Soon...",
-        "ko-info": "Coming Soon...",
+        "en-info": "A simple project to explore meaningful patterns in Korean lottery numbers, but lacked sufficient data (or perhaps, there were no patterns at all).",
+        "ko-info": "한국 로또번호의 의미 있는 패턴을 찾기 위해 시도했지만 데이터가 부족했습니다 (어쩌면 패턴 자체가 없는게 사실 맞습니다).",
         "techStacks": [
           { "name": "Python", "icon": "icons/python.svg" },
           { "name": "Pandas", "icon": "icons/pandas.svg" }
@@ -338,8 +355,8 @@
         "duration": "2021-07",
         "en-title": "Text-Mining-with-ChromeDriver",
         "ko-title": "크롬드라이버를 이용한 텍스트 마이닝",
-        "en-info": "Developed web crawler, collecting data on Wiki's recent changes, and extracting their keywords for forming wordcloud for visualization",
-        "ko-info": "Coming Soon...",
+        "en-info": "Crawled NamuWiki data, extracted recent changes, and visualized keywords using a word cloud.",
+        "ko-info": "나무위키의 데이터를 크롤링하여 최근 변화를 분석하고 키워드를 워드클라우드로 시각화하였습니다.",
         "techStacks": [
           { "name": "Python", "icon": "icons/python.svg" },
           { "name": "Selenium", "icon": "icons/selenium.svg" }
@@ -349,12 +366,12 @@
         "duration": "2018-06",
         "en-title": "Sudoku Solver",
         "ko-title": "스토쿠 해결사",
-        "en-info": "Coming Soon...",
-        "ko-info": "Coming Soon...",
+        "en-info": "A web-based Sudoku solver using a backtracking algorithm in C and Node.js for the frontend.",
+        "ko-info": "백트래킹 알고리즘을 사용하여 C로 구현하고 Node.js로 웹 기반 인터페이스를 만든 스도쿠 해결 프로그램입니다.",
         "techStacks": [
           { "name": "C", "icon": "icons/c.svg" },
           { "name": "Node.js", "icon": "icons/nodedotjs.svg" }
         ]
-      }
+      }      
     ]
   }

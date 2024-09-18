@@ -50,9 +50,11 @@ const OtherExperience: React.FC = () => {
                         <div className="other-experience-summary">
                             <div className="other-summary-left">
                                 <div className="job-company">{otherExperience[`${language}-company`]}</div>
+
                                 <div className="job-title">
-                                    <div className="job-role"> {otherExperience[`${language}-role`]} </div>
-                                    <div className="job-type">- {otherExperience[`${language}-type`]}</div>
+                                    <div className="job-role">
+                                        {otherExperience[`${language}-role`]} -<span className="job-type">{otherExperience[`${language}-type`]}</span>
+                                    </div>
                                 </div>
                             </div>
                             <div className="other-summary-right">

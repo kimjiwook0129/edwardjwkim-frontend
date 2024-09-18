@@ -17,6 +17,7 @@
     display: flex;
     font-weight: bold;
     font-size: 14px;
+    text-align: left;
 }
 
 .major-or-minor-projects-list {
@@ -153,7 +154,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    gap: 10px;
+    gap: 5px;
 }
 
 .toy-title {
@@ -163,7 +164,9 @@
     margin: 0;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    max-width: 100%;
+    white-space: normal;
+    text-align: left;
 }
 
 .toy-tech-stacks {
@@ -243,6 +246,6 @@
 
     .toy-duration {
         text-align: left;
-        margin-top: 5px;
+        margin-top: 0px;
     }
 }

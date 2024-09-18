@@ -49,9 +49,11 @@ const TechExperience: React.FC = () => {
                             <div className="tech-summary-left">
                                 <div className="job-company">{techExperience[`${language}-company`]}</div>
                                 <div className="job-title">
-                                    <div className="job-role"> {techExperience[`${language}-role`]} </div>
-                                    <div className="job-type">- {techExperience[`${language}-type`]}</div>
+                                    <div className="job-role">
+                                        {techExperience[`${language}-role`]} -<span className="job-type">{techExperience[`${language}-type`]}</span>
+                                    </div>
                                 </div>
+
                             </div>
                             <div className="tech-summary-right">
                                 <div className="job-location-duration">

@@ -1,10 +1,125 @@
 {
+    "en-header1": "Certificates & Licenses",
+    "ko-header1": "자격증 및 면허",
+    "en-summary1": "",
+    "ko-summary1": "",
+
+    "en-header2": "Standardized Test Scores",
+    "ko-header2": "공인 시험",
+    "en-summary2": "These test results are from more than 5 years ago, so they may not fully reflect my current abilities. However, I have included them to also showcase my knowledge transfer abilities, for example, as a Math, Statistics, and Physics instructor.",
+    "ko-summary2": "이 시험 결과들은 5년이 넘은 것들이라 현재 제 능력을 완전히 반영하지는 않습니다. 그러나 수학, 통계, 물리 강사로서의 지식 전달 능력도 보여주기 때문에 첨부하였습니다.",
     "certificates": [
         {
-            "en-title": "",
-            "en-organization": "",
-            "ko-title": "",
-            "ko-organization": ""
+            "date": "2024-01",
+            "ko-title": "Google Cloud Certified Professional Data Engineer",
+            "en-title": "Google Cloud Certified Professional Data Engineer",
+            "ko-organization": "구글 클라우드",
+            "en-organization": "Google Cloud"
+        },
+        {
+            "date": "2021-06",
+            "ko-title": "정보처리산업기사",
+            "en-title": "Information Processing Industrial Engineer",
+            "ko-organization": "한국산업인력공단",
+            "en-organization": "HRD Korea"
+        },
+        {
+            "date": "2021-05",
+            "ko-title": "정보처리기능사",
+            "en-title": "Information Processing Craftsman",
+            "ko-organization": "한국산업인력공단",
+            "en-organization": "HRD Korea"
+        },
+        {
+            "date": "2020-11",
+            "ko-title": "리눅스마스터 2급",
+            "en-title": "Linux Master Class-II",
+            "ko-organization": "한국정보통신진흥협회",
+            "en-organization": "Korea Association for ICT Promotion"
+        },
+        {
+            "date": "2020-08",
+            "ko-title": "컴퓨터활용능력 1급",
+            "en-title": "Computer Specialist in Spreadsheet & Database Class-I",
+            "ko-organization": "대한상공회의소",
+            "en-organization": "Korea Chamber of Commerce and Industry"
+        },
+        {
+            "date": "2020-07",
+            "ko-title": "워드프로세서 단일등급",
+            "en-title": "Word Processor Specialist",
+            "ko-organization": "대한상공회의소",
+            "en-organization": "Korea Chamber of Commerce and Industry"
+        },
+        {
+            "date": "2020-12",
+            "ko-title": "비서 1급",
+            "en-title": "Secretarial Administrator Class-I",
+            "ko-organization": "대한상공회의소",
+            "en-organization": "Korea Chamber of Commerce and Industry"
+        },
+        {
+            "date": "2020-12",
+            "ko-title": "회계관리 2급",
+            "en-title": "Certified Accounting Manager Class-II",
+            "ko-organization": "삼일회계법인",
+            "en-organization": "Samil PwC"
+        },
+        {
+            "date": "2021-04",
+            "ko-title": "한국사능력검정시험 2급",
+            "en-title": "Korean History Proficiency Test Class-II",
+            "ko-organization": "국사편찬위원회",
+            "en-organization": "National Institute of Korean History"
+        },
+        {
+            "date": "2020-06",
+            "ko-title": "상공회의소 한자 3급",
+            "en-title": "Chinese Characters Class-III",
+            "ko-organization": "대한상공회의소",
+            "en-organization": "Korea Chamber of Commerce and Industry"
+        },
+        {
+            "date": "2020-01",
+            "ko-title": "멘사 코리아",
+            "en-title": "Mensa Korea",
+            "ko-organization": "멘사 코리아",
+            "en-organization": "Mensa Korea"
+        },
+        {
+            "date": "2017-08",
+            "ko-title": "운전면허 2종",
+            "en-title": "Full G Driver's License",
+            "ko-organization": "",
+            "en-organization": ""
+        }
+
+    ],
+    "test-scores": [
+        {
+            "date": "2019-06",
+            "ko-title": "TOEIC: 945 / 990, 듣기: 495 / 495, 읽기: 450 / 495",
+            "en-title": "TOEIC: 945 / 990, Listening: 495 / 495, Reading: 450 / 495"
+        },
+        {
+            "date": "2017-04",
+            "ko-title": "SAT: 1490 / 1600, 수학: 800 / 800, 영어: 690 / 800",
+            "en-title": "SAT: 1490 / 1600, Math: 800 / 800, English: 690 / 800"
+        },
+        {
+            "date": "2017-05",
+            "ko-title": "IB HL 수학: 7 / 7",
+            "en-title": "IB HL Math: 7 / 7"
+        },
+        {
+            "date": "2017-05",
+            "ko-title": "IB HL 물리: 7 / 7",
+            "en-title": "IB HL Physics: 7 / 7"
+        },
+        {
+            "date": "2017-05",
+            "ko-title": "AP 통계: 5 / 5",
+            "en-title": "AP Statistics: 5 / 5"
         }
     ]
 }
